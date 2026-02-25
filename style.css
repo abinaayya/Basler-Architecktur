@@ -183,3 +183,94 @@ body{
   height: 750px;
   border: none;
 }
+
+/* =========================
+   MOBILE FIXES (nur Handy)
+   ========================= */
+@media (max-width: 768px) {
+
+  /* Body padding kleiner, Nav darf wachsen */
+  body{
+    padding-top: 90px;
+  }
+
+  .nav-inner{
+    padding: 12px 16px;
+    flex-wrap: wrap;       /* wichtig: darf umbrechen */
+    gap: 10px;
+  }
+
+  .logo{
+    letter-spacing: 2px;
+    font-size: 14px;
+  }
+
+  /* Links umbrechen statt überlaufen */
+  .nav-links{
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+  }
+
+  .nav-link{
+    font-size: 14px;
+    padding: 8px 10px;          /* bessere Touch-Fläche */
+    border-radius: 10px;
+  }
+
+  .dropbtn{
+    padding: 10px 12px;         /* besser antippbar */
+    border-radius: 10px;
+  }
+
+  /* Dropdown: auf Mobile per Klick/Fokus statt Hover */
+  .dropdown:hover .dropdown-content{
+    display: none;
+  }
+
+  .dropdown:focus-within .dropdown-content{
+    display: block;
+  }
+
+  .dropdown-content{
+    position: static;           /* nicht absolut -> kein Offscreen */
+    width: 100%;
+    margin-top: 8px;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .dropdown-content a{
+    padding: 14px 14px;         /* große Touch-Ziele */
+  }
+
+  /* Hero etwas kürzer, Text nicht zu riesig */
+  .hero{
+    height: calc(85vh - 90px);
+    padding: 0 14px;
+  }
+
+  .content h1{
+    letter-spacing: 3px;
+  }
+
+  .content p{
+    font-size: 16px;
+  }
+
+  /* Info: weniger Abstand auf Mobile */
+  .info{
+    padding: 60px 18px;
+  }
+
+  .info-inner p{
+    font-size: 16px;
+    margin-bottom: 22px;
+  }
+
+  .timeline-link{
+    display: inline-block;
+    padding: 14px 18px;
+  }
+}
