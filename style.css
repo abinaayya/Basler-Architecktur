@@ -352,11 +352,14 @@ body{
 }
 
 .map-frame img{
-  width: 100%;
+  width: auto;
   height: auto;
+  max-width: none;   /* wichtig: nicht auf 100% begrenzen */
+  max-height: none;
   display: block;
   user-select: none;
   -webkit-user-drag: none;
+  transform-origin: 0 0; /* sauberes Zoomen */
 }
 
 .map-hint{
@@ -366,17 +369,33 @@ body{
   text-align: center;
 }
 
-/* Mobile: etwas höhere Fläche und größere Buttons */
 @media (max-width: 768px){
-  .map-frame{
-    height: 70vh;
-    width: 100%;
+  .map-shell{
+    padding: 14px;
   }
+
+  .map-frame{
+    width: 100%;
+    height: calc(100vh - 210px); /* mehr Platz für die Karte am Handy */
+    border-radius: 14px;
+  }
+
   .map-toolbar{
     width: 100%;
     justify-content: space-between;
+    position: sticky;
+    top: 72px;                 /* unter der fixed nav */
+    z-index: 50;
+    padding: 8px 0;
+    background: rgba(5,5,5,0.55);
+    backdrop-filter: blur(10px);
   }
+
   .toolbtn{
     padding: 12px 14px;
+  }
+
+  .map-hint{
+    width: 100%;
   }
 }

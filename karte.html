@@ -67,15 +67,22 @@
   const frame = document.getElementById("mapFrame");
   const img = document.getElementById("mapImage");
 
-  const panzoom = Panzoom(img, {
-    maxScale: 6,
-    minScale: 1,
-    contain: 'outside',
-    cursor: 'grab'
-  });
+const panzoom = Panzoom(img, {
+  maxScale: 8,
+  minScale: 1,
+  contain: 'outside',
+  cursor: 'grab',
+  startScale: 1,
+  animate: true
+});
 
+// Wichtig: Touch-Pinch aktivieren
+frame.addEventListener('pointerdown', (e) => {
+  // verhindert, dass der Browser beim Drag "scrollt"
+  if (e.pointerType === 'touch') e.preventDefault();
+});
   // Zoom mit Mausrad
-  frame.addEventListener('wheel', panzoom.zoomWithWheel);
+frame.addEventListener('wheel', panzoom.zoomWithWheel, { passive: false });
 
   // Buttons
   document.getElementById("zoomIn").addEventListener("click", () => panzoom.zoomIn());
