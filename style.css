@@ -274,3 +274,109 @@ body{
     padding: 14px 18px;
   }
 }
+
+/* =========================
+   MAP VIEWER (karte.html)
+   ========================= */
+
+.map-page{
+  color: white;
+}
+
+.map-hero{
+  padding: 40px 20px 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.map-hero-inner{
+  width: min(900px, 100% - 40px);
+}
+
+.map-hero h1{
+  font-weight: 300;
+  letter-spacing: 4px;
+  font-size: clamp(28px, 4vw, 44px);
+  margin-bottom: 8px;
+}
+
+.map-hero p{
+  opacity: 0.8;
+  font-size: 14px;
+}
+
+.map-shell{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.map-toolbar{
+  width: min(1100px, 100% - 40px);
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.toolbtn{
+  border: 1px solid rgba(255,255,255,0.25);
+  background: rgba(0,0,0,0.35);
+  color: white;
+  padding: 10px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  backdrop-filter: blur(8px);
+}
+
+.toolbtn:hover{
+  background: rgba(255,255,255,0.08);
+}
+
+.toolbtn-link{
+  display: inline-flex;
+  align-items: center;
+}
+
+.map-frame{
+  width: min(1100px, 100% - 40px);
+  height: min(72vh, 720px);
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  touch-action: none; /* wichtig für Touch/Panzoom */
+}
+
+.map-frame img{
+  width: 100%;
+  height: auto;
+  display: block;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.map-hint{
+  width: min(1100px, 100% - 40px);
+  opacity: 0.7;
+  font-size: 13px;
+  text-align: center;
+}
+
+/* Mobile: etwas höhere Fläche und größere Buttons */
+@media (max-width: 768px){
+  .map-frame{
+    height: 70vh;
+    width: 100%;
+  }
+  .map-toolbar{
+    width: 100%;
+    justify-content: space-between;
+  }
+  .toolbtn{
+    padding: 12px 14px;
+  }
+}
