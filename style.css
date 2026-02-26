@@ -400,4 +400,81 @@ body{
   }
 }
 
+/* =========================
+   PROJECT PAGE
+   ========================= */
 
+.project-page{
+  color: white;
+}
+
+.project-inner{
+  width: min(900px, calc(100% - 40px));
+  margin: auto;
+}
+
+.project-hero{
+  padding: 120px 0 60px;
+  text-align: center;
+}
+
+.project-hero h1{
+  font-weight: 300;
+  letter-spacing: 6px;
+  font-size: clamp(32px, 5vw, 60px);
+  margin-bottom: 20px;
+}
+
+.project-lead{
+  font-size: 18px;
+  opacity: 0.85;
+  max-width: 600px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.project-section{
+  padding: 60px 0;
+}
+
+.project-section h2{
+  margin-top: 40px;
+  margin-bottom: 12px;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+
+.project-section p{
+  line-height: 1.8;
+  opacity: 0.8;
+  margin-bottom: 20px;
+  font-size: 17px;
+}
+
+.team-section{
+  padding: 80px 0;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.team-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.team-member h3{
+  font-weight: 400;
+  margin-bottom: 6px;
+}
+
+.team-member p{
+  opacity: 0.7;
+  font-size: 14px;
+}
+
+.team-photo{
+  margin-top: 50px;
+  width: 100%;
+  border-radius: 16px;
+}
