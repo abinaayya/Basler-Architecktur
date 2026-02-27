@@ -68,53 +68,66 @@
   const frame = document.getElementById("mapFrame");
   const img = document.getElementById("mapImage");
 
-const panzoom = Panzoom(img, {
-  maxScale: 8,
-  minScale: 0.1,
-  contain: 'outside',
-  cursor: 'grab',
-  animate: true
-});
-function fitMap() {
-  const frameRect = frame.getBoundingClientRect();
-  const iw = img.naturalWidth;
-  const ih = img.naturalHeight;
-  if (!iw || !ih) return;
+  const panzoom = Panzoom(img, {
+    maxScale: 8,
+    minScale: 0.05,
+    contain: "outside",
+    cursor: "grab",
+    animate: true
+  });
 
-  const scale = Math.min(frameRect.width / iw, frameRect.height / ih);
+  function fitMap() {
+    const frameRect = frame.getBoundingClientRect();
+    const iw = img.naturalWidth;
+    const ih = img.naturalHeight;
+    if (!iw || !ih || frameRect.width === 0 || frameRect.height === 0) return;
 
-  panzoom.reset({ animate: false });
-  panzoom.zoom(scale, { animate: false });
+    const scale = Math.min(frameRect.width / iw, frameRect.height / ih);
 
-  // Zentrieren:
-  const x = (frameRect.width - iw * scale) / 2;
-  const y = (frameRect.height - ih * scale) / 2;
-  panzoom.pan(x, y, { animate: false });
-}
+    panzoom.reset({ animate: false });
+    panzoom.zoom(scale, { animate: false });
 
-img.addEventListener("load", fitMap);
-window.addEventListener("resize", fitMap);
-// Wichtig: Touch-Pinch aktivieren
-frame.addEventListener('pointerdown', (e) => {
-  // verhindert, dass der Browser beim Drag "scrollt"
-  if (e.pointerType === 'touch') e.preventDefault();
-});
-  // Zoom mit Mausrad
-frame.addEventListener('wheel', panzoom.zoomWithWheel, { passive: false });
+    const x = (frameRect.width - iw * scale) / 2;
+    const y = (frameRect.height - ih * scale) / 2;
+    panzoom.pan(x, y, { animate: false });
+  }
+
+  // Wichtig: Fit erst, wenn Bild wirklich geladen ist
+  img.addEventListener("load", () => {
+    fitMap();
+
+    // Mobile/Sticky-Toolbar/Layout braucht oft noch 1–2 Frames → dann stimmt die Höhe wirklich
+    requestAnimationFrame(() => requestAnimationFrame(fitMap));
+    setTimeout(fitMap, 250);
+  });
+
+  // Beim Resize (auch Handy drehen)
+  let resizeTimer;
+  window.addEventListener("resize", () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(fitMap, 150);
+  });
+
+  // Touch: verhindert Scroll statt Drag (nur im Frame)
+  frame.addEventListener("pointerdown", (e) => {
+    if (e.pointerType === "touch") e.preventDefault();
+  });
+
+  frame.addEventListener("wheel", panzoom.zoomWithWheel, { passive: false });
 
   // Buttons
   document.getElementById("zoomIn").addEventListener("click", () => panzoom.zoomIn());
   document.getElementById("zoomOut").addEventListener("click", () => panzoom.zoomOut());
- document.getElementById("reset").addEventListener("click", () => fitMap());
+  document.getElementById("reset").addEventListener("click", fitMap);
 
-  // Doppelklick / Doppeltipp zum Zoomen
+  // Doppelklick / Doppeltipp
   let lastTap = 0;
   frame.addEventListener("dblclick", (e) => {
     e.preventDefault();
     panzoom.zoomIn({ animate: true });
   });
 
-  frame.addEventListener("touchend", (e) => {
+  frame.addEventListener("touchend", () => {
     const now = Date.now();
     if (now - lastTap < 300) panzoom.zoomIn({ animate: true });
     lastTap = now;
