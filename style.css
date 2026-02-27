@@ -376,7 +376,7 @@ body{
 
   .map-frame{
     width: 100%;
-    height: calc(100vh - 210px); /* mehr Platz für die Karte am Handy */
+    height: 70vh;
     border-radius: 14px;
   }
 
