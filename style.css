@@ -352,14 +352,13 @@ body{
 }
 
 .map-frame img{
-  width: auto;
-  height: auto;
-  max-width: none;   /* wichtig: nicht auf 100% begrenzen */
-  max-height: none;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;     /* <-- DAS ist der Schlüssel */
   display: block;
   user-select: none;
   -webkit-user-drag: none;
-  transform-origin: 0 0; /* sauberes Zoomen */
+  transform-origin: 50% 50%;
 }
 
 .map-hint{

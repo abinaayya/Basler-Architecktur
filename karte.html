@@ -70,55 +70,21 @@
 
   const panzoom = Panzoom(img, {
     maxScale: 8,
-    minScale: 0.05,
+    minScale: 1,          // Start ist "fit", also 1
     contain: "outside",
     cursor: "grab",
     animate: true
   });
 
-  function fitMap() {
-    const frameRect = frame.getBoundingClientRect();
-    const iw = img.naturalWidth;
-    const ih = img.naturalHeight;
-    if (!iw || !ih || frameRect.width === 0 || frameRect.height === 0) return;
-
-    const scale = Math.min(frameRect.width / iw, frameRect.height / ih);
-
-    panzoom.reset({ animate: false });
-    panzoom.zoom(scale, { animate: false });
-
-    const x = (frameRect.width - iw * scale) / 2;
-    const y = (frameRect.height - ih * scale) / 2;
-    panzoom.pan(x, y, { animate: false });
-  }
-
-  // Wichtig: Fit erst, wenn Bild wirklich geladen ist
-  img.addEventListener("load", () => {
-    fitMap();
-
-    // Mobile/Sticky-Toolbar/Layout braucht oft noch 1–2 Frames → dann stimmt die Höhe wirklich
-    requestAnimationFrame(() => requestAnimationFrame(fitMap));
-    setTimeout(fitMap, 250);
-  });
-
-  // Beim Resize (auch Handy drehen)
-  let resizeTimer;
-  window.addEventListener("resize", () => {
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(fitMap, 150);
-  });
-
-  // Touch: verhindert Scroll statt Drag (nur im Frame)
   frame.addEventListener("pointerdown", (e) => {
     if (e.pointerType === "touch") e.preventDefault();
   });
 
   frame.addEventListener("wheel", panzoom.zoomWithWheel, { passive: false });
 
-  // Buttons
   document.getElementById("zoomIn").addEventListener("click", () => panzoom.zoomIn());
   document.getElementById("zoomOut").addEventListener("click", () => panzoom.zoomOut());
-  document.getElementById("reset").addEventListener("click", fitMap);
+  document.getElementById("reset").addEventListener("click", () => panzoom.reset());
 
   // Doppelklick / Doppeltipp
   let lastTap = 0;
