@@ -349,32 +349,20 @@ body{
   overflow: hidden;
   position: relative;
   touch-action: none; /* wichtig für Touch/Panzoom */
+  overscroll-behavior: contain;
 }
 
-.map-pan{
-  width: 100%;
-  height: 100%;
-  display: grid;
-  place-items: center;  /* Bild zentriert */
-}
 
-.map-pan img{
-  width: 100%;
-  height: 100%;
-  object-fit: contain;  /* ganze Karte sichtbar */
-  display: block;
-  user-select: none;
-  -webkit-user-drag: none;
-}
 
 .map-frame img{
-  width: 100%;
-  height: 100%;
-  object-fit: contain;     /* <-- DAS ist der Schlüssel */
+  width: auto;
+  height: auto;
+  max-width: none;
+  max-height: none;
   display: block;
   user-select: none;
   -webkit-user-drag: none;
-  transform-origin: 50% 50%;
+  transform-origin: 0 0;
 }
 
 .map-hint{

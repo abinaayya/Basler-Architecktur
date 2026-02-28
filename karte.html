@@ -52,10 +52,8 @@
       <!-- <a class="toolbtn toolbtn-link" href="karte.pdf" download>PDF</a> -->
     </div>
 
-   <div class="map-frame" id="mapFrame" aria-label="Kartenviewer">
-  <div id="mapPan" class="map-pan">
-    <img id="mapImage" src="Karte_Basel.jpg" alt="Karte Basel – Tramlinien und Bauwerke" draggable="false">
-  </div>
+  <div class="map-frame" id="mapFrame" aria-label="Kartenviewer">
+  <img id="mapImage" src="Karte_Basel.jpg" alt="Karte Basel – Tramlinien und Bauwerke" draggable="false">
 </div>
 
     <p class="map-hint">
@@ -69,25 +67,51 @@
 <script src="https://unpkg.com/@panzoom/panzoom@4.5.1/dist/panzoom.min.js"></script>
 <script>
   const frame = document.getElementById("mapFrame");
-  const pan = document.getElementById("mapPan");
+  const img = document.getElementById("mapImage");
 
-  const panzoom = Panzoom(pan, {
+  const panzoom = Panzoom(img, {
     maxScale: 8,
-    minScale: 1,
+    minScale: 0.05,
     contain: "outside",
     cursor: "grab",
     animate: true
   });
 
-  frame.addEventListener("pointerdown", (e) => {
-    if (e.pointerType === "touch") e.preventDefault();
+  function fitMap() {
+    const r = frame.getBoundingClientRect();
+    const iw = img.naturalWidth;
+    const ih = img.naturalHeight;
+    if (!iw || !ih || r.width === 0 || r.height === 0) return;
+
+    const scale = Math.min(r.width / iw, r.height / ih);
+
+    panzoom.reset({ animate: false });
+    panzoom.zoom(scale, { animate: false });
+
+    const x = (r.width - iw * scale) / 2;
+    const y = (r.height - ih * scale) / 2;
+    panzoom.pan(x, y, { animate: false });
+  }
+
+  img.addEventListener("load", () => {
+    fitMap();
+    requestAnimationFrame(() => requestAnimationFrame(fitMap));
+    setTimeout(fitMap, 200);
   });
 
+  let t;
+  window.addEventListener("resize", () => {
+    clearTimeout(t);
+    t = setTimeout(fitMap, 150);
+  });
+
+  // Wheel zoom (Desktop)
   frame.addEventListener("wheel", panzoom.zoomWithWheel, { passive: false });
 
+  // Buttons
   document.getElementById("zoomIn").addEventListener("click", () => panzoom.zoomIn());
   document.getElementById("zoomOut").addEventListener("click", () => panzoom.zoomOut());
-  document.getElementById("reset").addEventListener("click", () => panzoom.reset());
+  document.getElementById("reset").addEventListener("click", fitMap);
 </script>
 
 </body>
