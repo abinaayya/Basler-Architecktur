@@ -52,9 +52,11 @@
       <!-- <a class="toolbtn toolbtn-link" href="karte.pdf" download>PDF</a> -->
     </div>
 
-    <div class="map-frame" id="mapFrame" aria-label="Kartenviewer">
-      <img id="mapImage" src="Karte_Basel.jpg" alt="Karte Basel – Tramlinien und Bauwerke" draggable="false">
-    </div>
+   <div class="map-frame" id="mapFrame" aria-label="Kartenviewer">
+  <div id="mapPan" class="map-pan">
+    <img id="mapImage" src="Karte_Basel.jpg" alt="Karte Basel – Tramlinien und Bauwerke" draggable="false">
+  </div>
+</div>
 
     <p class="map-hint">
      Doppelklick (Desktop) oder Doppeltippen (Handy) zoomt.
@@ -64,13 +66,14 @@
 
 <!-- kleine Zoom/Pan Library (sehr leichtgewichtig) -->
 <script src="https://unpkg.com/@panzoom/panzoom@4.5.1/dist/panzoom.min.js"></script>
+<script src="https://unpkg.com/@panzoom/panzoom@4.5.1/dist/panzoom.min.js"></script>
 <script>
   const frame = document.getElementById("mapFrame");
-  const img = document.getElementById("mapImage");
+  const pan = document.getElementById("mapPan");
 
-  const panzoom = Panzoom(img, {
+  const panzoom = Panzoom(pan, {
     maxScale: 8,
-    minScale: 1,          // Start ist "fit", also 1
+    minScale: 1,
     contain: "outside",
     cursor: "grab",
     animate: true
@@ -85,19 +88,6 @@
   document.getElementById("zoomIn").addEventListener("click", () => panzoom.zoomIn());
   document.getElementById("zoomOut").addEventListener("click", () => panzoom.zoomOut());
   document.getElementById("reset").addEventListener("click", () => panzoom.reset());
-
-  // Doppelklick / Doppeltipp
-  let lastTap = 0;
-  frame.addEventListener("dblclick", (e) => {
-    e.preventDefault();
-    panzoom.zoomIn({ animate: true });
-  });
-
-  frame.addEventListener("touchend", () => {
-    const now = Date.now();
-    if (now - lastTap < 300) panzoom.zoomIn({ animate: true });
-    lastTap = now;
-  }, { passive: true });
 </script>
 
 </body>

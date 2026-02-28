@@ -351,6 +351,22 @@ body{
   touch-action: none; /* wichtig für Touch/Panzoom */
 }
 
+.map-pan{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;  /* Bild zentriert */
+}
+
+.map-pan img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;  /* ganze Karte sichtbar */
+  display: block;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
 .map-frame img{
   width: 100%;
   height: 100%;
