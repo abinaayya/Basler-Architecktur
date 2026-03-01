@@ -659,9 +659,11 @@ rgba(0,0,0,0.85)
 
 .figure__img{
   width: 100%;
+  max-height: 650px;     /* begrenzt zu hohe Bilder */
+  object-fit: contain;   /* GANZES Bild sichtbar */
   display: block;
+  margin: 0 auto;
 }
-
 .figure__cap{
   padding: 10px 12px;
   font-size: 13px;
@@ -700,9 +702,11 @@ rgba(0,0,0,0.85)
 
 .gallery__img{
   width: 100%;
+  max-height: 70vh;      /* max 70% der Bildschirmhöhe */
+  object-fit: contain;   /* wichtig für Hochformat */
   display: block;
+  margin: 0 auto;
 }
-
 .gallery__cap{
   padding: 10px 12px;
   font-size: 13px;
