@@ -98,7 +98,21 @@ body{
   background: rgba(255,255,255,0.08);
 }
 
-.dropdown:hover .dropdown-content{
+/* Dropdown als <details>: funktioniert sicher auf Handy */
+.dropdown > summary{
+  list-style: none;
+}
+
+.dropdown > summary::-webkit-details-marker{
+  display: none; /* Safari Pfeil entfernen */
+}
+
+.dropdown-content{
+  display: none; /* Standard zu */
+}
+
+/* Wenn geöffnet */
+.dropdown[open] .dropdown-content{
   display: block;
 }
 
@@ -224,14 +238,7 @@ body{
     border-radius: 10px;
   }
 
-  /* Dropdown: auf Mobile per Klick/Fokus statt Hover */
-  .dropdown:hover .dropdown-content{
-    display: none;
-  }
-
-  .dropdown:focus-within .dropdown-content{
-    display: block;
-  }
+ 
 
   .dropdown-content{
     position: static;           /* nicht absolut -> kein Offscreen */

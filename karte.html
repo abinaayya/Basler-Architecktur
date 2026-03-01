@@ -19,8 +19,8 @@
       <a href="karte.html" class="nav-link nav-link--active">Karte</a>
       <a href="wir.html" class="nav-link">Projekt</a>
 
-      <div class="dropdown">
-        <button class="dropbtn" type="button">Bauwerke ▾</button>
+      <details class="dropdown">
+        <summary class="dropbtn">Bauwerke ▾</summary>
         <div class="dropdown-content">
           <a href="elisabethen.html">1864 · Elisabethenkirche</a>
           <a href="markthalle.html">1929 · Markthalle</a>
@@ -29,7 +29,8 @@
           <a href="weinlager.html">2023 · Weinlager</a>
           <a href="novartis.html">2022 · Novartis Campus</a>
         </div>
-      </div>
+      </details>
+
       <a href="Quellen.html" class="nav-link">Verzeichnis</a>
     </nav>
   </div>
@@ -47,23 +48,19 @@
       <button class="toolbtn" type="button" id="zoomIn">＋</button>
       <button class="toolbtn" type="button" id="zoomOut">－</button>
       <button class="toolbtn" type="button" id="reset">Reset</button>
-
       <!-- optional: PDF Download -->
       <!-- <a class="toolbtn toolbtn-link" href="karte.pdf" download>PDF</a> -->
     </div>
 
-  <div class="map-frame" id="mapFrame" aria-label="Kartenviewer">
-  <img id="mapImage" src="Karte_Basel.jpg" alt="Karte Basel – Tramlinien und Bauwerke" draggable="false">
-</div>
+    <div class="map-frame" id="mapFrame" aria-label="Kartenviewer">
+      <img id="mapImage" src="Karte_Basel.jpg" alt="Karte Basel – Tramlinien und Bauwerke" draggable="false">
+    </div>
 
-    <p class="map-hint">
-     Doppelklick (Desktop) oder Doppeltippen (Handy) zoomt.
-    </p>
+    <p class="map-hint">Doppelklick (Desktop) oder Doppeltippen (Handy) zoomt.</p>
   </section>
 </main>
 
-<!-- kleine Zoom/Pan Library (sehr leichtgewichtig) -->
-<script src="https://unpkg.com/@panzoom/panzoom@4.5.1/dist/panzoom.min.js"></script>
+<!-- Panzoom (nur einmal!) -->
 <script src="https://unpkg.com/@panzoom/panzoom@4.5.1/dist/panzoom.min.js"></script>
 <script>
   const frame = document.getElementById("mapFrame");
@@ -105,10 +102,8 @@
     t = setTimeout(fitMap, 150);
   });
 
-  // Wheel zoom (Desktop)
   frame.addEventListener("wheel", panzoom.zoomWithWheel, { passive: false });
 
-  // Buttons
   document.getElementById("zoomIn").addEventListener("click", () => panzoom.zoomIn());
   document.getElementById("zoomOut").addEventListener("click", () => panzoom.zoomOut());
   document.getElementById("reset").addEventListener("click", fitMap);
