@@ -488,3 +488,266 @@ body{
   width: 100%;
   border-radius: 16px;
 }
+
+/* =========================
+   BAUWERK-SEITEN (z.B. markthalle.html)
+   ========================= */
+
+/* Haupttitel – edel & architektonisch */
+.page-hero__title{
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  letter-spacing: 9px;
+  font-size: clamp(98px, 8vw, 96px);
+  line-height: 1.05;
+  color: white;
+  text-transform: none; /* kein komplett uppercase mehr */
+  text-shadow: 0 12px 50px rgba(0,0,0,0.6);
+}
+
+/* Basel – sehr fein */
+.page-hero__city{
+  display: block;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
+  font-size: clamp(20px, 2.8vw, 30px);
+  letter-spacing: 3px;
+  margin-top: 10px;
+  opacity: 0.85;
+}
+
+/* Untertitel – leicht & modern */
+.page-hero__subtitle{
+  margin-top: 35px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: clamp(16px, 2vw, 22px);
+  line-height: 1.7;
+  font-weight: 300;
+  color: white;
+  opacity: 0.95;
+  text-shadow: 0 6px 30px rgba(0,0,0,0.6);
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.page-hero{
+  height: calc(100vh - 70px);
+  min-height: 520px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* dunkler, eleganter Overlay */
+.page-hero__overlay{
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+rgba(0,0,0,0.25),
+rgba(0,0,0,0.85)
+  );
+}
+
+/* Inhalt */
+.page-hero__inner{
+  position: relative;
+  padding: 0 20px;
+  max-width: 900px;
+}
+
+/* Haupttitel */
+.page-hero__title{
+  font-weight: 300;
+  letter-spacing: 8px;
+  font-size: clamp(40px, 7vw, 90px);
+  line-height: 1.1;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 0 10px 40px rgba(0,0,0,0.6);
+}
+
+/* Basel kleiner, eleganter */
+.page-hero__city{
+  display: block;
+  font-size: clamp(18px, 2.5vw, 26px);
+  letter-spacing: 6px;
+  margin-top: 12px;
+  opacity: 0.85;
+}
+
+/* Untertitel */
+.page-hero__subtitle{
+  margin-top: 30px;
+  font-size: clamp(16px, 2vw, 22px);
+  line-height: 1.6;
+  font-weight: 300;
+  color: white;
+  opacity: 0.95;
+  text-shadow: 0 6px 30px rgba(0,0,0,0.6);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page{
+  color: white;
+}
+
+.page-section{
+  padding: 60px 0 80px;
+}
+
+.container{
+  width: min(900px, calc(100% - 40px));
+  margin: auto;
+}
+
+.h2{
+  margin-top: 44px;
+  margin-bottom: 12px;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+
+.p{
+  color: rgba(255,255,255,0.78);
+  font-size: 17px;
+  line-height: 1.85;
+  margin-bottom: 18px;
+}
+
+/* Steckbrief */
+.facts{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-bottom: 18px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(0,0,0,0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.fact__label{
+  opacity: 0.7;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+.fact__value{
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Bilder */
+.figure{
+  margin: 26px 0;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.03);
+}
+
+.figure__img{
+  width: 100%;
+  display: block;
+}
+
+.figure__cap{
+  padding: 10px 12px;
+  font-size: 13px;
+  opacity: 0.75;
+}
+
+.figure--wide{
+  margin-top: 18px;
+}
+
+/* Galerie */
+.gallery{
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: 44px 1fr 44px;
+  gap: 12px;
+  align-items: center;
+}
+
+.gallery__btn{
+  border: 1px solid rgba(255,255,255,0.25);
+  background: rgba(0,0,0,0.35);
+  color: white;
+  height: 44px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.gallery__figure{
+  margin: 0;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 16px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.03);
+}
+
+.gallery__img{
+  width: 100%;
+  display: block;
+}
+
+.gallery__cap{
+  padding: 10px 12px;
+  font-size: 13px;
+  opacity: 0.75;
+}
+
+/* Weiter/Zurück */
+.pager{
+  margin-top: 34px;
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.pager__link{
+  color: white;
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,0.35);
+  padding: 12px 14px;
+  border-radius: 12px;
+  letter-spacing: 1px;
+  transition: .2s;
+}
+
+.pager__link:hover{
+  background: white;
+  color: black;
+}
+
+/* Mobile */
+@media (max-width: 768px){
+  .page-hero{
+    height: calc(80vh - 90px);
+    min-height: 360px;
+  }
+
+  .facts{
+    grid-template-columns: 1fr;
+  }
+
+  .gallery{
+    grid-template-columns: 44px 1fr 44px;
+  }
+
+  .pager{
+    flex-direction: column;
+  }
+}
