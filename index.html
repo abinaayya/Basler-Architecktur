@@ -14,82 +14,271 @@
     <div class="logo">BAULINIE Basel</div>
 
     <nav class="nav-links">
-      <a href="index.html" class="nav-link" data-de="Home" data-en="Home">Home</a>
-      <a href="zeitstrahl.html" class="nav-link" data-de="Zeitstrahl" data-en="Timeline">Zeitstrahl</a>
-      <a href="karte.html" class="nav-link" data-de="Karte" data-en="Map">Karte</a>
-      <a href="wir.html" class="nav-link" data-de="Projekt" data-en="Project">Projekt</a>
+      <a href="index.html" class="nav-link nav-link--active"
+         data-de="Home"
+         data-en="Home"
+         data-fr="Accueil">Home</a>
+
+      <a href="zeitstrahl.html" class="nav-link"
+         data-de="Zeitstrahl"
+         data-en="Timeline"
+         data-fr="Chronologie">Zeitstrahl</a>
+
+      <a href="karte.html" class="nav-link"
+         data-de="Karte"
+         data-en="Map"
+         data-fr="Carte">Karte</a>
+
+      <a href="wir.html" class="nav-link"
+         data-de="Projekt"
+         data-en="Project"
+         data-fr="Projet">Projekt</a>
 
       <details class="dropdown">
-        <summary class="dropbtn" data-de="Bauwerke ▾" data-en="Buildings ▾">Bauwerke ▾</summary>
+        <summary class="dropbtn"
+                 data-de="Bauwerke ▾"
+                 data-en="Buildings ▾"
+                 data-fr="Bâtiments ▾">Bauwerke ▾</summary>
         <div class="dropdown-content">
-          <a href="elisabethen.html">1864 · Elisabethenkirche</a>
-          <a href="markthalle.html">1929 · Markthalle</a>
-          <a href="messe.html">2013 · Messe</a>
-          <a href="kunstmuseum.html">2016 · Kunstmuseum</a>
-          <a href="weinlager.html">2023 · Weinlager</a>
-          <a href="novartis.html">2022 · Novartis Campus</a>
+          <a href="elisabethen.html"
+             data-de="1864 · Elisabethenkirche"
+             data-en="1864 · Elisabethenkirche"
+             data-fr="1864 · Église Sainte-Elisabeth">1864 · Elisabethenkirche</a>
+
+          <a href="markthalle.html"
+             data-de="1929 · Markthalle"
+             data-en="1929 · Market Hall"
+             data-fr="1929 · Halle du Marché">1929 · Markthalle</a>
+
+          <a href="messe.html"
+             data-de="2013 · Messe"
+             data-en="2013 · Messe"
+             data-fr="2013 · Messe">2013 · Messe</a>
+
+          <a href="kunstmuseum.html"
+             data-de="2016 · Kunstmuseum"
+             data-en="2016 · Art Museum"
+             data-fr="2016 · Musée des Beaux-Arts">2016 · Kunstmuseum</a>
+
+          <a href="weinlager.html"
+             data-de="2023 · Weinlager"
+             data-en="2023 · Weinlager"
+             data-fr="2023 · Weinlager">2023 · Weinlager</a>
+
+          <a href="novartis.html"
+             data-de="2022 · Novartis Campus"
+             data-en="2022 · Novartis Campus"
+             data-fr="2022 · Campus Novartis">2022 · Novartis Campus</a>
         </div>
       </details>
 
-      <a href="Quellen.html" class="nav-link" data-de="Verzeichnis" data-en="Sources">Verzeichnis</a>
+      <a href="Quellen.html" class="nav-link"
+         data-de="Verzeichnis"
+         data-en="Sources"
+         data-fr="Sources">Verzeichnis</a>
 
-      <!-- 🌍 Sprachschalter (RICHTIG PLATZIERT) -->
       <div class="lang-switch">
         <button type="button" class="lang-btn active" data-lang-btn="de">DE</button>
         <button type="button" class="lang-btn" data-lang-btn="en">EN</button>
+        <button type="button" class="lang-btn" data-lang-btn="fr">FR</button>
       </div>
-
     </nav>
   </div>
 </header>
 
-<section class="hero">
+<section class="hero hero-home">
   <div class="overlay"></div>
-  <div class="content">
-    <h1>BAULINIE BASEL</h1>
-    <p data-de="Architektur entlang der Tramlinie" data-en="Architecture along the tram line">
-      Architektur entlang der Tramlinie
+  <div class="content hero-home__content">
+    <div class="hero-home__eyebrow"
+         data-de="Architekturroute durch Basel"
+         data-en="Architecture route through Basel"
+         data-fr="Parcours architectural à travers Bâle">
+      Architekturroute durch Basel
+    </div>
+
+    <h1
+      data-de="BAULINIE BASEL"
+      data-en="BAULINIE BASEL"
+      data-fr="BAULINIE BASEL">
+      BAULINIE BASEL
+    </h1>
+
+    <p class="hero-home__lead"
+       data-de="Entdecke ausgewählte Bauwerke entlang der Tramlinien 1, 2 und 14 – von der Elisabethenkirche bis zum Novartis Pavillon."
+       data-en="Discover selected buildings along tram lines 1, 2 and 14 – from Elisabethenkirche to the Novartis Pavilion."
+       data-fr="Découvre des bâtiments sélectionnés le long des lignes de tram 1, 2 et 14 – de l’église Sainte-Elisabeth au Pavillon Novartis.">
+      Entdecke ausgewählte Bauwerke entlang der Tramlinien 1, 2 und 14 – von der Elisabethenkirche bis zum Novartis Pavillon.
     </p>
+
+    <div class="hero-home__actions">
+      <a href="zeitstrahl.html" class="hero-btn hero-btn--primary"
+         data-de="Zeitstrahl ansehen"
+         data-en="View timeline"
+         data-fr="Voir la chronologie">
+        Zeitstrahl ansehen
+      </a>
+
+      <a href="karte.html" class="hero-btn hero-btn--secondary"
+         data-de="Karte öffnen"
+         data-en="Open map"
+         data-fr="Ouvrir la carte">
+        Karte öffnen
+      </a>
+    </div>
   </div>
 </section>
 
-<section class="info">
-  <div class="info-inner">
+<section class="home-intro">
+  <div class="home-container">
+    <div class="home-intro__text">
+      <div class="section-kicker"
+           data-de="Projektidee"
+           data-en="Project idea"
+           data-fr="Idée du projet">
+        Projektidee
+      </div>
 
-<p data-de="Basel ist eine Stadt, die sich entlang von Linien entwickelt. Tramlinien verbinden nicht nur Orte, sondern auch Zeiten, Nutzungen und architektonische Haltungen. Genau hier setzt unser Projekt an."
-   data-en="Basel is a city that develops along lines. Tram lines connect not only places, but also times, uses and architectural approaches. This is exactly where our project begins.">
-Basel ist eine Stadt, die sich entlang von Linien entwickelt. Tramlinien verbinden nicht nur Orte, sondern auch Zeiten, Nutzungen und architektonische Haltungen. Genau hier setzt unser Projekt an.
-</p>
+      <h2 data-de="Architektur, Mobilität und Stadtentwicklung"
+          data-en="Architecture, mobility and urban development"
+          data-fr="Architecture, mobilité et développement urbain">
+        Architektur, Mobilität und Stadtentwicklung
+      </h2>
 
-<p data-de="Wir sind Abinaya, Marla und Miranda vom Gymnasium Muttenz und haben im Rahmen des Wahlkurses Sportgeografie eine Karte von Basel entwickelt. Sie macht ausgewählte Architekturbauten entlang der Tramlinien 1, 2 und 14 sichtbar. Die Gebäude wurden bewusst ausgewählt, aufgrund ihrer heutigen Nutzung, ihrer architektonischen Bedeutung sowie ihres Umgangs mit Nachhaltigkeit. Sie stehen exemplarisch für den Wandel der Stadt und zeigen, wie Architektur über Zeit hinweg weitergedacht wird."
-   data-en="We are Abinaya, Marla and Miranda from Gymnasium Muttenz. As part of the elective course in sports geography, we developed a map of Basel. It highlights selected architectural buildings along tram lines 1, 2 and 14. The buildings were deliberately chosen based on their current use, architectural significance and approach to sustainability. They represent the transformation of the city and show how architecture evolves over time.">
-Wir sind Abinaya, Marla und Miranda vom Gymnasium Muttenz und haben im Rahmen des Wahlkurses Sportgeografie eine Karte von Basel entwickelt. Sie macht ausgewählte Architekturbauten entlang der Tramlinien 1, 2 und 14 sichtbar. Die Gebäude wurden bewusst ausgewählt, aufgrund ihrer heutigen Nutzung, ihrer architektonischen Bedeutung sowie ihres Umgangs mit Nachhaltigkeit. Sie stehen exemplarisch für den Wandel der Stadt und zeigen, wie Architektur über Zeit hinweg weitergedacht wird.
-</p>
+      <p data-de="Basel ist eine Stadt, die sich entlang von Linien entwickelt. Tramlinien verbinden nicht nur Orte, sondern auch Zeiten, Nutzungen und architektonische Haltungen. Genau hier setzt unser Projekt an."
+         data-en="Basel is a city that develops along lines. Tram lines connect not only places, but also times, uses and architectural approaches. This is exactly where our project begins."
+         data-fr="Bâle est une ville qui se développe le long de lignes. Les lignes de tram relient non seulement des lieux, mais aussi des époques, des usages et des approches architecturales. C’est précisément là que commence notre projet.">
+        Basel ist eine Stadt, die sich entlang von Linien entwickelt. Tramlinien verbinden nicht nur Orte, sondern auch Zeiten, Nutzungen und architektonische Haltungen. Genau hier setzt unser Projekt an.
+      </p>
 
-<p data-de="Die Karte dient als Ausgangspunkt für eine Entdeckungsreise durch Basel. Über QR-Codes führt sie zu unserer Website, auf der vertiefende Informationen, weiterführende Links sowie eigene Fotografien der Bauwerke zu finden sind. Unser Ziel ist es, Architektur verständlich, zugänglich und im Stadtraum erlebbar zu machen, für Touristinnen und Touristen ebenso wie für Interessierte vor Ort."
-   data-en="The map serves as a starting point for a journey of discovery through Basel. QR codes lead to our website, where more detailed information, additional links and our own photographs of the buildings can be found. Our goal is to make architecture understandable, accessible and tangible in the urban space, both for tourists and for local visitors.">
-Die Karte dient als Ausgangspunkt für eine Entdeckungsreise durch Basel. Über QR-Codes führt sie zu unserer Website, auf der vertiefende Informationen, weiterführende Links sowie eigene Fotografien der Bauwerke zu finden sind. Unser Ziel ist es, Architektur verständlich, zugänglich und im Stadtraum erlebbar zu machen, für Touristinnen und Touristen ebenso wie für Interessierte vor Ort.
-</p>
+      <p data-de="Wir sind Abinaya, Marla und Miranda vom Gymnasium Muttenz und haben im Rahmen des Wahlkurses Sportgeografie eine Karte von Basel entwickelt. Sie macht ausgewählte Architekturbauten entlang der Tramlinien 1, 2 und 14 sichtbar."
+         data-en="We are Abinaya, Marla and Miranda from Gymnasium Muttenz. As part of the elective course in sports geography, we developed a map of Basel. It highlights selected architectural buildings along tram lines 1, 2 and 14."
+         data-fr="Nous sommes Abinaya, Marla et Miranda du Gymnasium Muttenz et, dans le cadre du cours à option de géographie du sport, nous avons créé une carte de Bâle. Elle met en évidence des bâtiments architecturaux sélectionnés le long des lignes de tram 1, 2 et 14.">
+        Wir sind Abinaya, Marla und Miranda vom Gymnasium Muttenz und haben im Rahmen des Wahlkurses Sportgeografie eine Karte von Basel entwickelt. Sie macht ausgewählte Architekturbauten entlang der Tramlinien 1, 2 und 14 sichtbar.
+      </p>
 
-<a href="zeitstrahl.html" class="timeline-link"
-   data-de="→ Zum Zeitstrahl"
-   data-en="→ To the timeline">
-→ Zum Zeitstrahl
-</a>
+      <p data-de="Unser Ziel ist es, Architektur verständlich, zugänglich und im Stadtraum erlebbar zu machen – für Touristinnen und Touristen ebenso wie für Interessierte vor Ort."
+         data-en="Our goal is to make architecture understandable, accessible and tangible in the urban space – both for tourists and for local visitors."
+         data-fr="Notre objectif est de rendre l’architecture compréhensible, accessible et tangible dans l’espace urbain – aussi bien pour les touristes que pour les personnes intéressées sur place.">
+        Unser Ziel ist es, Architektur verständlich, zugänglich und im Stadtraum erlebbar zu machen – für Touristinnen und Touristen ebenso wie für Interessierte vor Ort.
+      </p>
+    </div>
 
-<a href="karte.html" class="timeline-link"
-   data-de="→ Zur Karte"
-   data-en="→ To the map">
-→ Zur Karte
-</a>
+    <div class="home-intro__card">
+      <div class="section-kicker"
+           data-de="Im Fokus"
+           data-en="In focus"
+           data-fr="Points clés">
+        Im Fokus
+      </div>
 
+      <ul class="focus-list">
+        <li data-de="Architektur aus verschiedenen Epochen"
+            data-en="Architecture from different periods"
+            data-fr="Architecture de différentes époques">
+          Architektur aus verschiedenen Epochen
+        </li>
+        <li data-de="Verbindung von Nutzung und Nachhaltigkeit"
+            data-en="Connection between use and sustainability"
+            data-fr="Lien entre usage et durabilité">
+          Verbindung von Nutzung und Nachhaltigkeit
+        </li>
+        <li data-de="Route entlang der Tramlinien 1, 2 und 14"
+            data-en="Route along tram lines 1, 2 and 14"
+            data-fr="Parcours le long des lignes de tram 1, 2 et 14">
+          Route entlang der Tramlinien 1, 2 und 14
+        </li>
+        <li data-de="Eigene Fotografien und vertiefende Informationen"
+            data-en="Own photographs and in-depth information"
+            data-fr="Photographies personnelles et informations détaillées">
+          Eigene Fotografien und vertiefende Informationen
+        </li>
+      </ul>
+    </div>
   </div>
 </section>
 
-<!-- 🌍 LANGUAGE SCRIPT -->
+<section class="home-highlights">
+  <div class="home-container">
+    <div class="section-kicker"
+         data-de="Bauwerke"
+         data-en="Buildings"
+         data-fr="Bâtiments">
+      Bauwerke
+    </div>
+
+    <h2 data-de="Ausgewählte Stationen der Route"
+        data-en="Selected stops along the route"
+        data-fr="Étapes sélectionnées du parcours">
+      Ausgewählte Stationen der Route
+    </h2>
+
+    <div class="highlight-grid">
+      <a href="elisabethen.html" class="highlight-card">
+        <div class="highlight-card__image" style="background-image:url('ek_1.jpg');"></div>
+        <div class="highlight-card__content">
+          <div class="highlight-card__year">1864</div>
+          <h3 data-de="Elisabethenkirche"
+              data-en="Elisabethenkirche"
+              data-fr="Église Sainte-Elisabeth">Elisabethenkirche</h3>
+        </div>
+      </a>
+
+      <a href="markthalle.html" class="highlight-card">
+        <div class="highlight-card__image" style="background-image:url('markthalle_1.jpg');"></div>
+        <div class="highlight-card__content">
+          <div class="highlight-card__year">1929</div>
+          <h3 data-de="Markthalle"
+              data-en="Market Hall"
+              data-fr="Halle du Marché">Markthalle</h3>
+        </div>
+      </a>
+
+      <a href="messe.html" class="highlight-card">
+        <div class="highlight-card__image" style="background-image:url('messe_1.jpg');"></div>
+        <div class="highlight-card__content">
+          <div class="highlight-card__year">2013</div>
+          <h3 data-de="Messe"
+              data-en="Messe"
+              data-fr="Messe">Messe</h3>
+        </div>
+      </a>
+
+      <a href="kunstmuseum.html" class="highlight-card">
+        <div class="highlight-card__image" style="background-image:url('kunstmuseum_1.jpg');"></div>
+        <div class="highlight-card__content">
+          <div class="highlight-card__year">2016</div>
+          <h3 data-de="Kunstmuseum"
+              data-en="Art Museum"
+              data-fr="Musée des Beaux-Arts">Kunstmuseum</h3>
+        </div>
+      </a>
+
+      <a href="novartis.html" class="highlight-card">
+        <div class="highlight-card__image" style="background-image:url('novartis_1.jpg');"></div>
+        <div class="highlight-card__content">
+          <div class="highlight-card__year">2022</div>
+          <h3 data-de="Novartis Pavillon"
+              data-en="Novartis Pavilion"
+              data-fr="Pavillon Novartis">Novartis Pavillon</h3>
+        </div>
+      </a>
+
+      <a href="weinlager.html" class="highlight-card">
+        <div class="highlight-card__image" style="background-image:url('weinlager_1.jpg');"></div>
+        <div class="highlight-card__content">
+          <div class="highlight-card__year">2023</div>
+          <h3 data-de="Weinlager"
+              data-en="Weinlager"
+              data-fr="Weinlager">Weinlager</h3>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
 <script>
   function switchLanguage(lang) {
-    document.querySelectorAll("[data-de][data-en]").forEach(el => {
+    document.querySelectorAll("[data-de][data-en][data-fr]").forEach(el => {
       el.textContent = el.getAttribute("data-" + lang);
     });
 

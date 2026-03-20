@@ -15,41 +15,167 @@
 
     <nav class="nav-links">
       <a href="index.html" class="nav-link">Home</a>
-      <a href="zeitstrahl.html" class="nav-link">Zeitstrahl</a>
+      <a href="zeitstrahl.html" class="nav-link nav-link--active">Zeitstrahl</a>
       <a href="karte.html" class="nav-link">Karte</a>
       <a href="wir.html" class="nav-link">Projekt</a>
 
-     <details class="dropdown">
-  <summary class="dropbtn">Bauwerke ▾</summary>
-  <div class="dropdown-content">
-    <a href="elisabethen.html">1864 · Elisabethenkirche</a>
-    <a href="markthalle.html">1929 · Markthalle</a>
-    <a href="messe.html">2013 · Messe</a>
-    <a href="kunstmuseum.html">2016 · Kunstmuseum</a>
-    <a href="weinlager.html">2023 · Weinlager</a>
-    <a href="novartis.html">2022 · Novartis Campus</a>
-  </div>
-</details>
+      <details class="dropdown">
+        <summary class="dropbtn">Bauwerke ▾</summary>
+        <div class="dropdown-content">
+          <a href="elisabethen.html">1864 · Elisabethenkirche</a>
+          <a href="markthalle.html">1929 · Markthalle</a>
+          <a href="messe.html">2013 · Messe</a>
+          <a href="kunstmuseum.html">2016 · Kunstmuseum</a>
+          <a href="novartis.html">2022 · Novartis Campus</a>
+          <a href="weinlager.html">2023 · Weinlager</a>
+        </div>
+      </details>
 
       <a href="Quellen.html" class="nav-link">Verzeichnis</a>
     </nav>
   </div>
 </header>
 
-</header>
+<main class="timeline-page timeline-page--custom">
+  <section class="timeline-hero">
+    <div class="timeline-hero__inner">
+      <h1>Zeitstrahl</h1>
+      <p>Architektur entlang der Tramlinien 1, 2 und 14 – von der Elisabethenkirche bis zum Weinlager.</p>
+    </div>
+  </section>
 
-<main class="timeline-page">
-  <div class="timeline-wrap">
+  <section class="timeline-custom">
+    <div class="timeline-track-wrap">
+      <div class="timeline-track" id="timelineTrack">
+        <button class="timeline-dot active" data-index="0">
+          <span class="timeline-year">1864</span>
+          <span class="timeline-name">Elisabethenkirche</span>
+        </button>
 
-    <iframe
-      src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=v2%3A2PACX-1vSr5gpxYm9kV1wV_SenoZW0IKgPYoDgSvK-UifPKfUGags0p3JBfaKRX-ZHp8lz6VT9OCG6G_gSN87a&lang=de&initial_zoom=2&height=650"
-      width="100%"
-      height="650"
-      frameborder="0"
-      allowfullscreen>
-    </iframe>
+        <button class="timeline-dot" data-index="1">
+          <span class="timeline-year">1929</span>
+          <span class="timeline-name">Markthalle</span>
+        </button>
 
-  </div>
+        <button class="timeline-dot" data-index="2">
+          <span class="timeline-year">2013</span>
+          <span class="timeline-name">Messe</span>
+        </button>
+
+        <button class="timeline-dot" data-index="3">
+          <span class="timeline-year">2016</span>
+          <span class="timeline-name">Kunstmuseum</span>
+        </button>
+
+        <button class="timeline-dot" data-index="4">
+          <span class="timeline-year">2022</span>
+          <span class="timeline-name">Novartis Pavillon</span>
+        </button>
+
+        <button class="timeline-dot" data-index="5">
+          <span class="timeline-year">2023</span>
+          <span class="timeline-name">Weinlager</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="timeline-card" id="timelineCard">
+      <div class="timeline-card__image-wrap">
+        <img id="timelineImage" class="timeline-card__image" src="ek_1.jpg" alt="Elisabethenkirche">
+      </div>
+
+      <div class="timeline-card__content">
+        <div class="timeline-card__meta" id="timelineMeta">1857–1865</div>
+        <h2 id="timelineTitle">Elisabethenkirche</h2>
+        <p id="timelineText">
+          Die Elisabethenkirche ist eine der bedeutendsten neugotischen Kirchen der Schweiz und gilt als erster grosser Kirchenneubau in Basel seit der Reformation. Heute dient sie als offene Citykirche und verbindet religiöse, kulturelle und soziale Nutzung.
+        </p>
+        <a id="timelineLink" class="timeline-card__link" href="elisabethen.html">Mehr erfahren →</a>
+      </div>
+    </div>
+  </section>
 </main>
 
+<script>
+  const timelineItems = [
+    {
+      year: "1864",
+      meta: "1857–1865",
+      title: "Elisabethenkirche",
+      text: "Die Elisabethenkirche ist eine der bedeutendsten neugotischen Kirchen der Schweiz und gilt als erster grosser Kirchenneubau in Basel seit der Reformation. Heute dient sie als offene Citykirche und verbindet religiöse, kulturelle und soziale Nutzung.",
+      image: "ek_1.jpg",
+      link: "elisabethen.html"
+    },
+    {
+      year: "1929",
+      meta: "1929 · Umbau 2007–2011",
+      title: "Markthalle",
+      text: "Die Markthalle wurde ursprünglich als Grossmarkt für den Handel gebaut und entwickelte sich nach dem Umbau zu einem lebendigen Ort für Gastronomie, Kultur und Begegnung. Heute ist sie ein zentraler Treffpunkt im urbanen Raum Basel.",
+      image: "markthalle_1.jpg",
+      link: "markthalle.html"
+    },
+    {
+      year: "2013",
+      meta: "Planung 2009 · Umbau 2010–2013",
+      title: "Messe",
+      text: "Die Messe Basel ist ein zentraler Veranstaltungsort für internationale Messen, Kongresse und Events. Mit ihrer modernen Architektur und der City Lounge verbindet sie Mobilität, Öffentlichkeit und städtisches Leben.",
+      image: "messe_1.jpg",
+      link: "messe.html"
+    },
+    {
+      year: "2016",
+      meta: "2016",
+      title: "Kunstmuseum",
+      text: "Der Neubau des Kunstmuseums Basel erweitert das bestehende Museum und schafft neue Räume für Ausstellungen und kulturellen Austausch. Er verbindet moderne Architektur mit nachhaltiger Bauweise und integriert sich harmonisch ins Stadtbild.",
+      image: "kunstmuseum_1.jpg",
+      link: "kunstmuseum.html"
+    },
+    {
+      year: "2022",
+      meta: "2022",
+      title: "Novartis Pavillon",
+      text: "Der Novartis Pavillon ist ein öffentlich zugänglicher Ort für Wissenschaft, Bildung und Begegnung. Mit seiner innovativen Medienfassade verbindet er Architektur, Technologie und Nachhaltigkeit.",
+      image: "novartis_1.jpg",
+      link: "novartis.html"
+    },
+    {
+      year: "2023",
+      meta: "1955 · Umbau 2020–2023",
+      title: "Weinlager",
+      text: "Das ehemalige Weinlager wurde von einem Industriebau zu modernem Wohnraum transformiert. Es steht exemplarisch für den nachhaltigen Umgang mit bestehender Architektur und die Weiterentwicklung urbaner Räume.",
+      image: "weinlager_1.jpg",
+      link: "weinlager.html"
+    }
+  ];
+
+  const dots = document.querySelectorAll(".timeline-dot");
+  const imageEl = document.getElementById("timelineImage");
+  const metaEl = document.getElementById("timelineMeta");
+  const titleEl = document.getElementById("timelineTitle");
+  const textEl = document.getElementById("timelineText");
+  const linkEl = document.getElementById("timelineLink");
+
+  function updateTimeline(index) {
+    const item = timelineItems[index];
+
+    metaEl.textContent = item.meta;
+    titleEl.textContent = item.title;
+    textEl.textContent = item.text;
+    imageEl.src = item.image;
+    imageEl.alt = item.title;
+    linkEl.href = item.link;
+
+    dots.forEach((dot, i) => {
+      dot.classList.toggle("active", i === index);
+    });
+  }
+
+  dots.forEach((dot) => {
+    dot.addEventListener("click", () => {
+      updateTimeline(Number(dot.dataset.index));
+    });
+  });
+</script>
+
 </body>
+</html>
