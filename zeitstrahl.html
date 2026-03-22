@@ -3,7 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Zeitstrahl – Basel</title>
+  <title id="pageTitle"
+    data-de="Zeitstrahl – Basel"
+    data-en="Timeline – Basel"
+    data-fr="Chronologie – Bâle">
+    Zeitstrahl – Basel
+  </title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,72 +19,161 @@
     <div class="logo">BAULINIE Basel</div>
 
     <nav class="nav-links">
-      <a href="index.html" class="nav-link">Home</a>
-      <a href="zeitstrahl.html" class="nav-link nav-link--active">Zeitstrahl</a>
-      <a href="karte.html" class="nav-link">Karte</a>
-      <a href="wir.html" class="nav-link">Projekt</a>
+      <a href="index.html" class="nav-link"
+         data-de="Home"
+         data-en="Home"
+         data-fr="Accueil">Home</a>
+
+      <a href="zeitstrahl.html" class="nav-link nav-link--active"
+         data-de="Zeitstrahl"
+         data-en="Timeline"
+         data-fr="Chronologie">Zeitstrahl</a>
+
+      <a href="karte.html" class="nav-link"
+         data-de="Karte"
+         data-en="Map"
+         data-fr="Carte">Karte</a>
+
+      <a href="wir.html" class="nav-link"
+         data-de="Projekt"
+         data-en="Project"
+         data-fr="Projet">Projekt</a>
 
       <details class="dropdown">
-        <summary class="dropbtn">Bauwerke ▾</summary>
+        <summary class="dropbtn"
+          data-de="Bauwerke ▾"
+          data-en="Buildings ▾"
+          data-fr="Bâtiments ▾">Bauwerke ▾</summary>
+
         <div class="dropdown-content">
-          <a href="elisabethen.html">1864 · Elisabethenkirche</a>
-          <a href="markthalle.html">1929 · Markthalle</a>
-          <a href="messe.html">2013 · Messe</a>
-          <a href="kunstmuseum.html">2016 · Kunstmuseum</a>
-          <a href="novartis.html">2022 · Novartis Campus</a>
-          <a href="weinlager.html">2023 · Weinlager</a>
+          <a href="elisabethen.html"
+             data-de="Elisabethenkirche"
+             data-en="Elisabethenkirche"
+             data-fr="Église Sainte-Elisabeth">Elisabethenkirche</a>
+
+          <a href="markthalle.html"
+             data-de="Markthalle"
+             data-en="Market Hall"
+             data-fr="Halle du Marché">Markthalle</a>
+
+          <a href="messe.html"
+             data-de="Messe"
+             data-en="Messe"
+             data-fr="Messe">Messe</a>
+
+          <a href="kunstmuseum.html"
+             data-de="Kunstmuseum"
+             data-en="Art Museum"
+             data-fr="Musée des Beaux-Arts">Kunstmuseum</a>
+
+          <a href="novartis.html"
+             data-de="Novartis Campus"
+             data-en="Novartis Campus"
+             data-fr="Campus Novartis">Novartis Campus</a>
+
+          <a href="weinlager.html"
+             data-de="Weinlager"
+             data-en="Weinlager"
+             data-fr="Weinlager">Weinlager</a>
         </div>
       </details>
 
-      <a href="Quellen.html" class="nav-link">Verzeichnis</a>
+      <a href="Quellen.html" class="nav-link"
+         data-de="Verzeichnis"
+         data-en="Sources"
+         data-fr="Sources">Verzeichnis</a>
+
+      <div class="lang-switch">
+        <button type="button" class="lang-btn active" data-lang-btn="de">DE</button>
+        <button type="button" class="lang-btn" data-lang-btn="en">EN</button>
+        <button type="button" class="lang-btn" data-lang-btn="fr">FR</button>
+      </div>
     </nav>
   </div>
 </header>
 
-<main class="timeline-page timeline-page--custom">
-  <section class="timeline-hero">
+<main class="timeline-page timeline-page--wow">
+  <section class="timeline-hero timeline-hero--wow">
     <div class="timeline-hero__inner">
-      <h1>Zeitstrahl</h1>
-      <p>Architektur entlang der Tramlinien 1, 2 und 14 – von der Elisabethenkirche bis zum Weinlager.</p>
+      <div class="timeline-kicker"
+        data-de="Interaktive Architekturroute"
+        data-en="Interactive architecture route"
+        data-fr="Parcours architectural interactif">
+        Interaktive Architekturroute
+      </div>
+
+      <h1
+        data-de="Zeitstrahl"
+        data-en="Timeline"
+        data-fr="Chronologie">
+        Zeitstrahl
+      </h1>
+
+      <p
+        data-de="Klicke auf eine Station und entdecke Architektur entlang der Tramlinien 1, 2 und 14 – von der Elisabethenkirche bis zum Weinlager."
+        data-en="Click on a stop and discover architecture along tram lines 1, 2 and 14 – from Elisabethenkirche to the Weinlager."
+        data-fr="Clique sur une étape et découvre l’architecture le long des lignes de tram 1, 2 et 14 – de l’église Sainte-Elisabeth au Weinlager.">
+        Klicke auf eine Station und entdecke Architektur entlang der Tramlinien 1, 2 und 14 – von der Elisabethenkirche bis zum Weinlager.
+      </p>
     </div>
   </section>
 
-  <section class="timeline-custom">
+  <section class="timeline-custom timeline-custom--wow">
     <div class="timeline-track-wrap">
       <div class="timeline-track" id="timelineTrack">
+
         <button class="timeline-dot active" data-index="0">
-          <span class="timeline-year">1864</span>
-          <span class="timeline-name">Elisabethenkirche</span>
+          <span class="timeline-year">1865</span>
+          <span class="timeline-name"
+            data-de="Elisabethenkirche"
+            data-en="Elisabethenkirche"
+            data-fr="Église Sainte-Elisabeth">Elisabethenkirche</span>
         </button>
 
         <button class="timeline-dot" data-index="1">
           <span class="timeline-year">1929</span>
-          <span class="timeline-name">Markthalle</span>
+          <span class="timeline-name"
+            data-de="Markthalle"
+            data-en="Market Hall"
+            data-fr="Halle du Marché">Markthalle</span>
         </button>
 
         <button class="timeline-dot" data-index="2">
           <span class="timeline-year">2013</span>
-          <span class="timeline-name">Messe</span>
+          <span class="timeline-name"
+            data-de="Messe"
+            data-en="Messe"
+            data-fr="Messe">Messe</span>
         </button>
 
         <button class="timeline-dot" data-index="3">
           <span class="timeline-year">2016</span>
-          <span class="timeline-name">Kunstmuseum</span>
+          <span class="timeline-name"
+            data-de="Kunstmuseum"
+            data-en="Art Museum"
+            data-fr="Musée des Beaux-Arts">Kunstmuseum</span>
         </button>
 
         <button class="timeline-dot" data-index="4">
           <span class="timeline-year">2022</span>
-          <span class="timeline-name">Novartis Pavillon</span>
+          <span class="timeline-name"
+            data-de="Novartis Pavillon"
+            data-en="Novartis Pavilion"
+            data-fr="Pavillon Novartis">Novartis Pavillon</span>
         </button>
 
         <button class="timeline-dot" data-index="5">
           <span class="timeline-year">2023</span>
-          <span class="timeline-name">Weinlager</span>
+          <span class="timeline-name"
+            data-de="Weinlager"
+            data-en="Weinlager"
+            data-fr="Weinlager">Weinlager</span>
         </button>
+
       </div>
     </div>
 
-    <div class="timeline-card" id="timelineCard">
+    <div class="timeline-card timeline-card--wow" id="timelineCard">
       <div class="timeline-card__image-wrap">
         <img id="timelineImage" class="timeline-card__image" src="ek_1.jpg" alt="Elisabethenkirche">
       </div>
@@ -99,51 +193,153 @@
 <script>
   const timelineItems = [
     {
-      year: "1864",
-      meta: "1857–1865",
-      title: "Elisabethenkirche",
-      text: "Die Elisabethenkirche ist eine der bedeutendsten neugotischen Kirchen der Schweiz und gilt als erster grosser Kirchenneubau in Basel seit der Reformation. Heute dient sie als offene Citykirche und verbindet religiöse, kulturelle und soziale Nutzung.",
+      year: "1865",
+      meta: {
+        de: "1857–1865",
+        en: "1857–1865",
+        fr: "1857–1865"
+      },
+      title: {
+        de: "Elisabethenkirche",
+        en: "Elisabethenkirche",
+        fr: "Église Sainte-Elisabeth"
+      },
+      text: {
+        de: "Die Elisabethenkirche ist eine der bedeutendsten neugotischen Kirchen der Schweiz und gilt als erster grosser Kirchenneubau in Basel seit der Reformation. Heute dient sie als offene Citykirche und verbindet religiöse, kulturelle und soziale Nutzung.",
+        en: "Elisabethenkirche is one of the most important neo-Gothic churches in Switzerland and is considered the first major church built in Basel since the Reformation. Today it serves as an open city church and combines religious, cultural and social use.",
+        fr: "L’église Sainte-Elisabeth est l’une des plus importantes églises néogothiques de Suisse et est considérée comme la première grande nouvelle église construite à Bâle depuis la Réforme. Aujourd’hui, elle fonctionne comme une église urbaine ouverte et associe usages religieux, culturels et sociaux."
+      },
+      button: {
+        de: "Mehr erfahren →",
+        en: "Learn more →",
+        fr: "En savoir plus →"
+      },
       image: "ek_1.jpg",
       link: "elisabethen.html"
     },
     {
       year: "1929",
-      meta: "1929 · Umbau 2007–2011",
-      title: "Markthalle",
-      text: "Die Markthalle wurde ursprünglich als Grossmarkt für den Handel gebaut und entwickelte sich nach dem Umbau zu einem lebendigen Ort für Gastronomie, Kultur und Begegnung. Heute ist sie ein zentraler Treffpunkt im urbanen Raum Basel.",
+      meta: {
+        de: "1929 · Umbau 2007–2011",
+        en: "1929 · Renovation 2007–2011",
+        fr: "1929 · Transformation 2007–2011"
+      },
+      title: {
+        de: "Markthalle",
+        en: "Market Hall",
+        fr: "Halle du Marché"
+      },
+      text: {
+        de: "Die Markthalle wurde ursprünglich als Grossmarkt für den Handel gebaut und entwickelte sich nach dem Umbau zu einem lebendigen Ort für Gastronomie, Kultur und Begegnung. Heute ist sie ein zentraler Treffpunkt im urbanen Raum Basel.",
+        en: "The Market Hall was originally built as a wholesale market and developed after its renovation into a lively place for gastronomy, culture and encounters. Today it is a central meeting place in urban Basel.",
+        fr: "La Halle du Marché a d’abord été construite comme marché de gros avant de devenir, après sa transformation, un lieu vivant dédié à la gastronomie, à la culture et aux rencontres. Aujourd’hui, elle constitue un point de rencontre central dans l’espace urbain bâlois."
+      },
+      button: {
+        de: "Mehr erfahren →",
+        en: "Learn more →",
+        fr: "En savoir plus →"
+      },
       image: "markthalle_1.jpg",
       link: "markthalle.html"
     },
     {
       year: "2013",
-      meta: "Planung 2009 · Umbau 2010–2013",
-      title: "Messe",
-      text: "Die Messe Basel ist ein zentraler Veranstaltungsort für internationale Messen, Kongresse und Events. Mit ihrer modernen Architektur und der City Lounge verbindet sie Mobilität, Öffentlichkeit und städtisches Leben.",
-      image: "messe_1.jpg",
+      meta: {
+        de: "Planung 2009 · Umbau 2010–2013",
+        en: "Planning 2009 · Reconstruction 2010–2013",
+        fr: "Planification 2009 · Transformation 2010–2013"
+      },
+      title: {
+        de: "Messe",
+        en: "Messe",
+        fr: "Messe"
+      },
+      text: {
+        de: "Die Messe Basel ist ein zentraler Veranstaltungsort für internationale Messen, Kongresse und Events. Mit ihrer modernen Architektur und der City Lounge verbindet sie Mobilität, Öffentlichkeit und städtisches Leben.",
+        en: "Messe Basel is a central venue for international fairs, congresses and events. With its modern architecture and the City Lounge, it connects mobility, public space and urban life.",
+        fr: "La Foire de Bâle est un lieu central pour les salons, congrès et événements internationaux. Avec son architecture contemporaine et la City Lounge, elle relie mobilité, espace public et vie urbaine."
+      },
+      button: {
+        de: "Mehr erfahren →",
+        en: "Learn more →",
+        fr: "En savoir plus →"
+      },
+      image: "messe2_.jpg",
       link: "messe.html"
     },
     {
       year: "2016",
-      meta: "2016",
-      title: "Kunstmuseum",
-      text: "Der Neubau des Kunstmuseums Basel erweitert das bestehende Museum und schafft neue Räume für Ausstellungen und kulturellen Austausch. Er verbindet moderne Architektur mit nachhaltiger Bauweise und integriert sich harmonisch ins Stadtbild.",
-      image: "kunstmuseum_1.jpg",
+      meta: {
+        de: "2016",
+        en: "2016",
+        fr: "2016"
+      },
+      title: {
+        de: "Kunstmuseum",
+        en: "Art Museum",
+        fr: "Musée des Beaux-Arts"
+      },
+      text: {
+        de: "Der Neubau des Kunstmuseums Basel erweitert das bestehende Museum und schafft neue Räume für Ausstellungen und kulturellen Austausch. Er verbindet moderne Architektur mit nachhaltiger Bauweise und integriert sich harmonisch ins Stadtbild.",
+        en: "The new building of the Kunstmuseum Basel expands the existing museum and creates new spaces for exhibitions and cultural exchange. It combines modern architecture with sustainable construction and integrates harmoniously into the cityscape.",
+        fr: "Le nouveau bâtiment du Kunstmuseum Basel agrandit le musée existant et crée de nouveaux espaces pour les expositions et les échanges culturels. Il associe architecture contemporaine, construction durable et intégration harmonieuse dans le paysage urbain."
+      },
+      button: {
+        de: "Mehr erfahren →",
+        en: "Learn more →",
+        fr: "En savoir plus →"
+      },
+      image: "km1_.jpg",
       link: "kunstmuseum.html"
     },
     {
       year: "2022",
-      meta: "2022",
-      title: "Novartis Pavillon",
-      text: "Der Novartis Pavillon ist ein öffentlich zugänglicher Ort für Wissenschaft, Bildung und Begegnung. Mit seiner innovativen Medienfassade verbindet er Architektur, Technologie und Nachhaltigkeit.",
-      image: "novartis_1.jpg",
+      meta: {
+        de: "2022",
+        en: "2022",
+        fr: "2022"
+      },
+      title: {
+        de: "Novartis Pavillon",
+        en: "Novartis Pavilion",
+        fr: "Pavillon Novartis"
+      },
+      text: {
+        de: "Der Novartis Pavillon ist ein öffentlich zugänglicher Ort für Wissenschaft, Bildung und Begegnung. Mit seiner innovativen Medienfassade verbindet er Architektur, Technologie und Nachhaltigkeit.",
+        en: "The Novartis Pavilion is a publicly accessible place for science, education and exchange. With its innovative media façade, it connects architecture, technology and sustainability.",
+        fr: "Le Pavillon Novartis est un lieu public consacré à la science, à l’éducation et à la rencontre. Grâce à sa façade médiatique innovante, il relie architecture, technologie et durabilité."
+      },
+      button: {
+        de: "Mehr erfahren →",
+        en: "Learn more →",
+        fr: "En savoir plus →"
+      },
+      image: "novartis3_.jpg",
       link: "novartis.html"
     },
     {
       year: "2023",
-      meta: "1955 · Umbau 2020–2023",
-      title: "Weinlager",
-      text: "Das ehemalige Weinlager wurde von einem Industriebau zu modernem Wohnraum transformiert. Es steht exemplarisch für den nachhaltigen Umgang mit bestehender Architektur und die Weiterentwicklung urbaner Räume.",
-      image: "weinlager_1.jpg",
+      meta: {
+        de: "1955 · Umbau 2020–2023",
+        en: "1955 · Conversion 2020–2023",
+        fr: "1955 · Transformation 2020–2023"
+      },
+      title: {
+        de: "Weinlager",
+        en: "Weinlager",
+        fr: "Weinlager"
+      },
+      text: {
+        de: "Das ehemalige Weinlager wurde von einem Industriebau zu modernem Wohnraum transformiert. Es steht exemplarisch für den nachhaltigen Umgang mit bestehender Architektur und die Weiterentwicklung urbaner Räume.",
+        en: "The former wine warehouse was transformed from an industrial building into modern living space. It exemplifies the sustainable use of existing architecture and the ongoing development of urban spaces.",
+        fr: "L’ancien entrepôt à vin a été transformé d’un bâtiment industriel en espace d’habitation contemporain. Il représente de manière exemplaire l’usage durable de l’architecture existante et l’évolution des espaces urbains."
+      },
+      button: {
+        de: "Mehr erfahren →",
+        en: "Learn more →",
+        fr: "En savoir plus →"
+      },
+      image: "weinlager1_.jpg",
       link: "weinlager.html"
     }
   ];
@@ -156,13 +352,15 @@
   const linkEl = document.getElementById("timelineLink");
 
   function updateTimeline(index) {
+    const lang = localStorage.getItem("siteLanguage") || "de";
     const item = timelineItems[index];
 
-    metaEl.textContent = item.meta;
-    titleEl.textContent = item.title;
-    textEl.textContent = item.text;
+    metaEl.textContent = item.meta[lang];
+    titleEl.textContent = item.title[lang];
+    textEl.textContent = item.text[lang];
+    linkEl.textContent = item.button[lang];
     imageEl.src = item.image;
-    imageEl.alt = item.title;
+    imageEl.alt = item.title[lang];
     linkEl.href = item.link;
 
     dots.forEach((dot, i) => {
@@ -170,11 +368,43 @@
     });
   }
 
+  function switchLanguage(lang) {
+    document.querySelectorAll("[data-de][data-en][data-fr]").forEach(el => {
+      el.textContent = el.getAttribute("data-" + lang);
+    });
+
+    const pageTitle = document.getElementById("pageTitle");
+    if (pageTitle) {
+      document.title = pageTitle.getAttribute("data-" + lang);
+    }
+
+    document.documentElement.lang = lang;
+    localStorage.setItem("siteLanguage", lang);
+
+    document.querySelectorAll("[data-lang-btn]").forEach(btn => {
+      btn.classList.toggle("active", btn.getAttribute("data-lang-btn") === lang);
+    });
+
+    const activeDot = document.querySelector(".timeline-dot.active");
+    const index = activeDot ? Number(activeDot.dataset.index) : 0;
+    updateTimeline(index);
+  }
+
   dots.forEach((dot) => {
     dot.addEventListener("click", () => {
       updateTimeline(Number(dot.dataset.index));
     });
   });
+
+  document.querySelectorAll("[data-lang-btn]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      switchLanguage(btn.getAttribute("data-lang-btn"));
+    });
+  });
+
+  const savedLang = localStorage.getItem("siteLanguage") || "de";
+  switchLanguage(savedLang);
+  updateTimeline(0);
 </script>
 
 </body>
