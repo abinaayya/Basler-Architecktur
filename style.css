@@ -1065,502 +1065,220 @@ rgba(0,0,0,0.85)
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* =========================
-   HOME PAGE UPGRADE
+   PROJECT PAGE ELEGANT
    ========================= */
 
-.hero-home{
-  min-height: calc(100vh - 70px);
-  background:
-    linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.82)),
-    url("basel_bild1.jpg");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.project-elegant{
+  color: white;
 }
 
-.hero-home__content{
-  max-width: 980px;
-  padding: 0 20px;
+.project-elegant__container{
+  width: min(1080px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+.project-elegant__hero{
+  padding: 150px 0 90px;
   text-align: center;
 }
 
-.hero-home__eyebrow{
-  color: rgba(255,255,255,0.75);
+.project-elegant__hero-inner{
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.project-elegant__kicker{
+  color: rgba(255,255,255,0.68);
+  text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 12px;
-  text-transform: uppercase;
   margin-bottom: 18px;
 }
 
-.hero-home h1{
-  font-size: clamp(48px, 9vw, 104px);
+.project-elegant__hero h1{
   font-weight: 300;
-  letter-spacing: 8px;
+  letter-spacing: 6px;
+  font-size: clamp(44px, 7vw, 86px);
   margin-bottom: 20px;
 }
 
-.hero-home__lead{
+.project-elegant__lead{
   max-width: 760px;
-  margin: 0 auto 32px;
-  font-size: clamp(18px, 2.3vw, 24px);
+  margin: 0 auto;
+  font-size: clamp(18px, 2.4vw, 26px);
   line-height: 1.7;
   color: rgba(255,255,255,0.9);
 }
 
-.hero-home__actions{
-  display: flex;
-  justify-content: center;
-  gap: 14px;
-  flex-wrap: wrap;
-}
-
-.hero-btn{
-  display: inline-block;
-  text-decoration: none;
-  padding: 14px 22px;
-  border-radius: 12px;
-  transition: .25s;
-  letter-spacing: 1px;
-}
-
-.hero-btn--primary{
-  background: white;
-  color: black;
-}
-
-.hero-btn--primary:hover{
-  opacity: 0.88;
-}
-
-.hero-btn--secondary{
-  color: white;
-  border: 1px solid rgba(255,255,255,0.35);
-}
-
-.hero-btn--secondary:hover{
-  background: rgba(255,255,255,0.08);
-}
-
-.home-container{
-  width: min(1100px, calc(100% - 40px));
-  margin: 0 auto;
-}
-
-.section-kicker{
-  color: rgba(255,255,255,0.7);
+.project-elegant__label{
+  color: rgba(255,255,255,0.65);
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 12px;
   margin-bottom: 14px;
 }
 
-.home-intro{
-  padding: 90px 0 70px;
+.project-elegant__intro{
+  padding: 10px 0 70px;
 }
 
-.home-intro .home-container{
-  display: grid;
-  grid-template-columns: 1.4fr .9fr;
-  gap: 32px;
-  align-items: start;
-}
-
-.home-intro__text h2,
-.home-highlights h2,
-.home-cta h2{
-  font-weight: 300;
-  letter-spacing: 3px;
-  font-size: clamp(30px, 4vw, 46px);
-  margin-bottom: 20px;
-  color: white;
-}
-
-.home-intro__text p,
-.home-cta p{
-  color: rgba(255,255,255,0.78);
-  line-height: 1.85;
-  font-size: 17px;
-  margin-bottom: 18px;
-}
-
-.home-intro__card{
-  border: 1px solid rgba(255,255,255,0.12);
-  background: rgba(255,255,255,0.03);
-  border-radius: 18px;
-  padding: 24px;
-}
-
-.focus-list{
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.focus-list li{
-  color: rgba(255,255,255,0.82);
-  line-height: 1.7;
-  padding: 12px 0;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-}
-
-.focus-list li:last-child{
-  border-bottom: none;
-}
-
-.home-highlights{
-  padding: 30px 0 80px;
-}
-
-.highlight-grid{
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
-  margin-top: 28px;
-}
-
-.highlight-card{
-  text-decoration: none;
-  color: white;
-  border: 1px solid rgba(255,255,255,0.1);
-  background: rgba(255,255,255,0.03);
-  border-radius: 18px;
-  overflow: hidden;
-  transition: transform .25s ease, border-color .25s ease;
-}
-
-.highlight-card:hover{
-  transform: translateY(-4px);
-  border-color: rgba(255,255,255,0.25);
-}
-
-.highlight-card__image{
-  height: 220px;
-  background-size: cover;
-  background-position: center;
-}
-
-.highlight-card__content{
-  padding: 16px 16px 18px;
-}
-
-.highlight-card__year{
-  font-size: 12px;
-  letter-spacing: 2px;
-  opacity: 0.7;
-  margin-bottom: 8px;
-}
-
-.highlight-card__content h3{
-  font-weight: 300;
-  letter-spacing: 2px;
-  font-size: 21px;
-}
-
-.home-cta{
-  padding: 30px 0 100px;
-}
-
-.home-cta__inner{
-  border: 1px solid rgba(255,255,255,0.1);
-  background: rgba(255,255,255,0.03);
-  border-radius: 22px;
-  padding: 42px 28px;
-  text-align: center;
-}
-
-@media (max-width: 900px){
-  .home-intro .home-container{
-    grid-template-columns: 1fr;
-  }
-
-  .highlight-grid{
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (max-width: 768px){
-  .hero-home{
-    min-height: calc(90vh - 90px);
-    padding: 20px 0;
-  }
-
-  .hero-home h1{
-    font-size: clamp(40px, 12vw, 72px);
-    letter-spacing: 4px;
-  }
-
-  .hero-home__lead{
-    font-size: 17px;
-    line-height: 1.6;
-  }
-
-  .home-intro{
-    padding: 65px 0 50px;
-  }
-
-  .home-highlights{
-    padding: 20px 0 60px;
-  }
-
-  .highlight-grid{
-    grid-template-columns: 1fr;
-  }
-
-  .highlight-card__image{
-    height: 200px;
-  }
-
-  .home-cta{
-    padding: 10px 0 70px;
-  }
-
-  .home-cta__inner{
-    padding: 30px 18px;
-  }
-}
-
-.lang-switch{
-  display: flex;
-  gap: 6px;
-  align-items: center;
-}
-
-.lang-btn{
-  background: none;
-  border: 1px solid rgba(255,255,255,0.3);
-  color: white;
-  padding: 6px 10px;
-  font-size: 12px;
-  cursor: pointer;
-  border-radius: 8px;
-  transition: 0.2s;
-}
-
-.lang-btn:hover{
-  background: rgba(255,255,255,0.08);
-}
-
-.lang-btn.active{
-  background: white;
-  color: black;
-}
-
-@media (max-width: 768px){
-  .lang-switch{
-    width: 100%;
-    justify-content: flex-start;
-    margin-top: 6px;
-  }
-}
-
-.lang-switch{
-  display: flex;
-  gap: 6px;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.lang-btn{
-  background: none;
-  border: 1px solid rgba(255,255,255,0.3);
-  color: white;
-  padding: 6px 10px;
-  font-size: 12px;
-  cursor: pointer;
-  border-radius: 8px;
-  transition: 0.2s;
-}
-
-.lang-btn:hover{
-  background: rgba(255,255,255,0.08);
-}
-
-.lang-btn.active{
-  background: white;
-  color: black;
-}
-
-@media (max-width: 768px){
-  .lang-switch{
-    width: 100%;
-    justify-content: flex-start;
-    margin-top: 6px;
-  }
-}
-
-
-/* =========================
-   PROJECT PAGE UPGRADE
-   ========================= */
-
-.project-page--upgraded{
-  color: white;
-}
-
-.project-hero--large{
-  padding: 140px 0 80px;
-  text-align: center;
-  background:
-    linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6));
-}
-
-.project-kicker{
-  color: rgba(255,255,255,0.72);
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 12px;
-  margin-bottom: 18px;
-}
-
-.project-hero--large h1{
-  font-weight: 300;
-  letter-spacing: 6px;
-  font-size: clamp(42px, 7vw, 86px);
-  margin-bottom: 18px;
-}
-
-.project-lead{
-  font-size: clamp(18px, 2.3vw, 26px);
-  max-width: 760px;
-  margin: 0 auto 10px;
-  line-height: 1.6;
-  opacity: 0.92;
-}
-
-.project-sublead{
-  color: rgba(255,255,255,0.72);
-  font-size: 15px;
-  letter-spacing: 1px;
-}
-
-.project-overview{
-  padding: 10px 0 60px;
-}
-
-.project-overview__grid{
-  display: grid;
-  grid-template-columns: 1.4fr 0.9fr;
-  gap: 28px;
-  align-items: stretch;
-}
-
-.project-overview__text h2,
-.project-section--cards h2,
-.team-section--upgraded h2,
-.project-cta-block h2{
+.project-elegant__intro h2,
+.project-elegant__functions h2,
+.project-elegant__team h2{
   font-weight: 300;
   letter-spacing: 3px;
   font-size: clamp(30px, 4vw, 46px);
   margin-bottom: 18px;
 }
 
-.project-overview__text p,
-.project-card p,
-.project-cta-block p{
+.project-elegant__intro p,
+.project-elegant__split p,
+.project-elegant__functions p,
+.project-elegant__team p{
   color: rgba(255,255,255,0.78);
-  line-height: 1.85;
+  line-height: 1.9;
   font-size: 17px;
 }
 
-.project-overview__card{
-  border: 1px solid rgba(255,255,255,0.1);
-  background: rgba(255,255,255,0.03);
-  border-radius: 20px;
-  padding: 24px;
+.project-elegant__split{
+  padding: 10px 0 40px;
 }
 
-.mini-facts{
-  display: grid;
-  gap: 14px;
-}
-
-.mini-fact{
-  padding-bottom: 12px;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.mini-fact:last-child{
-  border-bottom: none;
-  padding-bottom: 0;
-}
-
-.mini-fact__label{
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: rgba(255,255,255,0.6);
-}
-
-.mini-fact__value{
-  color: white;
-  line-height: 1.5;
-}
-
-.project-section--cards{
-  padding: 30px 0 70px;
-}
-
-.project-card-grid{
+.project-elegant__split-grid{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 18px;
-  margin-top: 24px;
+  gap: 46px;
 }
 
-.project-card{
-  border: 1px solid rgba(255,255,255,0.1);
-  background: rgba(255,255,255,0.03);
-  border-radius: 18px;
-  padding: 24px;
-}
-
-.project-card h3{
+.project-elegant__col h3{
   font-weight: 300;
   letter-spacing: 2px;
-  font-size: 24px;
+  font-size: 28px;
   margin-bottom: 12px;
 }
 
-.project-cta-block{
-  padding: 10px 0 80px;
+.project-elegant__statement{
+  padding: 20px 0 80px;
 }
 
-.project-cta-block__inner{
-  border: 1px solid rgba(255,255,255,0.1);
-  background: rgba(255,255,255,0.03);
-  border-radius: 22px;
-  padding: 36px 28px;
-  display: flex;
-  justify-content: space-between;
+.project-elegant__quote{
+  max-width: 880px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(30px, 4vw, 50px);
+  line-height: 1.3;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.project-elegant__functions{
+  padding: 10px 0 90px;
+}
+
+.project-elegant__functions-grid{
+  display: grid;
+  grid-template-columns: 1fr 1.05fr;
+  gap: 34px;
   align-items: center;
-  gap: 26px;
 }
 
-.project-cta-block__buttons{
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-
-.team-section--upgraded{
-  padding: 20px 0 90px;
-}
-
-.team-member--card{
-  border: 1px solid rgba(255,255,255,0.1);
+.project-elegant__image-card{
+  margin: 0;
+  border-radius: 22px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.08);
   background: rgba(255,255,255,0.03);
-  border-radius: 18px;
-  padding: 24px;
-  text-align: left;
 }
 
-.team-member__initial{
+.project-elegant__image{
+  width: 100%;
+  display: block;
+  max-height: 560px;
+  object-fit: contain;
+  background: #0b0b0b;
+}
+
+.project-elegant__image-card figcaption{
+  padding: 12px 14px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.65);
+}
+
+.project-elegant__team{
+  padding: 20px 0 100px;
+}
+
+.project-elegant__team-grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 24px;
+}
+
+.project-elegant__team-item{
+  border-top: 1px solid rgba(255,255,255,0.14);
+  padding-top: 20px;
+}
+
+.project-elegant__team-letter{
   width: 42px;
   height: 42px;
   border-radius: 50%;
@@ -1569,61 +1287,47 @@ rgba(0,0,0,0.85)
   place-items: center;
   margin-bottom: 16px;
   font-size: 18px;
-  color: white;
 }
 
-.team-member--card h3{
+.project-elegant__team-item h3{
   font-weight: 400;
+  font-size: 24px;
   margin-bottom: 8px;
-  font-size: 22px;
-}
-
-.team-member--card p{
-  opacity: 0.75;
-  line-height: 1.7;
 }
 
 @media (max-width: 900px){
-  .project-overview__grid{
+  .project-elegant__split-grid,
+  .project-elegant__functions-grid{
     grid-template-columns: 1fr;
   }
 
-  .project-card-grid{
+  .project-elegant__team-grid{
     grid-template-columns: 1fr;
-  }
-
-  .project-cta-block__inner{
-    flex-direction: column;
-    align-items: flex-start;
   }
 }
 
 @media (max-width: 768px){
-  .project-hero--large{
-    padding: 120px 0 60px;
+  .project-elegant__hero{
+    padding: 120px 0 70px;
   }
 
-  .project-hero--large h1{
+  .project-elegant__hero h1{
     letter-spacing: 4px;
   }
 
-  .project-overview{
-    padding: 0 0 50px;
+  .project-elegant__intro{
+    padding: 0 0 55px;
   }
 
-  .project-section--cards{
-    padding: 20px 0 50px;
+  .project-elegant__statement{
+    padding: 10px 0 55px;
   }
 
-  .project-cta-block{
-    padding: 0 0 60px;
+  .project-elegant__functions{
+    padding: 0 0 65px;
   }
 
-  .project-cta-block__inner{
-    padding: 28px 18px;
-  }
-
-  .team-section--upgraded{
-    padding: 10px 0 70px;
+  .project-elegant__team{
+    padding: 0 0 70px;
   }
 }

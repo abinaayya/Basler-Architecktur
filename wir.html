@@ -14,13 +14,31 @@
     <div class="logo">BAULINIE Basel</div>
 
     <nav class="nav-links">
-      <a href="index.html" class="nav-link">Home</a>
-      <a href="zeitstrahl.html" class="nav-link">Zeitstrahl</a>
-      <a href="karte.html" class="nav-link">Karte</a>
-      <a href="wir.html" class="nav-link nav-link--active">Projekt</a>
+      <a href="index.html" class="nav-link"
+         data-de="Home"
+         data-en="Home"
+         data-fr="Accueil">Home</a>
+
+      <a href="zeitstrahl.html" class="nav-link"
+         data-de="Zeitstrahl"
+         data-en="Timeline"
+         data-fr="Chronologie">Zeitstrahl</a>
+
+      <a href="karte.html" class="nav-link"
+         data-de="Karte"
+         data-en="Map"
+         data-fr="Carte">Karte</a>
+
+      <a href="wir.html" class="nav-link nav-link--active"
+         data-de="Projekt"
+         data-en="Project"
+         data-fr="Projet">Projekt</a>
 
       <details class="dropdown">
-        <summary class="dropbtn">Bauwerke ▾</summary>
+        <summary class="dropbtn"
+                 data-de="Bauwerke ▾"
+                 data-en="Buildings ▾"
+                 data-fr="Bâtiments ▾">Bauwerke ▾</summary>
         <div class="dropdown-content">
           <a href="elisabethen.html">1864 · Elisabethenkirche</a>
           <a href="markthalle.html">1929 · Markthalle</a>
@@ -31,143 +49,252 @@
         </div>
       </details>
 
-      <a href="Quellen.html" class="nav-link">Verzeichnis</a>
+      <a href="Quellen.html" class="nav-link"
+         data-de="Verzeichnis"
+         data-en="Sources"
+         data-fr="Sources">Verzeichnis</a>
+
+      <div class="lang-switch">
+        <button type="button" class="lang-btn active" data-lang-btn="de">DE</button>
+        <button type="button" class="lang-btn" data-lang-btn="en">EN</button>
+        <button type="button" class="lang-btn" data-lang-btn="fr">FR</button>
+      </div>
     </nav>
   </div>
 </header>
 
-<main class="project-page project-page--upgraded">
+<main class="project-elegant">
 
-  <section class="project-hero project-hero--large">
-    <div class="project-inner">
-      <div class="project-kicker">Gymnasium Muttenz · Wahlkursprojekt</div>
-      <h1>BAULINIE Basel</h1>
-      <p class="project-lead">
-        Architektur entlang der Tramlinien 1, 2 und 14
-      </p>
-      <p class="project-sublead">
-        Ein interaktives Projekt des Gymnasium Muttenz
+  <section class="project-elegant__hero">
+    <div class="project-elegant__hero-inner">
+      <div class="project-elegant__kicker"
+           data-de="Gymnasium Muttenz · Wahlkursprojekt"
+           data-en="Gymnasium Muttenz · Elective course project"
+           data-fr="Gymnasium Muttenz · Projet de cours à option">
+        Gymnasium Muttenz · Wahlkursprojekt
+      </div>
+
+      <h1
+        data-de="BAULINIE Basel"
+        data-en="BASEL BUILDING LINE"
+        data-fr="LIGNE ARCHITECTURALE BÂLE">
+        BAULINIE Basel
+      </h1>
+
+      <p class="project-elegant__lead"
+         data-de="Ein interaktives Projekt zu Architektur, Mobilität und Stadtentwicklung entlang der Tramlinien 1, 2 und 14."
+         data-en="An interactive project on architecture, mobility and urban development along tram lines 1, 2 and 14."
+         data-fr="Un projet interactif consacré à l’architecture, à la mobilité et au développement urbain le long des lignes de tram 1, 2 et 14.">
+        Ein interaktives Projekt zu Architektur, Mobilität und Stadtentwicklung entlang der Tramlinien 1, 2 und 14.
       </p>
     </div>
   </section>
 
-  <section class="project-overview">
-    <div class="project-inner project-overview__grid">
-      <div class="project-overview__text">
-        <div class="section-kicker">Projektidee</div>
-        <h2>Architektur im Stadtraum erleben</h2>
-        <p>
-          Unser Projekt verbindet Architektur, Mobilität und Stadtentwicklung in einer interaktiven Route durch Basel. Ziel war es, ausgewählte Bauwerke aus verschiedenen Epochen sichtbar zu machen und ihre Bedeutung im heutigen Stadtraum verständlich aufzubereiten.
-        </p>
+  <section class="project-elegant__intro">
+    <div class="project-elegant__container">
+      <div class="project-elegant__label"
+           data-de="Projektidee"
+           data-en="Project idea"
+           data-fr="Idée du projet">
+        Projektidee
       </div>
 
-      <div class="project-overview__card">
-        <div class="mini-facts">
-          <div class="mini-fact">
-            <span class="mini-fact__label">Ort</span>
-            <span class="mini-fact__value">Basel</span>
-          </div>
-          <div class="mini-fact">
-            <span class="mini-fact__label">Linien</span>
-            <span class="mini-fact__value">1, 2 und 14</span>
-          </div>
-          <div class="mini-fact">
-            <span class="mini-fact__label">Format</span>
-            <span class="mini-fact__value">Karte + Website</span>
-          </div>
-          <div class="mini-fact">
-            <span class="mini-fact__label">Fokus</span>
-            <span class="mini-fact__value">Architektur, Nutzung, Nachhaltigkeit</span>
-          </div>
+      <h2
+        data-de="Architektur im Stadtraum sichtbar und erlebbar machen"
+        data-en="Making architecture visible and tangible in urban space"
+        data-fr="Rendre l’architecture visible et perceptible dans l’espace urbain">
+        Architektur im Stadtraum sichtbar und erlebbar machen
+      </h2>
+
+      <p
+        data-de="Unser Projekt verbindet Architektur, Mobilität und Stadtentwicklung in einer interaktiven Route durch Basel. Ziel war es, ausgewählte Bauwerke aus verschiedenen Epochen sichtbar zu machen und ihre Bedeutung im heutigen Stadtraum verständlich aufzubereiten."
+        data-en="Our project connects architecture, mobility and urban development through an interactive route across Basel. The goal was to make selected buildings from different periods visible and to present their significance in today’s urban space in a clear and accessible way."
+        data-fr="Notre projet relie architecture, mobilité et développement urbain à travers un parcours interactif à Bâle. L’objectif était de rendre visibles des bâtiments sélectionnés de différentes époques et de présenter de manière claire et accessible leur importance dans l’espace urbain actuel.">
+        Unser Projekt verbindet Architektur, Mobilität und Stadtentwicklung in einer interaktiven Route durch Basel. Ziel war es, ausgewählte Bauwerke aus verschiedenen Epochen sichtbar zu machen und ihre Bedeutung im heutigen Stadtraum verständlich aufzubereiten.
+      </p>
+    </div>
+  </section>
+
+  <section class="project-elegant__split">
+    <div class="project-elegant__container project-elegant__split-grid">
+      <div class="project-elegant__col">
+        <div class="project-elegant__label"
+             data-de="Hintergrund"
+             data-en="Background"
+             data-fr="Contexte">
+          Hintergrund
         </div>
-      </div>
-    </div>
-  </section>
 
-  <section class="project-section project-section--cards">
-    <div class="project-inner">
-      <div class="section-kicker">Hintergrund</div>
-      <h2>Wie das Projekt entstanden ist</h2>
+        <h3
+          data-de="Kontext"
+          data-en="Context"
+          data-fr="Contexte">
+          Kontext
+        </h3>
 
-      <div class="project-card-grid">
-        <article class="project-card">
-          <h3>Kontext</h3>
-          <p>
-            Unser Projekt entstand im Rahmen des Wahlkurses „Grösser, weiter, nachhaltiger – die räumlichen und gesellschaftlichen Auswirkungen von Sport und Freizeitaktivitäten“ im 4. Jahr des Gymnasium Muttenz. Als Abschlussarbeit konnten wir ein eigenes Thema wählen und praktisch umsetzen.
-          </p>
-        </article>
-
-        <article class="project-card">
-          <h3>Idee</h3>
-          <p>
-            Basel gilt als Schweizer Architekturhauptstadt: Historische Bauten treffen hier auf internationale Gegenwartsarchitektur. Ursprünglich wollten wir ein Fotobuch gestalten, entschieden uns jedoch für ein interaktives Format, das Architektur direkt im Stadtraum erlebbar macht.
-          </p>
-        </article>
-
-        <article class="project-card">
-          <h3>Ziel</h3>
-          <p>
-            Unser Ziel war es, eine Route entlang der Tramlinien 1, 2 und 14 zu entwickeln, die ausgewählte Bauwerke verschiedener Epochen verbindet. Dabei wollten wir zeigen, wie sich Architektur, Nutzung und Nachhaltigkeit im Laufe der Zeit verändern und wie diese Entwicklungen mit Unterrichtsinhalten wie den Grunddaseinsfunktionen verknüpft werden können.
-          </p>
-        </article>
-
-        <article class="project-card">
-          <h3>Umsetzung</h3>
-          <p>
-            Wir entwickelten eine physische, klappbare Karte mit Route, Kurzbeschreibungen und QR-Codes. Diese führen zu unserer Website mit Zeitstrahl, Detailseiten und weiterführenden Informationen. Die Gebäude wurden sorgfältig ausgewählt, vor Ort fotografiert und umfassend recherchiert.
-          </p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="project-cta-block">
-    <div class="project-inner project-cta-block__inner">
-      <div>
-        <div class="section-kicker">Ergebnis</div>
-        <h2>Eine Route zwischen Stadt, Architektur und Alltag</h2>
-        <p>
-          BAULINIE Basel macht Architektur nicht nur sichtbar, sondern vor Ort erfahrbar. Durch Karte, Website und Zeitstrahl entsteht eine Verbindung zwischen historischem Hintergrund, aktueller Nutzung und persönlicher Entdeckung im Stadtraum.
+        <p
+          data-de="Unser Projekt entstand im Rahmen des Wahlkurses „Grösser, weiter, nachhaltiger – die räumlichen und gesellschaftlichen Auswirkungen von Sport und Freizeitaktivitäten“ im 4. Jahr des Gymnasium Muttenz. Als Abschlussarbeit konnten wir ein eigenes Thema wählen und praktisch umsetzen."
+          data-en="Our project was created as part of the elective course “Bigger, farther, more sustainable – the spatial and social effects of sport and leisure activities” in the fourth year at Gymnasium Muttenz. As a final project, we were able to choose and implement our own topic."
+          data-fr="Notre projet a été réalisé dans le cadre du cours à option « Plus grand, plus loin, plus durable – les effets spatiaux et sociaux du sport et des activités de loisirs » en quatrième année au Gymnasium Muttenz. Comme travail final, nous avons pu choisir et réaliser notre propre thème.">
+          Unser Projekt entstand im Rahmen des Wahlkurses „Grösser, weiter, nachhaltiger – die räumlichen und gesellschaftlichen Auswirkungen von Sport und Freizeitaktivitäten“ im 4. Jahr des Gymnasium Muttenz. Als Abschlussarbeit konnten wir ein eigenes Thema wählen und praktisch umsetzen.
         </p>
       </div>
-      <div class="project-cta-block__buttons">
-        <a href="karte.html" class="hero-btn hero-btn--primary">Zur Karte</a>
-        <a href="zeitstrahl.html" class="hero-btn hero-btn--secondary">Zum Zeitstrahl</a>
+
+      <div class="project-elegant__col">
+        <div class="project-elegant__label"
+             data-de="Ausgangspunkt"
+             data-en="Starting point"
+             data-fr="Point de départ">
+          Ausgangspunkt
+        </div>
+
+        <h3
+          data-de="Idee"
+          data-en="Idea"
+          data-fr="Idée">
+          Idee
+        </h3>
+
+        <p
+          data-de="Basel gilt als Schweizer Architekturhauptstadt: Historische Bauten treffen hier auf internationale Gegenwartsarchitektur. Ursprünglich wollten wir ein Fotobuch gestalten, entschieden uns jedoch für ein interaktives Format, das Architektur direkt im Stadtraum erlebbar macht."
+          data-en="Basel is considered Switzerland’s architecture capital: historic buildings meet international contemporary architecture here. We first planned a photo book, but then chose an interactive format that makes architecture directly tangible in urban space."
+          data-fr="Bâle est considérée comme la capitale suisse de l’architecture : des bâtiments historiques y rencontrent une architecture contemporaine internationale. Nous avions d’abord prévu un livre photo, mais nous avons finalement choisi un format interactif qui rend l’architecture directement perceptible dans l’espace urbain.">
+          Basel gilt als Schweizer Architekturhauptstadt: Historische Bauten treffen hier auf internationale Gegenwartsarchitektur. Ursprünglich wollten wir ein Fotobuch gestalten, entschieden uns jedoch für ein interaktives Format, das Architektur direkt im Stadtraum erlebbar macht.
+        </p>
       </div>
     </div>
   </section>
 
-  <section class="team-section team-section--upgraded">
-    <div class="project-inner">
-      <div class="section-kicker">Team</div>
-      <h2>Wer hinter dem Projekt steht</h2>
+  <section class="project-elegant__statement">
+    <div class="project-elegant__container">
+      <div class="project-elegant__quote"
+           data-de="Unser Ziel war es, eine Route zu entwickeln, die Architektur aus verschiedenen Epochen mit Nutzung, Nachhaltigkeit und städtischer Entwicklung verbindet."
+           data-en="Our goal was to create a route that connects architecture from different periods with use, sustainability and urban development."
+           data-fr="Notre objectif était de développer un parcours reliant l’architecture de différentes époques à l’usage, à la durabilité et au développement urbain.">
+        Unser Ziel war es, eine Route zu entwickeln, die Architektur aus verschiedenen Epochen mit Nutzung, Nachhaltigkeit und städtischer Entwicklung verbindet.
+      </div>
+    </div>
+  </section>
 
-      <div class="team-grid">
-        <div class="team-member team-member--card">
-          <div class="team-member__initial">A</div>
+  <section class="project-elegant__functions">
+    <div class="project-elegant__container project-elegant__functions-grid">
+      <figure class="project-elegant__image-card">
+        <img src="grundda.png" alt="Grunddaseinsfunktionen" class="project-elegant__image">
+        <figcaption
+          data-de="Grunddaseinsfunktionen als gedankliche Grundlage unseres Projekts."
+          data-en="Basic functions of existence as a conceptual basis of our project."
+          data-fr="Les fonctions fondamentales de l’existence comme base conceptuelle de notre projet.">
+          Grunddaseinsfunktionen als gedankliche Grundlage unseres Projekts.
+        </figcaption>
+      </figure>
+
+      <div class="project-elegant__text-block">
+        <div class="project-elegant__label"
+             data-de="Grunddaseinsfunktionen"
+             data-en="Basic functions of existence"
+             data-fr="Fonctions fondamentales de l’existence">
+          Grunddaseinsfunktionen
+        </div>
+
+        <h2
+          data-de="Architektur im Zusammenhang mit Alltag und Nutzung"
+          data-en="Architecture in relation to everyday life and use"
+          data-fr="L’architecture en lien avec le quotidien et l’usage">
+          Architektur im Zusammenhang mit Alltag und Nutzung
+        </h2>
+
+        <p
+          data-de="Ein wichtiger Bezugspunkt unseres Projekts waren die Grunddaseinsfunktionen. Die ausgewählten Bauwerke lassen sich nicht nur architektonisch betrachten, sondern auch mit grundlegenden Bedürfnissen und Funktionen des städtischen Lebens verknüpfen."
+          data-en="An important reference point for our project was the concept of the basic functions of existence. The selected buildings can be understood not only architecturally, but also in connection with fundamental needs and functions of urban life."
+          data-fr="Un point de référence important pour notre projet a été le concept des fonctions fondamentales de l’existence. Les bâtiments sélectionnés peuvent être compris non seulement sur le plan architectural, mais aussi en lien avec les besoins et fonctions essentiels de la vie urbaine.">
+          Ein wichtiger Bezugspunkt unseres Projekts waren die Grunddaseinsfunktionen. Die ausgewählten Bauwerke lassen sich nicht nur architektonisch betrachten, sondern auch mit grundlegenden Bedürfnissen und Funktionen des städtischen Lebens verknüpfen.
+        </p>
+
+        <p
+          data-de="So steht die Markthalle beispielsweise für Versorgung, der Novartis Pavillon für Bildung und Wissensvermittlung, das Weinlager für Wohnen und die Elisabethenkirche für gesellschaftliche Teilhabe. Dadurch wird sichtbar, dass Architektur nicht isoliert existiert, sondern eng mit dem Alltag und der Entwicklung der Stadt verbunden ist."
+          data-en="For example, the Market Hall represents supply, the Novartis Pavilion stands for education and knowledge transfer, the Weinlager relates to housing, and Elisabethenkirche represents social participation. This shows that architecture does not exist in isolation, but is closely linked to everyday life and urban development."
+          data-fr="Par exemple, la Halle du Marché représente l’approvisionnement, le Pavillon Novartis l’éducation et la transmission du savoir, le Weinlager l’habitat, et l’église Sainte-Elisabeth la participation sociale. Cela montre que l’architecture n’existe pas de manière isolée, mais qu’elle est étroitement liée à la vie quotidienne et au développement urbain.">
+          So steht die Markthalle beispielsweise für Versorgung, der Novartis Pavillon für Bildung und Wissensvermittlung, das Weinlager für Wohnen und die Elisabethenkirche für gesellschaftliche Teilhabe. Dadurch wird sichtbar, dass Architektur nicht isoliert existiert, sondern eng mit dem Alltag und der Entwicklung der Stadt verbunden ist.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-elegant__team">
+    <div class="project-elegant__container">
+      <div class="project-elegant__label"
+           data-de="Team"
+           data-en="Team"
+           data-fr="Équipe">
+        Team
+      </div>
+
+      <h2
+        data-de="Wer hinter BAULINIE Basel steht"
+        data-en="Who is behind BAULINIE Basel"
+        data-fr="Qui est derrière BAULINIE Basel">
+        Wer hinter BAULINIE Basel steht
+      </h2>
+
+      <div class="project-elegant__team-grid">
+        <div class="project-elegant__team-item">
           <h3>Abinaya</h3>
-          <p>Website, Programmierung, Fotografien & Gestaltung</p>
+          <p
+            data-de="Website, Programmierung, Fotografien und Gestaltung"
+            data-en="Website, programming, photography and design"
+            data-fr="Site web, programmation, photographie et design">
+            Website, Programmierung, Fotografien und Gestaltung
+          </p>
         </div>
 
-        <div class="team-member team-member--card">
-          <div class="team-member__initial">M</div>
+        <div class="project-elegant__team-item">
           <h3>Miranda</h3>
-          <p>Texte, Interview & inhaltliche Recherche</p>
+          <p
+            data-de="Texte, Interview und inhaltliche Recherche"
+            data-en="Texts, interview and content research"
+            data-fr="Textes, entretien et recherche de contenu">
+            Texte, Interview und inhaltliche Recherche
+          </p>
         </div>
 
-        <div class="team-member team-member--card">
-          <div class="team-member__initial">M</div>
+        <div class="project-elegant__team-item">
           <h3>Marla</h3>
-          <p>Karte, Gestaltung & Routenentwicklung</p>
+          <p
+            data-de="Karte, Gestaltung und Routenentwicklung"
+            data-en="Map, design and route development"
+            data-fr="Carte, design et développement du parcours">
+            Karte, Gestaltung und Routenentwicklung
+          </p>
         </div>
       </div>
-
-      <!-- Optional später -->
-      <!-- <img src="team.jpg" alt="Projektteam BAULINIE Basel" class="team-photo"> -->
     </div>
   </section>
 
 </main>
+
+<script>
+  function switchLanguage(lang) {
+    document.querySelectorAll("[data-de][data-en][data-fr]").forEach(el => {
+      el.textContent = el.getAttribute("data-" + lang);
+    });
+
+    document.documentElement.lang = lang;
+    localStorage.setItem("siteLanguage", lang);
+
+    document.querySelectorAll("[data-lang-btn]").forEach(btn => {
+      btn.classList.toggle("active", btn.getAttribute("data-lang-btn") === lang);
+    });
+  }
+
+  document.querySelectorAll("[data-lang-btn]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      switchLanguage(btn.getAttribute("data-lang-btn"));
+    });
+  });
+
+  const savedLang = localStorage.getItem("siteLanguage") || "de";
+  switchLanguage(savedLang);
+</script>
 
 </body>
 </html>
