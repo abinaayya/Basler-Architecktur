@@ -3,7 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Karte – BAULINIE Basel</title>
+  <title id="pageTitle"
+    data-de="Karte – BAULINIE Basel"
+    data-en="Map – BAULINIE Basel"
+    data-fr="Carte – BAULINIE Basel">
+    Karte – BAULINIE Basel
+  </title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,53 +19,136 @@
     <div class="logo">BAULINIE Basel</div>
 
     <nav class="nav-links">
-      <a href="index.html" class="nav-link">Home</a>
-      <a href="zeitstrahl.html" class="nav-link">Zeitstrahl</a>
-      <a href="karte.html" class="nav-link nav-link--active">Karte</a>
-      <a href="wir.html" class="nav-link">Projekt</a>
+      <a href="index.html" class="nav-link"
+         data-de="Home"
+         data-en="Home"
+         data-fr="Accueil">Home</a>
+
+      <a href="zeitstrahl.html" class="nav-link"
+         data-de="Zeitstrahl"
+         data-en="Timeline"
+         data-fr="Chronologie">Zeitstrahl</a>
+
+      <a href="karte.html" class="nav-link nav-link--active"
+         data-de="Karte"
+         data-en="Map"
+         data-fr="Carte">Karte</a>
+
+      <a href="wir.html" class="nav-link"
+         data-de="Projekt"
+         data-en="Project"
+         data-fr="Projet">Projekt</a>
 
       <details class="dropdown">
-        <summary class="dropbtn">Bauwerke ▾</summary>
+        <summary class="dropbtn"
+          data-de="Bauwerke ▾"
+          data-en="Buildings ▾"
+          data-fr="Bâtiments ▾">Bauwerke ▾</summary>
+
         <div class="dropdown-content">
-          <a href="elisabethen.html">Elisabethenkirche</a>
-          <a href="markthalle.html">Markthalle</a>
-          <a href="messe.html">Messe</a>
-          <a href="kunstmuseum.html">Kunstmuseum</a>
-          <a href="novartis.html">Novartis Campus</a>
-          <a href="weinlager.html">Weinlager</a>
+          <a href="elisabethen.html"
+             data-de="Elisabethenkirche"
+             data-en="Elisabethenkirche"
+             data-fr="Église Sainte-Elisabeth">Elisabethenkirche</a>
+
+          <a href="markthalle.html"
+             data-de="Markthalle"
+             data-en="Market Hall"
+             data-fr="Halle du Marché">Markthalle</a>
+
+          <a href="messe.html"
+             data-de="Messe"
+             data-en="Trade Fair"
+             data-fr="Foire">Messe</a>
+
+          <a href="kunstmuseum.html"
+             data-de="Kunstmuseum"
+             data-en="Art Museum"
+             data-fr="Musée des Beaux-Arts">Kunstmuseum</a>
+
+          <a href="novartis.html"
+             data-de="Novartis Campus"
+             data-en="Novartis Campus"
+             data-fr="Campus Novartis">Novartis Campus</a>
+
+          <a href="weinlager.html"
+             data-de="Weinlager"
+             data-en="Wine Warehouse"
+             data-fr="Entrepôt à vin">Weinlager</a>
         </div>
       </details>
 
-      <a href="Quellen.html" class="nav-link">Verzeichnis</a>
+      <a href="Quellen.html" class="nav-link"
+         data-de="Verzeichnis"
+         data-en="Sources"
+         data-fr="Sources">Verzeichnis</a>
+
+      <div class="lang-switch">
+        <button type="button" class="lang-btn active" data-lang-btn="de">DE</button>
+        <button type="button" class="lang-btn" data-lang-btn="en">EN</button>
+        <button type="button" class="lang-btn" data-lang-btn="fr">FR</button>
+      </div>
     </nav>
   </div>
 </header>
 
-<main class="map-page">
-  <section class="map-hero">
+<main class="map-page map-page--premium">
+  <section class="map-hero map-hero--premium">
     <div class="map-hero-inner">
-      <h1>Karte</h1>
+      <div class="map-kicker"
+        data-de="Interaktive Route"
+        data-en="Interactive route"
+        data-fr="Parcours interactif">
+        Interaktive Route
+      </div>
+
+      <h1
+        data-de="Karte"
+        data-en="Map"
+        data-fr="Carte">
+        Karte
+      </h1>
+
+      <p
+        data-de="Zoome in die Route hinein und entdecke die ausgewählten Bauwerke entlang der Tramlinien 1, 2 und 14."
+        data-en="Zoom into the route and discover the selected buildings along tram lines 1, 2 and 14."
+        data-fr="Zoome dans le parcours et découvre les bâtiments sélectionnés le long des lignes de tram 1, 2 et 14.">
+        Zoome in die Route hinein und entdecke die ausgewählten Bauwerke entlang der Tramlinien 1, 2 und 14.
+      </p>
     </div>
   </section>
 
-  <section class="map-shell">
+  <section class="map-shell map-shell--premium">
     <div class="map-toolbar">
-      <button class="toolbtn" type="button" id="zoomIn">＋</button>
-      <button class="toolbtn" type="button" id="zoomOut">－</button>
-      <button class="toolbtn" type="button" id="reset">Reset</button>
-      <!-- optional: PDF Download -->
-      <!-- <a class="toolbtn toolbtn-link" href="karte.pdf" download>PDF</a> -->
+      <button class="toolbtn" type="button" id="zoomIn"
+        data-de="＋"
+        data-en="＋"
+        data-fr="＋">＋</button>
+
+      <button class="toolbtn" type="button" id="zoomOut"
+        data-de="－"
+        data-en="－"
+        data-fr="－">－</button>
+
+      <button class="toolbtn" type="button" id="reset"
+        data-de="Reset"
+        data-en="Reset"
+        data-fr="Réinitialiser">Reset</button>
     </div>
 
     <div class="map-frame" id="mapFrame" aria-label="Kartenviewer">
       <img id="mapImage" src="Karte_Basel.jpg" alt="Karte Basel – Tramlinien und Bauwerke" draggable="false">
     </div>
 
-    <p class="map-hint">Doppelklick (Desktop) oder Doppeltippen (Handy) zoomt.</p>
+    <p class="map-hint"
+      data-de="Tipp: Doppelklick oder Doppeltippen zoomt. Mit Maus oder Finger kannst du die Karte verschieben."
+      data-en="Tip: Double-click or double-tap to zoom. Use your mouse or finger to move the map."
+      data-fr="Astuce : un double-clic ou un double-tap permet de zoomer. Utilise la souris ou le doigt pour déplacer la carte.">
+      Tipp: Doppelklick oder Doppeltippen zoomt. Mit Maus oder Finger kannst du die Karte verschieben.
+    </p>
   </section>
 </main>
 
-<!-- Panzoom (nur einmal!) -->
 <script src="https://unpkg.com/@panzoom/panzoom@4.5.1/dist/panzoom.min.js"></script>
 <script>
   const frame = document.getElementById("mapFrame");
@@ -107,6 +195,44 @@
   document.getElementById("zoomIn").addEventListener("click", () => panzoom.zoomIn());
   document.getElementById("zoomOut").addEventListener("click", () => panzoom.zoomOut());
   document.getElementById("reset").addEventListener("click", fitMap);
+
+  frame.addEventListener("dblclick", () => panzoom.zoomIn());
+
+  let lastTap = 0;
+  frame.addEventListener("touchend", (e) => {
+    const now = Date.now();
+    if (now - lastTap < 300) {
+      panzoom.zoomIn();
+    }
+    lastTap = now;
+  }, { passive: true });
+
+  function switchLanguage(lang) {
+    document.querySelectorAll("[data-de][data-en][data-fr]").forEach(el => {
+      el.textContent = el.getAttribute("data-" + lang);
+    });
+
+    const pageTitle = document.getElementById("pageTitle");
+    if (pageTitle) {
+      document.title = pageTitle.getAttribute("data-" + lang);
+    }
+
+    document.documentElement.lang = lang;
+    localStorage.setItem("siteLanguage", lang);
+
+    document.querySelectorAll("[data-lang-btn]").forEach(btn => {
+      btn.classList.toggle("active", btn.getAttribute("data-lang-btn") === lang);
+    });
+  }
+
+  document.querySelectorAll("[data-lang-btn]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      switchLanguage(btn.getAttribute("data-lang-btn"));
+    });
+  });
+
+  const savedLang = localStorage.getItem("siteLanguage") || "de";
+  switchLanguage(savedLang);
 </script>
 
 </body>

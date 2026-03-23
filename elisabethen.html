@@ -3,7 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Elisabethenkirche – BAULINIE Basel</title>
+  <title id="pageTitle"
+    data-de="Elisabethenkirche – BAULINIE Basel"
+    data-en="Elisabethenkirche – BAULINIE Basel"
+    data-fr="Église Sainte-Elisabeth – BAULINIE Basel">
+    Elisabethenkirche – BAULINIE Basel
+  </title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
@@ -15,40 +20,96 @@
     <div class="logo">BAULINIE Basel</div>
 
     <nav class="nav-links">
-      <a href="index.html" class="nav-link">Home</a>
-      <a href="zeitstrahl.html" class="nav-link">Zeitstrahl</a>
-      <a href="karte.html" class="nav-link">Karte</a>
-      <a href="wir.html" class="nav-link">Projekt</a>
+      <a href="index.html" class="nav-link"
+         data-de="Home"
+         data-en="Home"
+         data-fr="Accueil">Home</a>
+
+      <a href="zeitstrahl.html" class="nav-link"
+         data-de="Zeitstrahl"
+         data-en="Timeline"
+         data-fr="Chronologie">Zeitstrahl</a>
+
+      <a href="karte.html" class="nav-link"
+         data-de="Karte"
+         data-en="Map"
+         data-fr="Carte">Karte</a>
+
+      <a href="wir.html" class="nav-link"
+         data-de="Projekt"
+         data-en="Project"
+         data-fr="Projet">Projekt</a>
 
       <details class="dropdown">
-        <summary class="dropbtn">Bauwerke ▾</summary>
+        <summary class="dropbtn"
+                 data-de="Bauwerke ▾"
+                 data-en="Buildings ▾"
+                 data-fr="Bâtiments ▾">Bauwerke ▾</summary>
         <div class="dropdown-content">
-          <a href="elisabethen.html">1864 · Elisabethenkirche</a>
-          <a href="markthalle.html">1929 · Markthalle</a>
-          <a href="messe.html">2013 · Messe</a>
-          <a href="kunstmuseum.html">2016 · Kunstmuseum</a>
-          <a href="weinlager.html">2023 · Weinlager</a>
-          <a href="novartis.html">2022 · Novartis Campus</a>
+          <a href="elisabethen.html"
+             data-de="Elisabethenkirche"
+             data-en="Elisabethenkirche"
+             data-fr="Église Sainte-Elisabeth">Elisabethenkirche</a>
+          <a href="markthalle.html"
+             data-de="Markthalle"
+             data-en="Market Hall"
+             data-fr="Halle du Marché">Markthalle</a>
+          <a href="messe.html"
+             data-de="Messe"
+             data-en="Messe"
+             data-fr="Messe">Messe</a>
+          <a href="kunstmuseum.html"
+             data-de="Kunstmuseum"
+             data-en="Art Museum"
+             data-fr="Musée des Beaux-Arts">Kunstmuseum</a>
+             <a href="novartis.html"
+             data-de="Novartis Campus"
+             data-en="Novartis Campus"
+             data-fr="Campus Novartis">Novartis Campus</a>
+          <a href="weinlager.html"
+             data-de="Weinlager"
+             data-en="Weinlager"
+             data-fr="Weinlager">Weinlager</a>
         </div>
       </details>
 
-      <a href="Quellen.html" class="nav-link">Verzeichnis</a>
+      <a href="Quellen.html" class="nav-link"
+         data-de="Verzeichnis"
+         data-en="Sources"
+         data-fr="Sources">Verzeichnis</a>
+
+      <div class="lang-switch">
+        <button type="button" class="lang-btn active" data-lang-btn="de">DE</button>
+        <button type="button" class="lang-btn" data-lang-btn="en">EN</button>
+        <button type="button" class="lang-btn" data-lang-btn="fr">FR</button>
+      </div>
     </nav>
   </div>
 </header>
 
-<!-- HERO -->
 <section class="page-hero" style="background-image:url('ek_4.jpg');">
   <div class="page-hero__overlay"></div>
 
   <div class="page-hero__inner">
-    <h1 class="page-hero__title">
-      Elisabethenkirche<br>
-      <span class="page-hero__city">Basel</span>
+    <h1 class="page-hero__title"
+        data-de="Elisabethenkirche"
+        data-en="Elisabethenkirche"
+        data-fr="Église Sainte-Elisabeth">
+      Elisabethenkirche
     </h1>
 
-    <p class="page-hero__subtitle">
-      Eine Kirche, die Traditionen und Moderne verbindet.
+    <div class="page-hero__city"
+         data-de="BASEL"
+         data-en="BASEL"
+         data-fr="BÂLE">
+      Basel
+    </div>
+
+    <p class="page-hero__subtitle"
+       data-de="Eine Kirche, die Tradition und Moderne verbindet."
+       data-en="A church that brings together tradition and modernity."
+       data-fr="Une église qui unit tradition et modernité.">
+      Eine Kirche, die Tradition und Moderne verbindet.
     </p>
   </div>
 </section>
@@ -57,123 +118,226 @@
   <section class="page-section">
     <div class="container">
 
-      <!-- Steckbrief -->
       <div class="facts">
         <div class="fact">
-          <div class="fact__label">Baujahr</div>
-          <div class="fact__value">1857–1865</div>
+          <div class="fact__label"
+               data-de="Baujahr"
+               data-en="Year of construction"
+               data-fr="Année de construction">
+            Baujahr
+          </div>
+          <div class="fact__value">1857–1865 [1]</div>
         </div>
       </div>
 
-      <!-- NUTZUNG -->
-      <h2 class="h2">Nutzung</h2>
+      <h2 class="h2"
+          data-de="Nutzung"
+          data-en="Use"
+          data-fr="Usage">
+        Nutzung
+      </h2>
 
-      <p class="p">
-        Die Elisabethenkirche wird als eine der bedeutendsten neugotischen Kirchen der Schweiz angesehen [2]. Am 30. April 1994 wurde die Elisabethenkirche als Citykirche der Schweiz wiedereröffnet. Durch einen Leihvertrag mit der Evangelisch-Reformierten Kirche wird diese Kirche dem ökumenischen Verein „Offene Kirchen Elisabethen“ (OKE) zur Nutzung überlassen. Die Kirche folgt dem Konzept der Werktagskirche und ist somit täglich offen.
+      <p class="p"
+         data-de="Die Elisabethenkirche gilt als eine der bedeutendsten neugotischen Kirchen der Schweiz [2]. Am 30. April 1994 wurde sie als erste Citykirche der Schweiz wiedereröffnet. Aufgrund eines Leihvertrags mit der Evangelisch-Reformierten Kirche wird das Gebäude vom ökumenischen Verein «Offene Kirche Elisabethen» genutzt. Die Kirche folgt dem Konzept der Werktagskirche und ist deshalb täglich geöffnet."
+         data-en="Elisabethenkirche is regarded as one of the most important neo-Gothic churches in Switzerland [2]. On 30 April 1994, it reopened as Switzerland’s first city church. Through a loan agreement with the Protestant Reformed Church, the building is used by the ecumenical association «Offene Kirche Elisabethen». The church follows the concept of a weekday church and is therefore open every day."
+         data-fr="L’église Sainte-Elisabeth est considérée comme l’une des plus importantes églises néogothiques de Suisse [2]. Le 30 avril 1994, elle a rouvert comme première église urbaine de Suisse. Grâce à un contrat de prêt conclu avec l’Église réformée évangélique, le bâtiment est utilisé par l’association œcuménique «Offene Kirche Elisabethen». L’église suit le concept d’une église ouverte en semaine et est donc accessible tous les jours.">
+        Die Elisabethenkirche gilt als eine der bedeutendsten neugotischen Kirchen der Schweiz [2]. Am 30. April 1994 wurde sie als erste Citykirche der Schweiz wiedereröffnet. Aufgrund eines Leihvertrags mit der Evangelisch-Reformierten Kirche wird das Gebäude vom ökumenischen Verein «Offene Kirche Elisabethen» genutzt. Die Kirche folgt dem Konzept der Werktagskirche und ist deshalb täglich geöffnet.
       </p>
 
-      <p class="p">
-        Diese Kirche ist bekannt für ihre Offenheit gegenüber Menschen unterschiedlicher Herkunft, Religion, sexueller Orientierung und Lebensform [3] und war die erste Schweizer Kirche, die ein Label für LGBTI-Freundlichkeit erhielt [4]. Die St. Elisabethenkirche wird vielseitig genutzt. Sie ist ein Ort für Stille, Gebet und Seelsorge, aber auch ein Ort für Feiern, Konzerte, Partys und Ausstellungen. Die St. Elisabethenkirche bietet kulturelle, spirituelle und soziale Angebote für alle Menschen an. Dabei wird nicht auf die Herkunft, Hautfarbe, sexuelle Orientierung oder Religion geachtet, sondern alle sind herzlich willkommen, bei den Angeboten mitzumachen [3][5].
+      <p class="p"
+         data-de="Bekannt ist die Kirche insbesondere für ihre Offenheit gegenüber Menschen unterschiedlicher Herkunft, Religion, sexueller Orientierung und Lebensform [3]. Sie war die erste Kirche der Schweiz, die ein Label für LGBTI-Freundlichkeit erhielt [4]. Die Elisabethenkirche ist ein Ort der Stille, des Gebets und der Seelsorge, zugleich aber auch ein Raum für Feiern, Konzerte, Partys und Ausstellungen. Damit verbindet sie spirituelle, kulturelle und soziale Angebote und richtet sich bewusst an alle Menschen [3][5]."
+         data-en="The church is especially known for its openness towards people of different backgrounds, religions, sexual orientations and ways of life [3]. It was the first church in Switzerland to receive a label for LGBTI friendliness [4]. Elisabethenkirche is a place of silence, prayer and pastoral care, but at the same time also a venue for celebrations, concerts, parties and exhibitions. In this way, it combines spiritual, cultural and social offerings and deliberately addresses all people [3][5]."
+         data-fr="L’église est particulièrement connue pour son ouverture envers des personnes d’origines, de religions, d’orientations sexuelles et de modes de vie différents [3]. Elle a été la première église de Suisse à recevoir un label de convivialité LGBTI [4]. L’église Sainte-Elisabeth est un lieu de silence, de prière et d’accompagnement pastoral, mais aussi un espace pour des célébrations, des concerts, des fêtes et des expositions. Elle réunit ainsi des offres spirituelles, culturelles et sociales et s’adresse volontairement à toutes et à tous [3][5].">
+        Bekannt ist die Kirche insbesondere für ihre Offenheit gegenüber Menschen unterschiedlicher Herkunft, Religion, sexueller Orientierung und Lebensform [3]. Sie war die erste Kirche der Schweiz, die ein Label für LGBTI-Freundlichkeit erhielt [4]. Die Elisabethenkirche ist ein Ort der Stille, des Gebets und der Seelsorge, zugleich aber auch ein Raum für Feiern, Konzerte, Partys und Ausstellungen. Damit verbindet sie spirituelle, kulturelle und soziale Angebote und richtet sich bewusst an alle Menschen [3][5].
       </p>
 
-      <p class="p">
-        Darüber hinaus engagiert sich die Offene Kirche Elisabethen (OKE) für soziale Projekte. Seit 2004 dient die Kirche als Abgabestelle für Lebensmittel der Organisation Tischlein deck dich. Tischlein deck dich ist eine Organisation, welche Lebensmittel sammelt und diese an armutsbetroffene Menschen verteilt [6].
+      <p class="p"
+         data-de="Darüber hinaus engagiert sich die Offene Kirche Elisabethen für soziale Projekte. Seit 2004 dient die Kirche als Abgabestelle der Organisation «Tischlein deck dich», die Lebensmittel sammelt und an armutsbetroffene Menschen verteilt [6]."
+         data-en="In addition, Offene Kirche Elisabethen is committed to social projects. Since 2004, the church has served as a distribution point for the organisation «Tischlein deck dich», which collects food and distributes it to people affected by poverty [6]."
+         data-fr="En outre, l’Offene Kirche Elisabethen s’engage dans des projets sociaux. Depuis 2004, l’église sert de point de distribution pour l’organisation «Tischlein deck dich», qui collecte des denrées alimentaires et les distribue à des personnes touchées par la pauvreté [6].">
+        Darüber hinaus engagiert sich die Offene Kirche Elisabethen für soziale Projekte. Seit 2004 dient die Kirche als Abgabestelle der Organisation «Tischlein deck dich», die Lebensmittel sammelt und an armutsbetroffene Menschen verteilt [6].
       </p>
 
-      <p class="p">
-        Ausserdem gibt es Projekte wie das Projekt (FRAU-SEIN). Dieses Projekt gibt geflüchteten und asylsuchenden Frauen jeden Dienstag einen Raum, um sich zu treffen, sich auszutauschen, Freundschaften zu schliessen und gemeinsam ihre neue Heimat zu entdecken.
+      <p class="p"
+         data-de="Hinzu kommen Projekte wie «FRAU-SEIN». Dieses Angebot schafft für geflüchtete und asylsuchende Frauen einen geschützten Raum für Begegnung, Austausch und Orientierung im Alltag. Die Kirche organisiert dabei freiwillige Helferinnen und Helfer, die beim Deutschlernen, bei Hausaufgaben oder bei der Vorbereitung auf Sprachprüfungen unterstützen. Auch Kinder werden mitgedacht: Für sie stehen eine Spielecke und Bücher zur Verfügung [7]."
+         data-en="Projects such as «FRAU-SEIN» complement this work. This programme creates a protected space for refugee and asylum-seeking women for encounters, exchange and orientation in everyday life. The church organises volunteers who support them in learning German, doing homework or preparing for language exams. Children are also taken into account: a play corner and books are available for them [7]."
+         data-fr="Des projets comme «FRAU-SEIN» viennent compléter ce travail. Cette offre crée pour les femmes réfugiées et requérantes d’asile un espace protégé de rencontre, d’échange et d’orientation dans la vie quotidienne. L’église organise des bénévoles qui les soutiennent dans l’apprentissage de l’allemand, les devoirs ou la préparation aux examens de langue. Les enfants sont également pris en compte : un coin de jeux et des livres sont mis à leur disposition [7].">
+        Hinzu kommen Projekte wie «FRAU-SEIN». Dieses Angebot schafft für geflüchtete und asylsuchende Frauen einen geschützten Raum für Begegnung, Austausch und Orientierung im Alltag. Die Kirche organisiert dabei freiwillige Helferinnen und Helfer, die beim Deutschlernen, bei Hausaufgaben oder bei der Vorbereitung auf Sprachprüfungen unterstützen. Auch Kinder werden mitgedacht: Für sie stehen eine Spielecke und Bücher zur Verfügung [7].
       </p>
 
-      <p class="p">
-        Die Kirche organisiert freiwillige Helferinnen und Helfer, die den Frauen Schritt für Schritt Deutsch beibringen. So erhalten sie die Möglichkeit, sich besser zu integrieren und später eine Arbeitsstelle zu finden. Sie helfen ihnen auch bei der Bewältigung der Hausaufgaben oder der Vorbereitung auf die Sprachprüfung. Auch durch Aktivitäten wie Kochen, Nähen oder Kopieren lernen sie unsere Infrastruktur kennen und auch deren Nutzung. Für die Kinder der Frauen gibt es eine Spielecke und Bücher, welche sie nutzen können [7].
+      <h2 class="h2"
+          data-de="Nachhaltigkeit"
+          data-en="Sustainability"
+          data-fr="Durabilité">
+        Nachhaltigkeit
+      </h2>
+
+      <p class="p"
+         data-de="Der Bezug zur Nachhaltigkeit zeigt sich in der Elisabethenkirche auf mehreren Ebenen."
+         data-en="The connection to sustainability becomes visible in Elisabethenkirche on several levels."
+         data-fr="Le lien avec la durabilité devient visible à plusieurs niveaux dans l’église Sainte-Elisabeth.">
+        Der Bezug zur Nachhaltigkeit zeigt sich in der Elisabethenkirche auf mehreren Ebenen.
       </p>
 
-      <!-- Bild im Mittelteil -->
-
-      <!-- NACHHALTIGKEIT -->
-      <h2 class="h2">Nachhaltigkeit</h2>
-
-      <p class="p">
-        Der Bezug zur Nachhaltigkeit wird in der Elisabethenkirche in vielerlei Hinsicht sichtbar.
+      <p class="p"
+         data-de="Die Offene Kirche Elisabethen ist nicht nur ein Ort für Gottesdienste, sondern auch eine soziale Anlaufstelle für Menschen in schwierigen Lebenslagen. Sie bietet Unterstützung, Begleitung und Beratung an, etwa für geflüchtete und asylsuchende Frauen im Projekt «FRAU-SEIN». Dadurch wird soziale Nachhaltigkeit gestärkt: Die Angebote fördern den gesellschaftlichen Zusammenhalt, eröffnen neue Perspektiven und schaffen langfristig tragfähige Formen des Miteinanders."
+         data-en="Offene Kirche Elisabethen is not only a place for services, but also a social point of contact for people in difficult life situations. It offers support, guidance and counselling, for example for refugee and asylum-seeking women in the project «FRAU-SEIN». In this way, social sustainability is strengthened: the programmes promote social cohesion, open up new perspectives and create sustainable forms of living together."
+         data-fr="L’Offene Kirche Elisabethen n’est pas seulement un lieu de culte, mais aussi un point de contact social pour des personnes en situation difficile. Elle offre soutien, accompagnement et conseil, par exemple pour des femmes réfugiées et requérantes d’asile dans le cadre du projet «FRAU-SEIN». Ainsi, la durabilité sociale est renforcée : ces offres favorisent la cohésion sociale, ouvrent de nouvelles perspectives et créent des formes durables de vivre-ensemble.">
+        Die Offene Kirche Elisabethen ist nicht nur ein Ort für Gottesdienste, sondern auch eine soziale Anlaufstelle für Menschen in schwierigen Lebenslagen. Sie bietet Unterstützung, Begleitung und Beratung an, etwa für geflüchtete und asylsuchende Frauen im Projekt «FRAU-SEIN». Dadurch wird soziale Nachhaltigkeit gestärkt: Die Angebote fördern den gesellschaftlichen Zusammenhalt, eröffnen neue Perspektiven und schaffen langfristig tragfähige Formen des Miteinanders.
       </p>
 
-      <p class="p">
-        Die Offene Kirche Elisabethen (OKE) ist neben einem Ort für Gottesdienste auch eine soziale Anlaufstelle für Menschen in Not. Sie unterstützt Menschen, die sich in schwierigen Lebenssituationen befinden, indem sie die noetige Hilfe, Begleitung und Beratung anbietet, wie beispielsweise für geflüchtete und asylsuchende Frauen im Projekt „FRAU-SEIN“. Somit wird die soziale Nachhaltigkeit gestärkt, denn diese Projekte und Angebote fördern den gesellschaftlichen Zusammenhalt und sichern ihn langfristig. Ausserdem eröffnet die Kirche Menschen in Not neue Perspektiven.
+      <p class="p"
+         data-de="Auch ökologische Nachhaltigkeit wird sichtbar. Aktionen wie die Frauenkleider-Tauschbörse im Jahr 2011 oder die Taschenbörse 2025 fördern das Wiederverwenden von Materialien, reduzieren Konsum und vermeiden Abfall [8][9]. Damit zeigt sich, dass die Kirche nicht nur sozial offen, sondern auch ökologisch sensibilisiert handelt."
+         data-en="Ecological sustainability is also visible. Activities such as the women’s clothing exchange in 2011 or the bag exchange in 2025 encourage the reuse of materials, reduce consumption and avoid waste [8][9]. This shows that the church not only acts with social openness, but also with ecological awareness."
+         data-fr="La durabilité écologique apparaît également. Des actions telles que la bourse d’échange de vêtements pour femmes en 2011 ou la bourse aux sacs en 2025 encouragent la réutilisation des matériaux, réduisent la consommation et évitent les déchets [8][9]. Cela montre que l’église agit non seulement avec ouverture sociale, mais aussi avec une conscience écologique.">
+        Auch ökologische Nachhaltigkeit wird sichtbar. Aktionen wie die Frauenkleider-Tauschbörse im Jahr 2011 oder die Taschenbörse 2025 fördern das Wiederverwenden von Materialien, reduzieren Konsum und vermeiden Abfall [8][9]. Damit zeigt sich, dass die Kirche nicht nur sozial offen, sondern auch ökologisch sensibilisiert handelt.
       </p>
 
-      <p class="p">
-        Neben der sozialen wird auch die ökologische Nachhaltigkeit gestärkt, denn durch Aktionen wie die Frauenkleider-Tauschbörse im Jahr 2011 oder die Taschenbörse 2025 werden Konsum und Abfall reduziert sowie das Wiederverwenden von Kleidern gefördert [8][9].
+      <h2 class="h2"
+          data-de="Architektonische Bedeutung"
+          data-en="Architectural significance"
+          data-fr="Importance architecturale">
+        Architektonische Bedeutung
+      </h2>
+
+      <p class="p"
+         data-de="Die Elisabethenkirche in Basel ist ein bedeutendes Beispiel neugotischer Architektur in der Schweiz [2]. Sie wurde zwischen 1857 und 1865 nach Plänen des Basler Architekten Ferdinand Stadler errichtet und war der erste grosse Kirchenneubau in Basel seit der Reformation. Der Bau wurde von der Familie Merian unterstützt; Christoph Merian selbst erlebte die Fertigstellung jedoch nicht mehr. Besonders prägend sind die dreischiffige Hallenkonstruktion, der 72 Meter hohe Turm mit Spitzdach sowie die sorgfältig gestalteten Glasfenster im Innenraum [10]."
+         data-en="Elisabethenkirche in Basel is an important example of neo-Gothic architecture in Switzerland [2]. It was built between 1857 and 1865 according to plans by the Basel architect Ferdinand Stadler and was the first major church building in Basel since the Reformation. Construction was supported by the Merian family, although Christoph Merian did not live to see its completion. Particularly striking are the three-aisled hall structure, the 72-metre-high tower with its pointed roof and the carefully designed stained-glass windows in the interior [10]."
+         data-fr="L’église Sainte-Elisabeth à Bâle est un exemple important de l’architecture néogothique en Suisse [2]. Elle a été construite entre 1857 et 1865 selon les plans de l’architecte bâlois Ferdinand Stadler et fut la première grande nouvelle église édifiée à Bâle depuis la Réforme. La construction fut soutenue par la famille Merian, même si Christoph Merian ne vécut pas jusqu’à son achèvement. Les éléments les plus marquants sont la structure en halle à trois nefs, la tour de 72 mètres coiffée d’un toit en pointe ainsi que les vitraux soigneusement conçus à l’intérieur [10].">
+        Die Elisabethenkirche in Basel ist ein bedeutendes Beispiel neugotischer Architektur in der Schweiz [2]. Sie wurde zwischen 1857 und 1865 nach Plänen des Basler Architekten Ferdinand Stadler errichtet und war der erste grosse Kirchenneubau in Basel seit der Reformation. Der Bau wurde von der Familie Merian unterstützt; Christoph Merian selbst erlebte die Fertigstellung jedoch nicht mehr. Besonders prägend sind die dreischiffige Hallenkonstruktion, der 72 Meter hohe Turm mit Spitzdach sowie die sorgfältig gestalteten Glasfenster im Innenraum [10].
       </p>
 
-      <!-- ARCHITEKTUR -->
-      <h2 class="h2">Architektonische Bedeutung</h2>
-
-      <p class="p">
-        Die Elisabethenkirche in Basel ist ein bedeutendes Beispiel der neugotischen Architektur in der Schweiz [2]. Sie wurde zwischen 1857 und 1865 nach Plaenen des Basler Architekten Ferdinand Stadler errichtet und war der erste grosse Kirchenneubau in Basel seit der Reformation. Der Bau der Kirche wurde durch die Familie Merian unterstuetzt. Leider verstarb Christoph Merian vor der Fertigstellung der Kirche. Besonders auffaellig sind die dreischiffige Hallenkonstruktion, der 72 Meter hohe Turm mit Spitzdach und die liebevoll gestalteten Glasfenster der Innenraeume [10].
+      <p class="p"
+         data-de="Durch ihre Architektur und ihre zentrale Lage ist die Elisabethenkirche bis heute eng mit dem städtischen Leben verbunden. Sie ist nicht nur ein religiöses Bauwerk, sondern auch ein bedeutender Bestandteil des Basler Kulturerbes."
+         data-en="Through its architecture and central location, Elisabethenkirche remains closely connected to urban life. It is not only a religious building, but also an important part of Basel’s cultural heritage."
+         data-fr="Par son architecture et sa situation centrale, l’église Sainte-Elisabeth reste étroitement liée à la vie urbaine. Elle n’est pas seulement un édifice religieux, mais aussi un élément important du patrimoine culturel bâlois.">
+        Durch ihre Architektur und ihre zentrale Lage ist die Elisabethenkirche bis heute eng mit dem städtischen Leben verbunden. Sie ist nicht nur ein religiöses Bauwerk, sondern auch ein bedeutender Bestandteil des Basler Kulturerbes.
       </p>
 
-      <p class="p">
-        Durch die Architektur und die zentrale Lage in Basel ist diese Kirche stark mit der Gesellschaft verbunden und somit ein bedeutender Teil des Basler Kulturerbes.
-      </p>
-
-      <!-- Galerie -->
-      <h2 class="h2">Bilder</h2>
+      <h2 class="h2"
+          data-de="Bilder"
+          data-en="Images"
+          data-fr="Images">
+        Bilder
+      </h2>
 
       <div class="gallery" aria-label="Bildergalerie Elisabethenkirche">
-  <button class="gallery__btn" type="button" id="prevImg" aria-label="Vorheriges Bild">←</button>
+        <button class="gallery__btn" type="button" id="prevImg" aria-label="Vorheriges Bild">←</button>
 
-  <figure class="gallery__figure">
-    <img class="gallery__img" id="galleryImg" src="ek_1.jpg" alt="Elisabethenkirche – Bild 1">
-    <figcaption class="gallery__cap" id="galleryCap">Aussenansicht der Elisabethenkirche. Foto: Abinaya Sureshkumar </figcaption>
-  </figure>
+        <figure class="gallery__figure">
+          <img class="gallery__img" id="galleryImg" src="ek_1.jpg" alt="Elisabethenkirche – Bild 1">
+          <figcaption class="gallery__cap" id="galleryCap">Aussenansicht der Elisabethenkirche. Foto: Abinaya Sureshkumar</figcaption>
+        </figure>
 
-  <button class="gallery__btn" type="button" id="nextImg" aria-label="Nächstes Bild">→</button>
-</div>
+        <button class="gallery__btn" type="button" id="nextImg" aria-label="Nächstes Bild">→</button>
+      </div>
 
-<div class="pager">
-  <a class="pager__link" href="novartis.html">← Novartis Campus</a>
-  <a class="pager__link" href="markthalle.html">Markthalle →</a>
-</div>
+      <div class="pager">
+        <a class="pager__link" href="weinlager.html"
+           data-de="← Weinlager"
+           data-en="← Weinlager"
+           data-fr="← Weinlager">
+          ← Weinlager
+        </a>
+
+        <a class="pager__link" href="markthalle.html"
+           data-de="Markthalle →"
+           data-en="Market Hall →"
+           data-fr="Halle du Marché →">
+          Markthalle →
+        </a>
+      </div>
 
     </div>
   </section>
 </main>
 
 <script>
- const items = [
-  { src: "ek_1.jpg", cap: "Elisabethenkirche – Aussenansicht." },
-  { src: "ek_2.jpg", cap: "Aussenbereich mit Sitzplätzen beim Eingang der Elisabethenkirche." },
-  { src: "ek_3.jpg", cap: "Hinweisschild zum Café der Elisabethenkirche." },
-  { src: "ek_4.jpg", cap: "Elisabethenkirche während der Renovationsarbeiten 2026." }
-];
+  const items = [
+    {
+      src: "ek_1.jpg",
+      cap: {
+        de: "Aussenansicht der Elisabethenkirche. Foto: Abinaya Sureshkumar",
+        en: "Exterior view of Elisabethenkirche. Photo: Abinaya Sureshkumar",
+        fr: "Vue extérieure de l’église Sainte-Elisabeth. Photo : Abinaya Sureshkumar"
+      }
+    },
+    {
+      src: "ek_2.jpg",
+      cap: {
+        de: "Aussenbereich mit Sitzplätzen beim Eingang der Elisabethenkirche. Foto: Abinaya Sureshkumar",
+        en: "Outdoor area with seating near the entrance of Elisabethenkirche. Photo: Abinaya Sureshkumar",
+        fr: "Espace extérieur avec places assises à l’entrée de l’église Sainte-Elisabeth. Photo : Abinaya Sureshkumar"
+      }
+    },
+    {
+      src: "ek_3.jpg",
+      cap: {
+        de: "Hinweisschild zum Café der Elisabethenkirche. Foto: Abinaya Sureshkumar",
+        en: "Sign for the café at Elisabethenkirche. Photo: Abinaya Sureshkumar",
+        fr: "Panneau indiquant le café de l’église Sainte-Elisabeth. Photo : Abinaya Sureshkumar"
+      }
+    },
+    {
+      src: "ek_4.jpg",
+      cap: {
+        de: "Elisabethenkirche während der Renovationsarbeiten 2026. Foto: Abinaya Sureshkumar",
+        en: "Elisabethenkirche during renovation works in 2026. Photo: Abinaya Sureshkumar",
+        fr: "Église Sainte-Elisabeth pendant les travaux de rénovation en 2026. Photo : Abinaya Sureshkumar"
+      }
+    }
+  ];
 
   let i = 0;
   const imgEl = document.getElementById("galleryImg");
   const capEl = document.getElementById("galleryCap");
 
-  function render() {
+  function renderGallery() {
+    const lang = localStorage.getItem("siteLanguage") || "de";
     imgEl.src = items[i].src;
-    imgEl.alt = items[i].cap;
-    capEl.textContent = items[i].cap;
+    imgEl.alt = items[i].cap[lang];
+    capEl.textContent = items[i].cap[lang];
   }
 
   document.getElementById("prevImg").addEventListener("click", () => {
     i = (i - 1 + items.length) % items.length;
-    render();
+    renderGallery();
   });
 
   document.getElementById("nextImg").addEventListener("click", () => {
     i = (i + 1) % items.length;
-    render();
+    renderGallery();
   });
 
-  function render() {
-  imgEl.src = items[i].src;
-  imgEl.alt = items[i].cap;
-  capEl.textContent = items[i].cap;
-}
+  function switchLanguage(lang) {
+    document.querySelectorAll("[data-de][data-en][data-fr]").forEach(el => {
+      el.textContent = el.getAttribute("data-" + lang);
+    });
 
-render();
+    const pageTitle = document.getElementById("pageTitle");
+    if (pageTitle) {
+      document.title = pageTitle.getAttribute("data-" + lang);
+    }
+
+    document.documentElement.lang = lang;
+    localStorage.setItem("siteLanguage", lang);
+
+    document.querySelectorAll("[data-lang-btn]").forEach(btn => {
+      btn.classList.toggle("active", btn.getAttribute("data-lang-btn") === lang);
+    });
+
+    renderGallery();
+  }
+
+  document.querySelectorAll("[data-lang-btn]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      switchLanguage(btn.getAttribute("data-lang-btn"));
+    });
+  });
+
+  const savedLang = localStorage.getItem("siteLanguage") || "de";
+  switchLanguage(savedLang);
+  renderGallery();
 </script>
 
 </body>

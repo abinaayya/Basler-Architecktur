@@ -3,7 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Markthalle – BAULINIE Basel</title>
+  <title id="pageTitle"
+    data-de="Markthalle – BAULINIE Basel"
+    data-en="Market Hall – BAULINIE Basel"
+    data-fr="Halle du Marché – BAULINIE Basel">
+    Markthalle – BAULINIE Basel
+  </title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
@@ -15,40 +20,96 @@
     <div class="logo">BAULINIE Basel</div>
 
     <nav class="nav-links">
-      <a href="index.html" class="nav-link">Home</a>
-      <a href="zeitstrahl.html" class="nav-link">Zeitstrahl</a>
-      <a href="karte.html" class="nav-link">Karte</a>
-      <a href="wir.html" class="nav-link">Projekt</a>
+      <a href="index.html" class="nav-link"
+         data-de="Home"
+         data-en="Home"
+         data-fr="Accueil">Home</a>
+
+      <a href="zeitstrahl.html" class="nav-link"
+         data-de="Zeitstrahl"
+         data-en="Timeline"
+         data-fr="Chronologie">Zeitstrahl</a>
+
+      <a href="karte.html" class="nav-link"
+         data-de="Karte"
+         data-en="Map"
+         data-fr="Carte">Karte</a>
+
+      <a href="wir.html" class="nav-link"
+         data-de="Projekt"
+         data-en="Project"
+         data-fr="Projet">Projekt</a>
 
       <details class="dropdown">
-        <summary class="dropbtn">Bauwerke ▾</summary>
+        <summary class="dropbtn"
+                 data-de="Bauwerke ▾"
+                 data-en="Buildings ▾"
+                 data-fr="Bâtiments ▾">Bauwerke ▾</summary>
         <div class="dropdown-content">
-          <a href="elisabethen.html">1864 · Elisabethenkirche</a>
-          <a href="markthalle.html">1929 · Markthalle</a>
-          <a href="messe.html">2013 · Messe</a>
-          <a href="kunstmuseum.html">2016 · Kunstmuseum</a>
-          <a href="weinlager.html">2023 · Weinlager</a>
-          <a href="novartis.html">2022 · Novartis Campus</a>
+          <a href="elisabethen.html"
+             data-de="Elisabethenkirche"
+             data-en="Elisabethenkirche"
+             data-fr="Église Sainte-Elisabeth">Elisabethenkirche</a>
+          <a href="markthalle.html"
+             data-de="Markthalle"
+             data-en="Market Hall"
+             data-fr="Halle du Marché">Markthalle</a>
+          <a href="messe.html"
+             data-de="Messe"
+             data-en="Messe"
+             data-fr="Messe">Messe</a>
+          <a href="kunstmuseum.html"
+             data-de="Kunstmuseum"
+             data-en="Art Museum"
+             data-fr="Musée des Beaux-Arts">Kunstmuseum</a>
+          <a href="novartis.html"
+             data-de="Novartis Campus"
+             data-en="Novartis Campus"
+             data-fr="Campus Novartis">Novartis Campus</a>
+          <a href="weinlager.html"
+             data-de="Weinlager"
+             data-en="Weinlager"
+             data-fr="Weinlager">Weinlager</a>
         </div>
       </details>
 
-      <a href="Quellen.html" class="nav-link">Verzeichnis</a>
+      <a href="Quellen.html" class="nav-link"
+         data-de="Verzeichnis"
+         data-en="Sources"
+         data-fr="Sources">Verzeichnis</a>
+
+      <div class="lang-switch">
+        <button type="button" class="lang-btn active" data-lang-btn="de">DE</button>
+        <button type="button" class="lang-btn" data-lang-btn="en">EN</button>
+        <button type="button" class="lang-btn" data-lang-btn="fr">FR</button>
+      </div>
     </nav>
   </div>
 </header>
 
-<!-- HERO -->
 <section class="page-hero" style="background-image:url('markthalle_1.jpg');">
   <div class="page-hero__overlay"></div>
 
   <div class="page-hero__inner">
-    <h1 class="page-hero__title">
-      Markthalle<br>
-      <span class="page-hero__city">Basel</span>
+    <h1 class="page-hero__title"
+        data-de="Markthalle"
+        data-en="Market Hall"
+        data-fr="Halle du Marché">
+      Markthalle
     </h1>
 
-    <p class="page-hero__subtitle">
-      Städtischer Treffpunkt: Genuss, Kultur und Architektur unter einem Dach
+    <div class="page-hero__city"
+         data-de="Basel"
+         data-en="Basel"
+         data-fr="Bâle">
+      Basel
+    </div>
+
+    <p class="page-hero__subtitle"
+       data-de="Städtischer Treffpunkt für Genuss, Kultur und Architektur unter einem Dach."
+       data-en="An urban meeting place for gastronomy, culture and architecture under one roof."
+       data-fr="Un lieu de rencontre urbain où se rejoignent gastronomie, culture et architecture sous un même toit.">
+      Städtischer Treffpunkt für Genuss, Kultur und Architektur unter einem Dach.
     </p>
   </div>
 </section>
@@ -57,81 +118,149 @@
   <section class="page-section">
     <div class="container">
 
-      <!-- Steckbrief -->
       <div class="facts">
         <div class="fact">
-          <div class="fact__label">Baujahr</div>
-          <div class="fact__value">1929</div>
+          <div class="fact__label"
+               data-de="Baujahr"
+               data-en="Year of construction"
+               data-fr="Année de construction">
+            Baujahr
+          </div>
+          <div class="fact__value">1929 [11]</div>
         </div>
         <div class="fact">
-          <div class="fact__label">Umbau</div>
-          <div class="fact__value">2007 bis 2011</div>
+          <div class="fact__label"
+               data-de="Umbau"
+               data-en="Renovation"
+               data-fr="Transformation">
+            Umbau
+          </div>
+          <div class="fact__value"
+               data-de="2007 bis 2011 [11]"
+               data-en="2007 to 2011 [11]"
+               data-fr="2007 à 2011 [11]">
+            2007 bis 2011
+          </div>
         </div>
       </div>
 
-      <!-- NUTZUNG -->
-      <h2 class="h2">Nutzung</h2>
+      <h2 class="h2"
+          data-de="Nutzung"
+          data-en="Use"
+          data-fr="Usage">
+        Nutzung
+      </h2>
 
-      <p class="p">
-        Nach der Fertigstellung der Markthalle im Jahr 1929 diente sie jahrzehntelang als Engros-Markt für den Basler Handel und die Gastronomie. Im Jahr 2004 musste der Grossmarkt der Markthalle schliessen, da sich die Liefer- und Vertriebswege verändert hatten. Früher kauften Restaurants und Geschäfte ihre Ware direkt in der Markthalle ein. Allerdings veränderte sich die Distributionslandschaft rasant, sodass der Betrieb der Markthalle wirtschaftlich nicht mehr rentabel war.
-     </p>
-
-      <p class="p">
-        Nach dem Umbau, der von 2007 bis 2011 dauerte, wird die Markthalle heute als vielseitiger öffentlicher Markt-, Begegnungs- und Kulturort genutzt. Somit übernimmt sie eine zentrale Funktion in der städtischen Lebensmittelversorgung und dient zugleich als sozialer Treffpunkt. Allerdings war dies nicht der ursprüngliche Plan des privaten Investors, der die Liegenschaft der Markthalle vom Kanton Basel-Stadt kaufte. Denn dieser sanierte das unter Denkmalschutz stehende Gebäude mit dem Ziel, es in ein Shoppingcenter zu verwandeln [11].
+      <p class="p"
+         data-de="Nach ihrer Fertigstellung im Jahr 1929 diente die Markthalle während Jahrzehnten als Engros-Markt für den Basler Handel und die Gastronomie. Im Jahr 2004 musste der Grossmarkt schliessen, weil sich Liefer- und Vertriebswege grundlegend verändert hatten. Früher bezogen Restaurants und Geschäfte ihre Waren direkt in der Markthalle; mit dem Wandel der Distributionsstrukturen verlor dieses Modell jedoch seine wirtschaftliche Tragfähigkeit."
+         data-en="After its completion in 1929, the Market Hall served for decades as a wholesale market for Basel’s trade and gastronomy. In 2004, the wholesale market had to close because delivery and distribution systems had fundamentally changed. In earlier times, restaurants and shops obtained their goods directly in the Market Hall, but with the transformation of distribution structures, this model lost its economic viability."
+         data-fr="Après son achèvement en 1929, la Halle du Marché a servi pendant des décennies de marché de gros pour le commerce et la gastronomie bâlois. En 2004, ce marché de gros a dû fermer, car les circuits de livraison et de distribution avaient profondément changé. Autrefois, les restaurants et les magasins se fournissaient directement dans la Halle du Marché, mais avec l’évolution des structures de distribution, ce modèle a perdu sa viabilité économique.">
+        Nach ihrer Fertigstellung im Jahr 1929 diente die Markthalle während Jahrzehnten als Engros-Markt für den Basler Handel und die Gastronomie. Im Jahr 2004 musste der Grossmarkt schliessen, weil sich Liefer- und Vertriebswege grundlegend verändert hatten. Früher bezogen Restaurants und Geschäfte ihre Waren direkt in der Markthalle; mit dem Wandel der Distributionsstrukturen verlor dieses Modell jedoch seine wirtschaftliche Tragfähigkeit.
       </p>
 
-      <!-- Bild: Innen (bei Nutzung) -->
+      <p class="p"
+         data-de="Nach dem Umbau von 2007 bis 2011 wird die Markthalle heute als vielseitiger öffentlicher Markt-, Begegnungs- und Kulturort genutzt. Sie übernimmt damit einerseits eine Funktion innerhalb der städtischen Lebensmittelversorgung und dient andererseits als sozialer Treffpunkt. Bemerkenswert ist, dass diese Entwicklung nicht der ursprünglichen Absicht des privaten Investors entsprach, der die Liegenschaft vom Kanton Basel-Stadt kaufte und das denkmalgeschützte Gebäude zunächst in ein Shoppingcenter umwandeln wollte [11]."
+         data-en="Following its renovation from 2007 to 2011, the Market Hall is now used as a versatile public place for markets, encounters and culture. On the one hand, it assumes a role within the city’s food supply; on the other, it serves as a social meeting place. It is noteworthy that this development did not correspond to the original intention of the private investor who bought the property from the Canton of Basel-Stadt and initially wanted to convert the listed building into a shopping centre [11]."
+         data-fr="À la suite de sa transformation entre 2007 et 2011, la Halle du Marché est aujourd’hui utilisée comme lieu public polyvalent consacré au marché, à la rencontre et à la culture. D’une part, elle remplit une fonction dans l’approvisionnement alimentaire de la ville ; d’autre part, elle constitue un lieu de rencontre social. Il est remarquable que cette évolution ne correspondait pas à l’intention première de l’investisseur privé ayant acquis l’immeuble auprès du canton de Bâle-Ville, qui souhaitait d’abord transformer ce bâtiment protégé en centre commercial [11].">
+        Nach dem Umbau von 2007 bis 2011 wird die Markthalle heute als vielseitiger öffentlicher Markt-, Begegnungs- und Kulturort genutzt. Sie übernimmt damit einerseits eine Funktion innerhalb der städtischen Lebensmittelversorgung und dient andererseits als sozialer Treffpunkt. Bemerkenswert ist, dass diese Entwicklung nicht der ursprünglichen Absicht des privaten Investors entsprach, der die Liegenschaft vom Kanton Basel-Stadt kaufte und das denkmalgeschützte Gebäude zunächst in ein Shoppingcenter umwandeln wollte [11].
+      </p>
+
       <figure class="figure">
         <img class="figure__img" src="markthalle_4.jpg" alt="Markthalle Basel – Innenansicht">
-        <figcaption class="figure__cap">Innenraum der Markthalle: Markt- und Begegnungsort mit langen Tischreihen und verschiedenen Essensständen.</figcaption>
+        <figcaption class="figure__cap"
+                    data-de="Innenraum der Markthalle: Markt- und Begegnungsort mit langen Tischreihen und verschiedenen Essensständen. Foto: Abinaya Sureshkumar"
+                    data-en="Interior of the Market Hall: a place of market activity and social encounter with long tables and different food stands. Photo: Abinaya Sureshkumar"
+                    data-fr="Intérieur de la Halle du Marché : un lieu de marché et de rencontre avec de longues tables et différents stands de nourriture. Photo: Abinaya Sureshkumar">
+          Innenraum der Markthalle: Markt- und Begegnungsort mit langen Tischreihen und verschiedenen Essensständen.
+        </figcaption>
       </figure>
 
-      <p class="p">
-        Im Jahr 2011 wurde die Markthalle an CSA Real Estate Switzerland verkauft, eine Tochtergesellschaft der Crédit Suisse Anlagestiftung. Ziel war es, die Markthalle mit einem neuen Nutzungskonzept wiederzubeleben. Ab Oktober 2013 arbeitete das Team gemeinsam mit der Basler Architektin Barbara Buser an der Umgestaltung. Dabei wurden unter anderem Marktstände und Gastronomiebetriebe eingerichtet, um die Markthalle wieder zu einem lebendigen Marktplatz und Treffpunkt zu machen.
+      <p class="p"
+         data-de="Im Jahr 2011 wurde die Markthalle an CSA Real Estate Switzerland verkauft, eine Tochtergesellschaft der Crédit Suisse Anlagestiftung. Ziel war es, die Markthalle mit einem neuen Nutzungskonzept wiederzubeleben. Ab Oktober 2013 arbeitete das Team gemeinsam mit der Basler Architektin Barbara Buser an der Umgestaltung. Dabei wurden unter anderem Marktstände und Gastronomiebetriebe eingerichtet, um die Markthalle erneut zu einem lebendigen Marktplatz und Treffpunkt zu machen."
+         data-en="In 2011, the Market Hall was sold to CSA Real Estate Switzerland, a subsidiary of the Crédit Suisse investment foundation. The aim was to revive the Market Hall through a new concept of use. From October 2013 onwards, the team worked together with the Basel architect Barbara Buser on the transformation. Among other measures, market stands and gastronomy businesses were installed in order to re-establish the Market Hall as a lively marketplace and meeting point."
+         data-fr="En 2011, la Halle du Marché a été vendue à CSA Real Estate Switzerland, une filiale de la fondation d’investissement Crédit Suisse. L’objectif était de redonner vie à la Halle du Marché grâce à un nouveau concept d’utilisation. À partir d’octobre 2013, l’équipe a travaillé avec l’architecte bâloise Barbara Buser à sa transformation. Des stands de marché et des espaces de restauration ont notamment été aménagés afin de faire redevenir la Halle du Marché un lieu vivant de marché et de rencontre.">
+        Im Jahr 2011 wurde die Markthalle an CSA Real Estate Switzerland verkauft, eine Tochtergesellschaft der Crédit Suisse Anlagestiftung. Ziel war es, die Markthalle mit einem neuen Nutzungskonzept wiederzubeleben. Ab Oktober 2013 arbeitete das Team gemeinsam mit der Basler Architektin Barbara Buser an der Umgestaltung. Dabei wurden unter anderem Marktstände und Gastronomiebetriebe eingerichtet, um die Markthalle erneut zu einem lebendigen Marktplatz und Treffpunkt zu machen.
       </p>
 
-      <p class="p">
-        Im Jahr 2016 wechselte der Besitzer der Markthalle erneut. Die Edith Maryon AG, eine Tochtergesellschaft der gemeinnuetzigen Stiftung Edith Maryon, kaufte die Markthalle, um sie langfristig als oeffentlichen Kultur- und Begegnungsort zu sichern und vor Immobilienspekulation zu schuetzen [12].
-     </p>
-
-      <p class="p">
-        Die zentralen Elemente des Konzepts der Markthalle Basel sind die Gastronomie, Ladenlokale/Produktionsstaetten, Maerkte, oeffentliche kulturelle Veranstaltungen und Innovationen [13].
+      <p class="p"
+         data-de="2016 wechselte die Markthalle erneut den Besitzer. Die Edith Maryon AG, eine Tochtergesellschaft der gemeinnützigen Stiftung Edith Maryon, erwarb das Gebäude, um es langfristig als öffentlichen Kultur- und Begegnungsort zu sichern und vor Immobilienspekulation zu schützen [12]."
+         data-en="In 2016, the Market Hall changed ownership once again. Edith Maryon AG, a subsidiary of the non-profit Edith Maryon Foundation, acquired the building in order to secure it in the long term as a public place for culture and encounters and to protect it from real-estate speculation [12]."
+         data-fr="En 2016, la Halle du Marché a de nouveau changé de propriétaire. Edith Maryon AG, filiale de la fondation d’utilité publique Edith Maryon, a acquis le bâtiment afin d’en garantir durablement la vocation de lieu public de culture et de rencontre et de le protéger contre la spéculation immobilière [12].">
+        2016 wechselte die Markthalle erneut den Besitzer. Die Edith Maryon AG, eine Tochtergesellschaft der gemeinnützigen Stiftung Edith Maryon, erwarb das Gebäude, um es langfristig als öffentlichen Kultur- und Begegnungsort zu sichern und vor Immobilienspekulation zu schützen [12].
       </p>
 
-      <!-- Bild 1: Konzepte -->
+      <p class="p"
+         data-de="Zu den zentralen Elementen des heutigen Konzepts der Markthalle Basel zählen Gastronomie, Ladenlokale und Produktionsstätten, Märkte, öffentliche kulturelle Veranstaltungen sowie Innovationen [13]."
+         data-en="The central elements of the current concept of Markthalle Basel include gastronomy, retail and production spaces, markets, public cultural events and innovation [13]."
+         data-fr="Les éléments centraux du concept actuel de la Halle du Marché de Bâle comprennent la gastronomie, des commerces et ateliers de production, des marchés, des manifestations culturelles publiques ainsi que l’innovation [13].">
+        Zu den zentralen Elementen des heutigen Konzepts der Markthalle Basel zählen Gastronomie, Ladenlokale und Produktionsstätten, Märkte, öffentliche kulturelle Veranstaltungen sowie Innovationen [13].
+      </p>
+
       <figure class="figure figure--wide">
         <img class="figure__img" src="markthalle_7.jpg" alt="Die zentralen Konzepte der Markthalle">
-        <figcaption class="figure__cap">Bild 1: Die zentralen Konzepte der Markthalle</figcaption>
+        <figcaption class="figure__cap"
+                    data-de="Bild 1: Die zentralen Konzepte der Markthalle (https://altemarkthalle.ch/wp-content/uploads/2022/05/Leitbild22.pdf)."
+                    data-en="Figure 1: The central concepts of the Market Hall. (https://altemarkthalle.ch/wp-content/uploads/2022/05/Leitbild22.pdf)"
+                    data-fr="Figure 1 : Les concepts centraux de la Halle du Marché. (https://altemarkthalle.ch/wp-content/uploads/2022/05/Leitbild22.pdf)">
+          Bild 1: Die zentralen Konzepte der Markthalle.
+        </figcaption>
       </figure>
 
-      <!-- NACHHALTIGKEIT -->
-      <h2 class="h2">Nachhaltigkeit</h2>
+      <h2 class="h2"
+          data-de="Nachhaltigkeit"
+          data-en="Sustainability"
+          data-fr="Durabilité">
+        Nachhaltigkeit
+      </h2>
 
-      <p class="p">
-      Der Bezug zur Nachhaltigkeit wird in der Markthalle in vielerlei Hinsicht sichtbar. Die soziale Nachhaltigkeit zeigt sich darin, dass faire Produktionsbedingungen unterstuetzt werden, gerechte Sozialstrukturen gefoerdert und Diversitaet gelebt wird. Zudem bietet die Markthalle einen offenen Treffpunkt fuer Begegnung, Austausch und Kultur, wodurch Gemeinschaft und Integration gestaerkt werden. Die Markthalle liegt auch zentral in der Stadt Basel und ist somit auch gut erreichbar mit oeffentlichen Verkehrsmitteln, dem Fahrrad oder zu Fuss.
+      <p class="p"
+         data-de="Der Bezug zur Nachhaltigkeit wird in der Markthalle auf vielfältige Weise sichtbar. Soziale Nachhaltigkeit zeigt sich darin, dass faire Produktionsbedingungen unterstützt, gerechte Sozialstrukturen gefördert und Diversität gelebt werden. Zugleich bietet die Markthalle einen offenen Treffpunkt für Begegnung, Austausch und Kultur, wodurch Gemeinschaft und Integration gestärkt werden. Aufgrund ihrer zentralen Lage in Basel ist sie zudem gut mit dem öffentlichen Verkehr, mit dem Fahrrad oder zu Fuss erreichbar."
+         data-en="The relationship to sustainability becomes visible in the Market Hall in many different ways. Social sustainability is reflected in the support of fair production conditions, the promotion of equitable social structures and the active practice of diversity. At the same time, the Market Hall offers an open place for encounter, exchange and culture, thereby strengthening community and integration. Owing to its central location in Basel, it is also easily accessible by public transport, bicycle or on foot."
+         data-fr="Le lien avec la durabilité se manifeste de multiples façons dans la Halle du Marché. La durabilité sociale apparaît dans le soutien apporté à des conditions de production équitables, dans la promotion de structures sociales justes et dans la diversité vécue au quotidien. En même temps, la Halle du Marché offre un lieu de rencontre, d’échange et de culture ouvert à toutes et à tous, renforçant ainsi la communauté et l’intégration. Grâce à sa situation centrale à Bâle, elle est en outre facilement accessible en transports publics, à vélo ou à pied.">
+        Der Bezug zur Nachhaltigkeit wird in der Markthalle auf vielfältige Weise sichtbar. Soziale Nachhaltigkeit zeigt sich darin, dass faire Produktionsbedingungen unterstützt, gerechte Sozialstrukturen gefördert und Diversität gelebt werden. Zugleich bietet die Markthalle einen offenen Treffpunkt für Begegnung, Austausch und Kultur, wodurch Gemeinschaft und Integration gestärkt werden. Aufgrund ihrer zentralen Lage in Basel ist sie zudem gut mit dem öffentlichen Verkehr, mit dem Fahrrad oder zu Fuss erreichbar.
       </p>
 
-      <p class="p">
-        Die Markthalle Basel steht zudem auch fuer nachhaltige Lebensmittelproduktion und -vermarktung. Oekologisch foerdern sie umweltfreundliche Produktionsverfahren, den Erhalt von Sortenvielfalt in der Landwirtschaft und kurze, ressourcenschonende Lieferketten.
+      <p class="p"
+         data-de="Die Markthalle Basel steht darüber hinaus für nachhaltige Lebensmittelproduktion und -vermarktung. In ökologischer Hinsicht fördert sie umweltfreundliche Produktionsverfahren, den Erhalt von Sortenvielfalt in der Landwirtschaft sowie kurze und ressourcenschonende Lieferketten."
+         data-en="In addition, Markthalle Basel stands for sustainable food production and marketing. From an ecological point of view, it promotes environmentally friendly production methods, the preservation of agricultural biodiversity and short, resource-efficient supply chains."
+         data-fr="En outre, la Halle du Marché de Bâle représente une production et une commercialisation alimentaires durables. Sur le plan écologique, elle favorise des procédés de production respectueux de l’environnement, la préservation de la diversité variétale dans l’agriculture ainsi que des chaînes d’approvisionnement courtes et économes en ressources.">
+        Die Markthalle Basel steht darüber hinaus für nachhaltige Lebensmittelproduktion und -vermarktung. In ökologischer Hinsicht fördert sie umweltfreundliche Produktionsverfahren, den Erhalt von Sortenvielfalt in der Landwirtschaft sowie kurze und ressourcenschonende Lieferketten.
       </p>
 
-      <p class="p">
-      Auch die oekonomische Nachhaltigkeit ist in dieser Markthalle zu erkennen, denn die Markthalle handelt nach dem Prinzip der Suffizienz. Dies bedeutet, dass die Gewinne nicht ausgeschuettet werden, sondern in den Betrieb, die Pflege des Gebaeudes und die Weiterentwicklung der Angebote reinvestiert werden [13].
+      <p class="p"
+         data-de="Auch ökonomische Nachhaltigkeit ist in der Markthalle erkennbar. Sie folgt dem Prinzip der Suffizienz: Gewinne werden nicht ausgeschüttet, sondern in den Betrieb, den Erhalt des Gebäudes und die Weiterentwicklung der Angebote reinvestiert [13]."
+         data-en="Economic sustainability is also evident in the Market Hall. It follows the principle of sufficiency: profits are not distributed, but reinvested in operations, the upkeep of the building and the further development of the offerings [13]."
+         data-fr="La durabilité économique est également perceptible dans la Halle du Marché. Elle suit le principe de suffisance : les bénéfices ne sont pas distribués, mais réinvestis dans l’exploitation, l’entretien du bâtiment et le développement continu des offres [13].">
+        Auch ökonomische Nachhaltigkeit ist in der Markthalle erkennbar. Sie folgt dem Prinzip der Suffizienz: Gewinne werden nicht ausgeschüttet, sondern in den Betrieb, den Erhalt des Gebäudes und die Weiterentwicklung der Angebote reinvestiert [13].
       </p>
 
-      <!-- ARCHITEKTUR -->
-      <h2 class="h2">Architektonische Bedeutung</h2>
+      <h2 class="h2"
+          data-de="Architektonische Bedeutung"
+          data-en="Architectural significance"
+          data-fr="Importance architecturale">
+        Architektonische Bedeutung
+      </h2>
 
-      <p class="p">
-        Die Markthalle Basel wurde 1929 gebaut und ist architektonisch vor allem wegen ihrer aussergewoehnlichen Kuppelkonstruktion bedeutend. Das achteckige Schalengewoelbe aus Stahlbeton hat eine Spannweite von rund 60 Metern und erreicht eine Hoehe von etwa 27 Metern. Zur Zeit der Errichtung zaehlte die Halle als das drittgroesste Stahlbetonkuppelbauwerk der Welt. Somit galt sie als ein Pionierbau des Stahlbetons [12] [14] [15].
+      <p class="p"
+         data-de="Die Markthalle Basel wurde 1929 errichtet und ist architektonisch vor allem wegen ihrer aussergewöhnlichen Kuppelkonstruktion von Bedeutung. Das achteckige Schalengewölbe aus Stahlbeton weist eine Spannweite von rund 60 Metern auf und erreicht eine Höhe von etwa 27 Metern. Zur Zeit ihrer Entstehung galt die Halle als drittgrösstes Stahlbetonkuppelbauwerk der Welt und damit als Pionierbau des Stahlbetons [12] [14] [15]."
+         data-en="Markthalle Basel was built in 1929 and is of particular architectural significance because of its extraordinary dome construction. The octagonal reinforced-concrete shell vault spans around 60 metres and reaches a height of approximately 27 metres. At the time of its construction, the hall was considered the third-largest reinforced-concrete dome structure in the world and thus a pioneering achievement in reinforced-concrete architecture [12] [14] [15]."
+         data-fr="La Halle du Marché de Bâle a été construite en 1929 et revêt une importance architecturale particulière en raison de sa construction en coupole exceptionnelle. La voûte octogonale en coque de béton armé présente une portée d’environ 60 mètres et atteint une hauteur d’environ 27 mètres. Au moment de sa construction, la halle était considérée comme la troisième plus grande coupole en béton armé du monde et représentait ainsi un ouvrage pionnier du béton armé [12] [14] [15].">
+        Die Markthalle Basel wurde 1929 errichtet und ist architektonisch vor allem wegen ihrer aussergewöhnlichen Kuppelkonstruktion von Bedeutung. Das achteckige Schalengewölbe aus Stahlbeton weist eine Spannweite von rund 60 Metern auf und erreicht eine Höhe von etwa 27 Metern. Zur Zeit ihrer Entstehung galt die Halle als drittgrösstes Stahlbetonkuppelbauwerk der Welt und damit als Pionierbau des Stahlbetons [12] [14] [15].
       </p>
 
-      <p class="p">
-        Zudem ist die Lage ein entscheidendes Element fuer die architektonische Bedeutung der Markthalle. Die Halle befindet sich in unmittelbarer Naehe des Bahnhof Basel SBB, einem der wichtigsten Verkehrsknotenpunkte der Schweiz. Dank dieser zentralen Position ist die Markthalle optimal an den oeffentlichen Verkehr angebunden. Die staedtische Lage im Zentrum von Basel macht sie zudem gut zu Fuss und mit dem Fahrrad erreichbar. Die charakteristische Kuppel der Markthalle ist bereits vom Bahnhof aus sichtbar und dient als Orientierungspunkt im Stadtbild. Dadurch erfuellt die Markthalle nicht nur die funktionale Rolle als Markt- und Begegnungsort, sondern praegt auch als Bauwerk die zentrale staedtische Umgebung.
+      <p class="p"
+         data-de="Auch ihre Lage ist ein zentrales Element ihrer architektonischen Bedeutung. Die Markthalle befindet sich in unmittelbarer Nähe des Bahnhofs Basel SBB, einem der wichtigsten Verkehrsknotenpunkte der Schweiz. Dank dieser zentralen Position ist sie optimal an den öffentlichen Verkehr angebunden und auch zu Fuss oder mit dem Fahrrad gut erreichbar. Die charakteristische Kuppel ist bereits vom Bahnhof aus sichtbar und fungiert als markanter Orientierungspunkt im Stadtbild. Damit erfüllt die Markthalle nicht nur eine funktionale Rolle als Markt- und Begegnungsort, sondern prägt auch die städtische Umgebung als eigenständiges architektonisches Zeichen."
+         data-en="Its location is also a central element of its architectural significance. The Market Hall stands in the immediate vicinity of Basel SBB railway station, one of the most important transport hubs in Switzerland. Thanks to this central position, it is ideally connected to public transport and is also easily accessible on foot or by bicycle. Its characteristic dome is already visible from the station and serves as a striking landmark in the urban landscape. In this way, the Market Hall not only fulfils a functional role as a place of market activity and encounter, but also shapes the urban environment as an architectural sign in its own right."
+         data-fr="Sa situation constitue également un élément central de son importance architecturale. La Halle du Marché se trouve à proximité immédiate de la gare de Bâle CFF, l’un des principaux nœuds de transport de Suisse. Grâce à cette position centrale, elle est parfaitement reliée aux transports publics et facilement accessible à pied ou à vélo. Sa coupole caractéristique est visible dès la gare et agit comme un repère marquant dans le paysage urbain. Ainsi, la Halle du Marché ne remplit pas seulement une fonction de marché et de lieu de rencontre, mais façonne aussi l’environnement urbain comme un signe architectural à part entière.">
+        Auch ihre Lage ist ein zentrales Element ihrer architektonischen Bedeutung. Die Markthalle befindet sich in unmittelbarer Nähe des Bahnhofs Basel SBB, einem der wichtigsten Verkehrsknotenpunkte der Schweiz. Dank dieser zentralen Position ist sie optimal an den öffentlichen Verkehr angebunden und auch zu Fuss oder mit dem Fahrrad gut erreichbar. Die charakteristische Kuppel ist bereits vom Bahnhof aus sichtbar und fungiert als markanter Orientierungspunkt im Stadtbild. Damit erfüllt die Markthalle nicht nur eine funktionale Rolle als Markt- und Begegnungsort, sondern prägt auch die städtische Umgebung als eigenständiges architektonisches Zeichen.
       </p>
 
-      <!-- Galerie -->
-      <h2 class="h2">Bilder</h2>
+      <h2 class="h2"
+          data-de="Bilder"
+          data-en="Images"
+          data-fr="Images">
+        Bilder
+      </h2>
 
       <div class="gallery" aria-label="Bildergalerie Markthalle">
         <button class="gallery__btn" type="button" id="prevImg" aria-label="Vorheriges Bild">←</button>
@@ -145,8 +274,19 @@
       </div>
 
       <div class="pager">
-        <a class="pager__link" href="elisabethen.html">← Elisabethenkirche</a>
-        <a class="pager__link" href="messe.html">Messe →</a>
+        <a class="pager__link" href="elisabethen.html"
+           data-de="← Elisabethenkirche"
+           data-en="← Elisabethenkirche"
+           data-fr="← Église Sainte-Elisabeth">
+          ← Elisabethenkirche
+        </a>
+
+        <a class="pager__link" href="messe.html"
+           data-de="Messe →"
+           data-en="Messe →"
+           data-fr="Messe →">
+          Messe →
+        </a>
       </div>
 
     </div>
@@ -154,34 +294,100 @@
 </main>
 
 <script>
-  // Kleine Galerie (lokal, ohne externe Dienste)
   const items = [
-    { src: "markthalle_1.jpg", cap: "Markthalle – Aussenansicht." },
-    { src: "markthalle_2.jpg", cap: "Unter der Kuppel – Raumwirkung im Inneren." },
-    { src: "markthalle_3.jpg", cap: "Markt & Gastronomie – Nutzung als Treffpunkt." },
-    { src: "markthalle_5.jpg", cap: "Haupteingang der Markthalle Basel (Aussenansicht)." },
-    { src: "markthalle_6.jpg", cap: "Hinterer Ausgang der Markthalle Basel" },
+    {
+      src: "markthalle_1.jpg",
+      cap: {
+        de: "Markthalle – Aussenansicht. Foto: Abinaya Sureshkumar",
+        en: "Market Hall – exterior view. Photo: Abinaya Sureshkumar",
+        fr: "Halle du Marché – vue extérieure. Photo: Abinaya Sureshkumar"
+      }
+    },
+    {
+      src: "markthalle_2.jpg",
+      cap: {
+        de: "Unter der Kuppel – räumliche Wirkung im Inneren. Foto: Abinaya Sureshkumar",
+        en: "Under the dome – spatial atmosphere in the interior. Photo: Abinaya Sureshkumar",
+        fr: "Sous la coupole – effet spatial à l’intérieur. Photo: Abinaya Sureshkumar"
+      }
+    },
+    {
+      src: "markthalle_3.jpg",
+      cap: {
+        de: "Markt und Gastronomie – die Markthalle als Treffpunkt. Foto: Abinaya Sureshkumar",
+        en: "Market and gastronomy – the Market Hall as a meeting place. Photo: Abinaya Sureshkumar",
+        fr: "Marché et gastronomie – la Halle du Marché comme lieu de rencontre. Photo: Abinaya Sureshkumar"
+      }
+    },
+    {
+      src: "markthalle_5.jpg",
+      cap: {
+        de: "Haupteingang der Markthalle Basel. Foto: Abinaya Sureshkumar",
+        en: "Main entrance of Markthalle Basel. Photo: Abinaya Sureshkumar",
+        fr: "Entrée principale de la Halle du Marché de Bâle. Photo: Abinaya Sureshkumar"
+      }
+    },
+    {
+      src: "markthalle_6.jpg",
+      cap: {
+        de: "Hinterer Ausgang der Markthalle Basel. Foto: Abinaya Sureshkumar",
+        en: "Rear exit of Markthalle Basel. Photo: Abinaya Sureshkumar",
+        fr: "Sortie arrière de la Halle du Marché de Bâle. Photo: Abinaya Sureshkumar"
+      }
+    }
   ];
 
   let i = 0;
   const imgEl = document.getElementById("galleryImg");
   const capEl = document.getElementById("galleryCap");
 
-  function render() {
+  function renderGallery() {
+    const lang = localStorage.getItem("siteLanguage") || "de";
     imgEl.src = items[i].src;
-    imgEl.alt = items[i].cap;
-    capEl.textContent = items[i].cap;
+    imgEl.alt = items[i].cap[lang];
+    capEl.textContent = items[i].cap[lang];
   }
 
   document.getElementById("prevImg").addEventListener("click", () => {
     i = (i - 1 + items.length) % items.length;
-    render();
+    renderGallery();
   });
 
   document.getElementById("nextImg").addEventListener("click", () => {
     i = (i + 1) % items.length;
-    render();
+    renderGallery();
   });
+
+  function switchLanguage(lang) {
+    document.querySelectorAll("[data-de][data-en][data-fr]").forEach(el => {
+      el.textContent = el.getAttribute("data-" + lang);
+    });
+
+    const pageTitle = document.getElementById("pageTitle");
+    if (pageTitle) {
+      document.title = pageTitle.getAttribute("data-" + lang);
+    }
+
+    document.documentElement.lang = lang;
+    localStorage.setItem("siteLanguage", lang);
+
+    document.querySelectorAll("[data-lang-btn]").forEach(btn => {
+      btn.classList.toggle("active", btn.getAttribute("data-lang-btn") === lang);
+    });
+
+    renderGallery();
+  }
+
+  document.querySelectorAll("[data-lang-btn]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      switchLanguage(btn.getAttribute("data-lang-btn"));
+    });
+  });
+
+  const savedLang = localStorage.getItem("siteLanguage") || "de";
+  switchLanguage(savedLang);
+  renderGallery();
 </script>
+
 </body>
 </html>
