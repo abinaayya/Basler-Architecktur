@@ -3,7 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Messe Basel – BAULINIE Basel</title>
+  <title id="pageTitle"
+    data-de="Messe Basel – BAULINIE Basel"
+    data-en="Messe Basel – BAULINIE Basel"
+    data-fr="Messe Bâle – BAULINIE Basel">
+    Messe Basel – BAULINIE Basel
+  </title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
@@ -15,40 +20,96 @@
     <div class="logo">BAULINIE Basel</div>
 
     <nav class="nav-links">
-      <a href="index.html" class="nav-link">Home</a>
-      <a href="zeitstrahl.html" class="nav-link">Zeitstrahl</a>
-      <a href="karte.html" class="nav-link">Karte</a>
-      <a href="wir.html" class="nav-link">Projekt</a>
+      <a href="index.html" class="nav-link"
+         data-de="Home"
+         data-en="Home"
+         data-fr="Accueil">Home</a>
+
+      <a href="zeitstrahl.html" class="nav-link"
+         data-de="Zeitstrahl"
+         data-en="Timeline"
+         data-fr="Chronologie">Zeitstrahl</a>
+
+      <a href="karte.html" class="nav-link"
+         data-de="Karte"
+         data-en="Map"
+         data-fr="Carte">Karte</a>
+
+      <a href="wir.html" class="nav-link"
+         data-de="Projekt"
+         data-en="Project"
+         data-fr="Projet">Projekt</a>
 
       <details class="dropdown">
-        <summary class="dropbtn">Bauwerke ▾</summary>
+        <summary class="dropbtn"
+                 data-de="Bauwerke ▾"
+                 data-en="Buildings ▾"
+                 data-fr="Bâtiments ▾">Bauwerke ▾</summary>
         <div class="dropdown-content">
-          <a href="elisabethen.html">Elisabethenkirche</a>
-          <a href="markthalle.html">Markthalle</a>
-          <a href="messe.html">Messe</a>
-          <a href="kunstmuseum.html">Kunstmuseum</a>
-          <a href="novartis.html">Novartis Campus</a>
-          <a href="weinlager.html">Weinlager</a>
+          <a href="elisabethen.html"
+             data-de="Elisabethenkirche"
+             data-en="Elisabethenkirche"
+             data-fr="Église Sainte-Elisabeth">Elisabethenkirche</a>
+          <a href="markthalle.html"
+             data-de="Markthalle"
+             data-en="Market Hall"
+             data-fr="Halle du Marché">Markthalle</a>
+          <a href="messe.html"
+             data-de="Messe"
+             data-en="Messe"
+             data-fr="Messe">Messe</a>
+          <a href="kunstmuseum.html"
+             data-de="Kunstmuseum"
+             data-en="Art Museum"
+             data-fr="Musée des Beaux-Arts">Kunstmuseum</a>
+          <a href="novartis.html"
+             data-de="Novartis Campus"
+             data-en="Novartis Campus"
+             data-fr="Campus Novartis">Novartis Campus</a>
+          <a href="weinlager.html"
+             data-de="Weinlager"
+             data-en="Weinlager"
+             data-fr="Weinlager">Weinlager</a>
         </div>
       </details>
 
-      <a href="Quellen.html" class="nav-link">Verzeichnis</a>
+      <a href="Quellen.html" class="nav-link"
+         data-de="Verzeichnis"
+         data-en="Sources"
+         data-fr="Sources">Verzeichnis</a>
+
+      <div class="lang-switch">
+        <button type="button" class="lang-btn active" data-lang-btn="de">DE</button>
+        <button type="button" class="lang-btn" data-lang-btn="en">EN</button>
+        <button type="button" class="lang-btn" data-lang-btn="fr">FR</button>
+      </div>
     </nav>
   </div>
 </header>
 
-<!-- HERO -->
 <section class="page-hero" style="background-image:url('messe3_.jpg');">
   <div class="page-hero__overlay"></div>
 
   <div class="page-hero__inner">
-    <h1 class="page-hero__title">
-      Messe<br>
-      <span class="page-hero__city">Basel</span>
+    <h1 class="page-hero__title"
+        data-de="Messe"
+        data-en="Messe"
+        data-fr="Messe">
+      Messe
     </h1>
 
-    <p class="page-hero__subtitle">
-      Ein offener Stadtraum zwischen Mobilität, Begegnung und Eventarchitektur
+    <div class="page-hero__city"
+         data-de="Basel"
+         data-en="Basel"
+         data-fr="Bâle">
+      Basel
+    </div>
+
+    <p class="page-hero__subtitle"
+       data-de="Ein offener Stadtraum zwischen Mobilität, Begegnung und Eventarchitektur."
+       data-en="An open urban space between mobility, encounter and event architecture."
+       data-fr="Un espace urbain ouvert entre mobilité, rencontre et architecture événementielle.">
+      Ein offener Stadtraum zwischen Mobilität, Begegnung und Eventarchitektur.
     </p>
   </div>
 </section>
@@ -57,63 +118,150 @@
   <section class="page-section">
     <div class="container">
 
-      <!-- Steckbrief -->
       <div class="facts">
         <div class="fact">
-          <div class="fact__label">Planung</div>
-          <div class="fact__value">2009</div>
+          <div class="fact__label"
+               data-de="Planung"
+               data-en="Planning"
+               data-fr="Planification">
+            Planung
+          </div>
+          <div class="fact__value">2009 [21]</div>
         </div>
+
         <div class="fact">
-          <div class="fact__label">Umbau</div>
-          <div class="fact__value">2010 bis 2013</div>
+          <div class="fact__label"
+               data-de="Umbau"
+               data-en="Reconstruction"
+               data-fr="Transformation">
+            Umbau
+          </div>
+          <div class="fact__value"
+               data-de="2010 bis 2013 [21]"
+               data-en="2010 to 2013 [21]"
+               data-fr="2010 à 2013 [21]">
+            2010 bis 2013
+          </div>
         </div>
       </div>
 
-      <!-- NUTZUNG -->
-      <h2 class="h2">Nutzung</h2>
+      <h2 class="h2"
+          data-de="Nutzung"
+          data-en="Use"
+          data-fr="Usage">
+        Nutzung
+      </h2>
 
-      <p class="p">
-        Die Messe Basel dient als zentraler Ort für Messen, Kongresse und Ausstellungen und ist somit ein wichtiger Begegnungsort für Einheimische und Touristen. Die Anlage beherbergt jährlich viele Veranstaltungen wie Fachmessen (z.B. Art Basel), Publikumsveranstaltungen (z.B. Herbstmesse oder Fantasy Basel), Kongresse, Konzerte (z.B. Baloise Session), Sportevents (z.B. Hybrid Games Switzerland) sowie Firmenanlässe. Dank der flexibel kombinierbaren Räumlichkeiten kann die Messe vielseitig genutzt und individuell an die Anforderungen verschiedener Veranstaltungen angepasst werden [21] [22].
+      <p class="p"
+         data-de="Die Messe Basel dient als zentraler Ort für Messen, Kongresse und Ausstellungen und ist damit ein bedeutender Begegnungsort für Einheimische wie auch für Touristen. Die Anlage beherbergt jährlich zahlreiche Veranstaltungen, darunter Fachmessen wie die Art Basel, Publikumsveranstaltungen wie die Herbstmesse oder Fantasy Basel, Kongresse, Konzerte wie die Baloise Session, Sportevents wie die Hybrid Games Switzerland sowie Firmenanlässe. Dank der flexibel kombinierbaren Räumlichkeiten kann die Messe vielseitig genutzt und präzise auf unterschiedliche Anforderungen abgestimmt werden [21] [22]."
+         data-en="Messe Basel serves as a central place for fairs, congresses and exhibitions and is therefore an important meeting place for both locals and tourists. Each year, the complex hosts numerous events, including trade fairs such as Art Basel, public events such as the Herbstmesse or Fantasy Basel, congresses, concerts such as the Baloise Session, sporting events such as the Hybrid Games Switzerland and corporate functions. Thanks to its flexibly combinable spaces, the fair can be used in many different ways and tailored precisely to the requirements of a wide range of events [21] [22]."
+         data-fr="La Messe de Bâle sert de lieu central pour les salons, congrès et expositions et constitue ainsi un important espace de rencontre pour les habitants comme pour les touristes. Chaque année, le site accueille de nombreuses manifestations, parmi lesquelles des salons professionnels comme Art Basel, des événements grand public comme la Herbstmesse ou Fantasy Basel, des congrès, des concerts comme la Baloise Session, des événements sportifs comme les Hybrid Games Switzerland ainsi que des manifestations d’entreprise. Grâce à des espaces combinables de manière flexible, la Messe peut être utilisée de façon très variée et adaptée précisément aux exigences de différentes manifestations [21] [22].">
+        Die Messe Basel dient als zentraler Ort für Messen, Kongresse und Ausstellungen und ist damit ein bedeutender Begegnungsort für Einheimische wie auch für Touristen. Die Anlage beherbergt jährlich zahlreiche Veranstaltungen, darunter Fachmessen wie die Art Basel, Publikumsveranstaltungen wie die Herbstmesse oder Fantasy Basel, Kongresse, Konzerte wie die Baloise Session, Sportevents wie die Hybrid Games Switzerland sowie Firmenanlässe. Dank der flexibel kombinierbaren Räumlichkeiten kann die Messe vielseitig genutzt und präzise auf unterschiedliche Anforderungen abgestimmt werden [21] [22].
       </p>
 
-      <!-- Bild 1 -->
       <figure class="figure">
         <img class="figure__img" src="messe1_.jpg" alt="Messe Basel mit Tram und Stadtraum">
-        <figcaption class="figure__cap">Die Messe Basel im Stadtraum mit Tramlinien und urbaner Umgebung. Foto: Abinaya Sureshkumar</figcaption>
+        <figcaption class="figure__cap"
+                    data-de="Die Messe Basel im Stadtraum mit Tramlinien und urbaner Umgebung. Foto: Abinaya Sureshkumar"
+                    data-en="Messe Basel in the urban context with tram lines and surrounding city space. Photo: Abinaya Sureshkumar"
+                    data-fr="La Messe de Bâle dans l’espace urbain avec les lignes de tram et l’environnement de la ville. Photo : Abinaya Sureshkumar">
+          Die Messe Basel im Stadtraum mit Tramlinien und urbaner Umgebung. Foto: Abinaya Sureshkumar
+        </figcaption>
       </figure>
 
-      <!-- NACHHALTIGKEIT -->
-      <h2 class="h2">Nachhaltigkeit</h2>
+      <h2 class="h2"
+          data-de="Nachhaltigkeit"
+          data-en="Sustainability"
+          data-fr="Durabilité">
+        Nachhaltigkeit
+      </h2>
 
-      <p class="p">
-        Die Messe Basel wurde unter besonderer Berücksichtigung ökologischer Kriterien geplant und umgesetzt. Das Ingenieurbüro Stefan Graf war für die Nachhaltigkeitsberatung zuständig. Der Neubau verfügt über eine hochwärmedämmende Gebäudehülle und ist an das Fernwärmenetz der Stadt Basel angeschlossen. Zudem werden die Zielwerte der SIA-Norm 380/4 in den Bereichen Beleuchtung, Lüftung und Klimatisierung eingehalten. Als einziges Messegebäude der Schweiz trägt die Messe Basel das Minergie-Zertifikat (BS-054). Zusätzlich ist das Dach begrünt und mit einer Photovoltaikanlage ausgestattet. Durch die zentrale Lage innerhalb der Stadt wird die Nutzung des öffentlichen Verkehrs gefördert, wodurch der motorisierte Individualverkehr reduziert wird, erklärte uns der Maschineningenieur Stefan Graf über das Telefon. Die nachhaltige Positionierung der Messe Basel zeigt, wie räumliche Planung und technische Gebäudeausrüstung gemeinsam zur ökologischen Verantwortung beitragen können [23][21].
+      <p class="p"
+         data-de="Die Messe Basel wurde unter besonderer Berücksichtigung ökologischer Kriterien geplant und realisiert. Für die Nachhaltigkeitsberatung war das Ingenieurbüro Stefan Graf zuständig. Der Neubau verfügt über eine hochwärmedämmende Gebäudehülle und ist an das Fernwärmenetz der Stadt Basel angeschlossen. Zudem werden die Zielwerte der SIA-Norm 380/4 in den Bereichen Beleuchtung, Lüftung und Klimatisierung eingehalten. Als einziges Messegebäude der Schweiz trägt die Messe Basel das Minergie-Zertifikat BS-054. Darüber hinaus ist das Dach begrünt und mit einer Photovoltaikanlage ausgestattet. Aufgrund der zentralen Lage in der Stadt wird ausserdem die Nutzung des öffentlichen Verkehrs gefördert, wodurch der motorisierte Individualverkehr reduziert wird. Wie uns der Maschineningenieur Stefan Graf telefonisch erläuterte, zeigt die nachhaltige Positionierung der Messe Basel exemplarisch, wie räumliche Planung und technische Gebäudeausrüstung gemeinsam zu ökologischer Verantwortung beitragen können [23][21]."
+         data-en="Messe Basel was planned and realised with particular consideration for ecological criteria. Sustainability consulting was carried out by the engineering office of Stefan Graf. The new building features a highly insulated building envelope and is connected to Basel’s district heating network. In addition, the target values of SIA standard 380/4 are met in the fields of lighting, ventilation and air conditioning. As the only fair building in Switzerland, Messe Basel holds the Minergie certificate BS-054. Furthermore, the roof is greened and equipped with a photovoltaic system. Owing to its central location within the city, the use of public transport is encouraged, which reduces motorised individual traffic. As the mechanical engineer Stefan Graf explained to us by telephone, the sustainable positioning of Messe Basel exemplifies how spatial planning and technical building systems can jointly contribute to ecological responsibility [23][21]."
+         data-fr="La Messe de Bâle a été conçue et réalisée en tenant particulièrement compte de critères écologiques. Le bureau d’ingénierie de Stefan Graf était chargé du conseil en matière de durabilité. Le nouveau bâtiment dispose d’une enveloppe hautement isolante et est raccordé au réseau de chauffage à distance de la ville de Bâle. En outre, les valeurs cibles de la norme SIA 380/4 sont respectées dans les domaines de l’éclairage, de la ventilation et de la climatisation. En tant que seul bâtiment de foire en Suisse, la Messe de Bâle porte le certificat Minergie BS-054. De plus, la toiture est végétalisée et équipée d’une installation photovoltaïque. En raison de sa situation centrale dans la ville, l’utilisation des transports publics est également encouragée, ce qui réduit le trafic individuel motorisé. Comme l’ingénieur mécanicien Stefan Graf nous l’a expliqué par téléphone, le positionnement durable de la Messe de Bâle montre de manière exemplaire comment la planification spatiale et les équipements techniques du bâtiment peuvent contribuer ensemble à la responsabilité écologique [23][21].">
+        Die Messe Basel wurde unter besonderer Berücksichtigung ökologischer Kriterien geplant und realisiert. Für die Nachhaltigkeitsberatung war das Ingenieurbüro Stefan Graf zuständig. Der Neubau verfügt über eine hochwärmedämmende Gebäudehülle und ist an das Fernwärmenetz der Stadt Basel angeschlossen. Zudem werden die Zielwerte der SIA-Norm 380/4 in den Bereichen Beleuchtung, Lüftung und Klimatisierung eingehalten. Als einziges Messegebäude der Schweiz trägt die Messe Basel das Minergie-Zertifikat BS-054. Darüber hinaus ist das Dach begrünt und mit einer Photovoltaikanlage ausgestattet. Aufgrund der zentralen Lage in der Stadt wird ausserdem die Nutzung des öffentlichen Verkehrs gefördert, wodurch der motorisierte Individualverkehr reduziert wird. Wie uns der Maschineningenieur Stefan Graf telefonisch erläuterte, zeigt die nachhaltige Positionierung der Messe Basel exemplarisch, wie räumliche Planung und technische Gebäudeausrüstung gemeinsam zu ökologischer Verantwortung beitragen können [23][21].
       </p>
 
-      <!-- ARCHITEKTUR -->
-      <h2 class="h2">Architektonische Bedeutung</h2>
+      <h2 class="h2"
+          data-de="Architektonische Bedeutung"
+          data-en="Architectural significance"
+          data-fr="Importance architecturale">
+        Architektonische Bedeutung
+      </h2>
 
-      <p class="p">
-        Die beiden Foyers des Gebäudes werden durch über 110 Meter lange LED-Bänder, hochauflösende Screens und dynamisch steuerbare Lichtbestimmungen geprägt. Diese Elemente erfüllen neben einer einladenden Atmosphäre auch kommunikative Funktionen. Da sie flexibel verändert werden können, kann die Messe Basel die visuellen Inhalte an unterschiedliche Veranstaltungen, Kundenanforderungen und Kommunikationsbedürfnisse anpassen. Aus architektonischer Sicht wird der Raum dadurch zu einer wandelbaren Bedienoberfläche, die sich beliebig anpassen lässt [24].
+      <p class="p"
+         data-de="Die beiden Foyers des Gebäudes werden von über 110 Meter langen LED-Bändern, hochauflösenden Screens und dynamisch steuerbaren Lichtstimmungen geprägt. Diese Elemente schaffen nicht nur eine einladende Atmosphäre, sondern erfüllen zugleich kommunikative Funktionen. Weil sie flexibel angepasst werden können, lassen sich visuelle Inhalte auf unterschiedliche Veranstaltungen, Kundenbedürfnisse und Kommunikationsanforderungen abstimmen. Aus architektonischer Sicht wird der Raum dadurch zu einer wandelbaren Oberfläche, die sich fortlaufend neu inszenieren lässt [24]."
+         data-en="The two foyers of the building are characterised by LED bands more than 110 metres long, high-resolution screens and dynamically controllable lighting atmospheres. These elements not only create an inviting atmosphere, but also fulfil communicative functions. Because they can be adapted flexibly, visual content can be adjusted to different events, customer needs and communication requirements. From an architectural perspective, the space thus becomes a transformable surface that can be staged again and again in new ways [24]."
+         data-fr="Les deux foyers du bâtiment sont marqués par des bandes LED de plus de 110 mètres de long, des écrans haute résolution et des ambiances lumineuses dynamiquement contrôlables. Ces éléments ne créent pas seulement une atmosphère accueillante, mais remplissent également des fonctions de communication. Comme ils peuvent être adaptés avec souplesse, les contenus visuels peuvent être ajustés à différentes manifestations, aux besoins des clients et aux exigences de communication. Du point de vue architectural, l’espace devient ainsi une surface transformable pouvant être mise en scène de manière toujours renouvelée [24].">
+        Die beiden Foyers des Gebäudes werden von über 110 Meter langen LED-Bändern, hochauflösenden Screens und dynamisch steuerbaren Lichtstimmungen geprägt. Diese Elemente schaffen nicht nur eine einladende Atmosphäre, sondern erfüllen zugleich kommunikative Funktionen. Weil sie flexibel angepasst werden können, lassen sich visuelle Inhalte auf unterschiedliche Veranstaltungen, Kundenbedürfnisse und Kommunikationsanforderungen abstimmen. Aus architektonischer Sicht wird der Raum dadurch zu einer wandelbaren Oberfläche, die sich fortlaufend neu inszenieren lässt [24].
       </p>
 
-      <p class="p">
-        Ein weiteres zentrales architektonisches Element des Neubaus der Messe ist die City Lounge. Dabei handelt es sich um einen überdachten öffentlichen Raum mit Tramhaltestelle. Sie markiert den Haupteingang zu den Messe- und Eventhallen und ist zugleich ein sozialer Treffpunkt im Stadtraum. Besonders auffällig ist die kreisrunde Öffnung im Lichthof, durch die Besucher direkt in den Himmel blicken können [25].
+      <p class="p"
+         data-de="Ein weiteres zentrales architektonisches Element des Neubaus ist die City Lounge. Dabei handelt es sich um einen überdachten öffentlichen Raum mit Tramhaltestelle. Sie markiert den Haupteingang zu den Messe- und Eventhallen und fungiert zugleich als sozialer Treffpunkt im Stadtraum. Besonders markant ist die kreisrunde Öffnung im Lichthof, durch die Besucherinnen und Besucher direkt in den Himmel blicken können [25]."
+         data-en="Another central architectural element of the new building is the City Lounge. This is a covered public space with a tram stop. It marks the main entrance to the exhibition and event halls while simultaneously functioning as a social meeting place in the urban environment. Particularly striking is the circular opening in the atrium, through which visitors can look directly up into the sky [25]."
+         data-fr="Un autre élément architectural central du nouveau bâtiment est la City Lounge. Il s’agit d’un espace public couvert avec arrêt de tram. Elle marque l’entrée principale des halls d’exposition et d’événements tout en servant de lieu de rencontre social dans l’espace urbain. L’ouverture circulaire au centre du patio, qui permet aux visiteuses et visiteurs de regarder directement le ciel, est particulièrement marquante [25].">
+        Ein weiteres zentrales architektonisches Element des Neubaus ist die City Lounge. Dabei handelt es sich um einen überdachten öffentlichen Raum mit Tramhaltestelle. Sie markiert den Haupteingang zu den Messe- und Eventhallen und fungiert zugleich als sozialer Treffpunkt im Stadtraum. Besonders markant ist die kreisrunde Öffnung im Lichthof, durch die Besucherinnen und Besucher direkt in den Himmel blicken können [25].
       </p>
 
-      <!-- Bild 2 -->
       <figure class="figure figure--wide">
         <img class="figure__img" src="messe2_.jpg" alt="Detailansicht der Messe Basel">
-        <figcaption class="figure__cap">Detailansicht der geschwungenen Fassadenstruktur der Messe Basel am Messeplatz. Foto: Abinaya Sureshkumar</figcaption>
+        <figcaption class="figure__cap"
+                    data-de="Detailansicht der geschwungenen Fassadenstruktur der Messe Basel am Messeplatz. Foto: Abinaya Sureshkumar"
+                    data-en="Detail view of the curved façade structure of Messe Basel at Messeplatz. Photo: Abinaya Sureshkumar"
+                    data-fr="Vue détaillée de la structure courbe de la façade de la Messe de Bâle sur la Messeplatz. Photo : Abinaya Sureshkumar">
+          Detailansicht der geschwungenen Fassadenstruktur der Messe Basel am Messeplatz. Foto: Abinaya Sureshkumar
+        </figcaption>
       </figure>
 
       <div class="pager">
-        <a class="pager__link" href="markthalle.html">← Markthalle</a>
-        <a class="pager__link" href="kunstmuseum.html">Kunstmuseum →</a>
+        <a class="pager__link" href="markthalle.html"
+           data-de="← Markthalle"
+           data-en="← Market Hall"
+           data-fr="← Halle du Marché">
+          ← Markthalle
+        </a>
+
+        <a class="pager__link" href="kunstmuseum.html"
+           data-de="Kunstmuseum →"
+           data-en="Art Museum →"
+           data-fr="Musée des Beaux-Arts →">
+          Kunstmuseum →
+        </a>
       </div>
 
     </div>
   </section>
 </main>
+
+<script>
+  function switchLanguage(lang) {
+    document.querySelectorAll("[data-de][data-en][data-fr]").forEach(el => {
+      el.textContent = el.getAttribute("data-" + lang);
+    });
+
+    const pageTitle = document.getElementById("pageTitle");
+    if (pageTitle) {
+      document.title = pageTitle.getAttribute("data-" + lang);
+    }
+
+    document.documentElement.lang = lang;
+    localStorage.setItem("siteLanguage", lang);
+
+    document.querySelectorAll("[data-lang-btn]").forEach(btn => {
+      btn.classList.toggle("active", btn.getAttribute("data-lang-btn") === lang);
+    });
+  }
+
+  document.querySelectorAll("[data-lang-btn]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      switchLanguage(btn.getAttribute("data-lang-btn"));
+    });
+  });
+
+  const savedLang = localStorage.getItem("siteLanguage") || "de";
+  switchLanguage(savedLang);
+</script>
 
 </body>
 </html>
