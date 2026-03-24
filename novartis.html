@@ -3,7 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Novartis Pavillon – BAULINIE Basel</title>
+  <title id="pageTitle"
+    data-de="Novartis Pavillon – BAULINIE Basel"
+    data-en="Novartis Pavilion – BAULINIE Basel"
+    data-fr="Pavillon Novartis – BAULINIE Basel">
+    Novartis Pavillon – BAULINIE Basel
+  </title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
@@ -15,40 +20,96 @@
     <div class="logo">BAULINIE Basel</div>
 
     <nav class="nav-links">
-      <a href="index.html" class="nav-link">Home</a>
-      <a href="zeitstrahl.html" class="nav-link">Zeitstrahl</a>
-      <a href="karte.html" class="nav-link">Karte</a>
-      <a href="wir.html" class="nav-link">Projekt</a>
+      <a href="index.html" class="nav-link"
+         data-de="Home"
+         data-en="Home"
+         data-fr="Accueil">Home</a>
+
+      <a href="zeitstrahl.html" class="nav-link"
+         data-de="Zeitstrahl"
+         data-en="Timeline"
+         data-fr="Chronologie">Zeitstrahl</a>
+
+      <a href="karte.html" class="nav-link"
+         data-de="Karte"
+         data-en="Map"
+         data-fr="Carte">Karte</a>
+
+      <a href="wir.html" class="nav-link"
+         data-de="Projekt"
+         data-en="Project"
+         data-fr="Projet">Projekt</a>
 
       <details class="dropdown">
-        <summary class="dropbtn">Bauwerke ▾</summary>
+        <summary class="dropbtn"
+                 data-de="Bauwerke ▾"
+                 data-en="Buildings ▾"
+                 data-fr="Bâtiments ▾">Bauwerke ▾</summary>
         <div class="dropdown-content">
-          <a href="elisabethen.html">1864 · Elisabethenkirche</a>
-          <a href="markthalle.html">1929 · Markthalle</a>
-          <a href="messe.html">2013 · Messe</a>
-          <a href="kunstmuseum.html">2016 · Kunstmuseum</a>
-          <a href="weinlager.html">2023 · Weinlager</a>
-          <a href="novartis.html">2022 · Novartis Campus</a>
+          <a href="elisabethen.html"
+             data-de="Elisabethenkirche"
+             data-en="Elisabethenkirche"
+             data-fr="Église Sainte-Elisabeth">Elisabethenkirche</a>
+          <a href="markthalle.html"
+             data-de="Markthalle"
+             data-en="Market Hall"
+             data-fr="Halle du Marché">Markthalle</a>
+          <a href="messe.html"
+             data-de="Messe"
+             data-en="Messe"
+             data-fr="Messe">Messe</a>
+          <a href="kunstmuseum.html"
+             data-de="Kunstmuseum"
+             data-en="Art Museum"
+             data-fr="Musée des Beaux-Arts">Kunstmuseum</a>
+          <a href="novartis.html"
+             data-de="Novartis Campus"
+             data-en="Novartis Campus"
+             data-fr="Campus Novartis">2022 · Novartis Campus</a>
+          <a href="weinlager.html"
+             data-de="Weinlager"
+             data-en="Weinlager"
+             data-fr="Weinlager">Weinlager</a>
         </div>
       </details>
 
-      <a href="Quellen.html" class="nav-link">Verzeichnis</a>
+      <a href="Quellen.html" class="nav-link"
+         data-de="Verzeichnis"
+         data-en="Sources"
+         data-fr="Sources">Verzeichnis</a>
+
+      <div class="lang-switch">
+        <button type="button" class="lang-btn active" data-lang-btn="de">DE</button>
+        <button type="button" class="lang-btn" data-lang-btn="en">EN</button>
+        <button type="button" class="lang-btn" data-lang-btn="fr">FR</button>
+      </div>
     </nav>
   </div>
 </header>
 
-<!-- HERO -->
 <section class="page-hero" style="background-image:url('novartis1_.jpg');">
   <div class="page-hero__overlay"></div>
 
   <div class="page-hero__inner">
-    <h1 class="page-hero__title">
-      Novartis Pavillon<br>
-      <span class="page-hero__city">Basel</span>
+    <h1 class="page-hero__title"
+        data-de="Novartis Pavillon"
+        data-en="Novartis Pavilion"
+        data-fr="Pavillon Novartis">
+      Novartis Pavillon
     </h1>
 
-    <p class="page-hero__subtitle">
-      Ort der Begegnung im Haus der pharmazeutischen Wissenschaft
+    <div class="page-hero__city"
+         data-de="Basel"
+         data-en="Basel"
+         data-fr="Bâle">
+      Basel
+    </div>
+
+    <p class="page-hero__subtitle"
+       data-de="Ort der Begegnung im Haus der pharmazeutischen Wissenschaft."
+       data-en="A place of encounter in the house of pharmaceutical science."
+       data-fr="Un lieu de rencontre au coeur de la science pharmaceutique.">
+      Ort der Begegnung im Haus der pharmazeutischen Wissenschaft.
     </p>
   </div>
 </section>
@@ -57,80 +118,170 @@
   <section class="page-section">
     <div class="container">
 
-      <!-- Steckbrief -->
       <div class="facts">
         <div class="fact">
-          <div class="fact__label">Baujahr</div>
-          <div class="fact__value">2022</div>
+          <div class="fact__label"
+               data-de="Baujahr"
+               data-en="Year of construction"
+               data-fr="Année de construction">
+            Baujahr
+          </div>
+          <div class="fact__value">2022 [28]</div>
         </div>
       </div>
 
-      <!-- NUTZUNG -->
-      <h2 class="h2">Nutzung</h2>
+      <h2 class="h2"
+          data-de="Nutzung"
+          data-en="Use"
+          data-fr="Usage">
+        Nutzung
+      </h2>
 
-      <p class="p">
-        Auf dem Novartis Campus wurde im Frühling 2022 der Neubau des Novartis Campus eröffnet [29]. Es ist ein öffentlich zugänglicher Ausstellungs-, Begegnungs- und Veranstaltungsort in Basel. Er dient als Ort des Lernens, des Wissens und des Austauschs. Das Herzstück des Pavillons ist die multimediale Ausstellung «Wonders of Medicine» im Obergeschoss. Sie zeigt der Bevölkerung Einblicke in die Welt der pharmazeutischen Wissenschaft und zeigt, wie Medikamente entstehen und welche Rolle die Forschung für die Gesundheit der Menschen spielt.
+      <p class="p"
+         data-de="Auf dem Novartis Campus wurde im Frühling 2022 der Novartis Pavillon eröffnet [29]. Er ist ein öffentlich zugänglicher Ausstellungs-, Begegnungs- und Veranstaltungsort in Basel und versteht sich als Ort des Lernens, des Wissens und des Austauschs. Das Herzstück des Pavillons bildet die multimediale Ausstellung «Wonders of Medicine» im Obergeschoss. Sie vermittelt der Öffentlichkeit Einblicke in die Welt der pharmazeutischen Wissenschaft und zeigt, wie Medikamente entstehen und welche Rolle Forschung für die Gesundheit der Menschen spielt."
+         data-en="The Novartis Pavilion opened on the Novartis Campus in spring 2022 [29]. It is a publicly accessible venue for exhibitions, encounters and events in Basel and presents itself as a place of learning, knowledge and exchange. The centrepiece of the pavilion is the multimedia exhibition «Wonders of Medicine» on the upper floor. It offers the public insights into the world of pharmaceutical science and shows how medicines are developed and what role research plays in human health."
+         data-fr="Le Pavillon Novartis a été inauguré sur le campus Novartis au printemps 2022 [29]. Il constitue à Bâle un lieu public d’exposition, de rencontre et d’événements, pensé comme un espace d’apprentissage, de savoir et d’échange. La pièce maîtresse du pavillon est l’exposition multimédia « Wonders of Medicine », située à l’étage supérieur. Elle donne au public un aperçu du monde de la science pharmaceutique et montre comment les médicaments sont développés et quel rôle la recherche joue pour la santé humaine.">
+        Auf dem Novartis Campus wurde im Frühling 2022 der Novartis Pavillon eröffnet [29]. Er ist ein öffentlich zugänglicher Ausstellungs-, Begegnungs- und Veranstaltungsort in Basel und versteht sich als Ort des Lernens, des Wissens und des Austauschs. Das Herzstück des Pavillons bildet die multimediale Ausstellung «Wonders of Medicine» im Obergeschoss. Sie vermittelt der Öffentlichkeit Einblicke in die Welt der pharmazeutischen Wissenschaft und zeigt, wie Medikamente entstehen und welche Rolle Forschung für die Gesundheit der Menschen spielt.
       </p>
 
-      <p class="p">
-        Die Ausstellung ist in vier Teilbereiche aufgeteilt: «Verletzlichkeit des Lebens», «Vom Labor zum Patienten», «Schritte durch die Zeit» und «Zukunft des Gesundheitswesens». Diese Themen haben das Ziel, die Besucherinnen und Besucher dazu anzuregen, über den menschlichen Körpers, Gesundheit sowie Chancen und Herausforderungen im Gesundheitswesen nachzudenken. Die Inhalte sind in drei Sprachen verfügbar: Deutsch, Englisch und Französisch. Neben der Ausstellung gibt es auch weitere Nutzungsmöglichkeiten. Im Erdgeschoss befinden sich ein Café, ein Veranstaltungsraum sowie der SchoolHub. Der SchoolHub ist ein interaktives Angebot für Schulklassen. Zudem gibt es auch einen kleinen Filmsaal im Mezzanine, der den Einstieg in den Ausstellungsrundgang bildet [30].
+      <p class="p"
+         data-de="Die Ausstellung ist in vier Themenbereiche gegliedert: «Verletzlichkeit des Lebens», «Vom Labor zum Patienten», «Schritte durch die Zeit» und «Zukunft des Gesundheitswesens». Ziel ist es, die Besucherinnen und Besucher dazu anzuregen, über den menschlichen Körper, über Gesundheit sowie über Chancen und Herausforderungen im Gesundheitswesen nachzudenken. Die Inhalte sind in drei Sprachen verfügbar: Deutsch, Englisch und Französisch. Neben der Ausstellung bietet der Pavillon weitere Nutzungsmöglichkeiten. Im Erdgeschoss befinden sich ein Café, ein Veranstaltungsraum sowie der SchoolHub, ein interaktives Angebot für Schulklassen. Hinzu kommt ein kleiner Filmsaal im Mezzanine, der den Einstieg in den Rundgang durch die Ausstellung bildet [30]."
+         data-en="The exhibition is divided into four thematic sections: «Fragility of Life», «From Lab to Patient», «Steps through Time» and «Future of Healthcare». Its aim is to encourage visitors to reflect on the human body, health, and the opportunities and challenges within healthcare systems. The contents are available in three languages: German, English and French. In addition to the exhibition, the pavilion offers further uses. On the ground floor, there is a café, an event space and the SchoolHub, an interactive programme for school classes. There is also a small cinema in the mezzanine, which serves as the introduction to the exhibition route [30]."
+         data-fr="L’exposition est structurée en quatre thématiques : « Fragilité de la vie », « Du laboratoire au patient », « À travers le temps » et « L’avenir du système de santé ». Son objectif est d’inciter les visiteuses et visiteurs à réfléchir au corps humain, à la santé ainsi qu’aux opportunités et défis du système de santé. Les contenus sont proposés en trois langues : allemand, anglais et français. Outre l’exposition, le pavillon offre d’autres usages. Au rez-de-chaussée se trouvent un café, un espace événementiel ainsi que le SchoolHub, une offre interactive destinée aux classes. S’y ajoute une petite salle de projection située en mezzanine, qui constitue l’introduction au parcours de l’exposition [30].">
+        Die Ausstellung ist in vier Themenbereiche gegliedert: «Verletzlichkeit des Lebens», «Vom Labor zum Patienten», «Schritte durch die Zeit» und «Zukunft des Gesundheitswesens». Ziel ist es, die Besucherinnen und Besucher dazu anzuregen, über den menschlichen Körper, über Gesundheit sowie über Chancen und Herausforderungen im Gesundheitswesen nachzudenken. Die Inhalte sind in drei Sprachen verfügbar: Deutsch, Englisch und Französisch. Neben der Ausstellung bietet der Pavillon weitere Nutzungsmöglichkeiten. Im Erdgeschoss befinden sich ein Café, ein Veranstaltungsraum sowie der SchoolHub, ein interaktives Angebot für Schulklassen. Hinzu kommt ein kleiner Filmsaal im Mezzanine, der den Einstieg in den Rundgang durch die Ausstellung bildet [30].
       </p>
 
-      <!-- Bild 1 -->
       <figure class="figure">
         <img class="figure__img" src="novartis2_.jpg" alt="Novartis Pavillon Basel – Ansicht">
-        <figcaption class="figure__cap">Der Novartis Pavillon als öffentlich zugänglicher Ort für Austausch, Wissenschaft und Begegnung.</figcaption>
+        <figcaption class="figure__cap"
+                    data-de="Der Novartis Pavillon als öffentlich zugänglicher Ort für Austausch, Wissenschaft und Begegnung. Foto: Abinaya Sureshkumar"
+                    data-en="The Novartis Pavilion as a publicly accessible place for exchange, science and encounter. Photo: Abinaya Sureshkumar"
+                    data-fr="Le Pavillon Novartis comme lieu public d’échange, de science et de rencontre. Photo : Abinaya Sureshkumar">
+          Der Novartis Pavillon als öffentlich zugänglicher Ort für Austausch, Wissenschaft und Begegnung. Foto: Abinaya Sureshkumar
+        </figcaption>
       </figure>
 
-      <!-- NACHHALTIGKEIT -->
-      <h2 class="h2">Nachhaltigkeit</h2>
+      <h2 class="h2"
+          data-de="Nachhaltigkeit"
+          data-en="Sustainability"
+          data-fr="Durabilité">
+        Nachhaltigkeit
+      </h2>
 
-      <p class="p">
-        Der Bezug zur Nachhaltigkeit wird im Novartis Campus in vielerlei Hinsicht sichtbar, denn dieser Pavillon vereint Wissenschaft und Nachhaltigkeit in einem Gebäude [31]. Novartis hat sich konkrete Ziele gesetzt, um Klima, Ressourcen und Energieverbrauch sowohl im eigenen Unternehmen als auch bei seinen Lieferanten zu verbessern. Das Unternehmen möchte mit seinen eigenen Aktivitäten bis 2025 kohlenstoffneutral sowie bis 2030 plastik- und wasserneutral sein. Bis 2030 soll zudem auch die gesamte Lieferkette von Novartis CO2-neutral sein, und bis 2040 soll das Netto-Null-Ziel erreicht werden [32].
+      <p class="p"
+         data-de="Der Bezug zur Nachhaltigkeit wird im Novartis Pavillon in vielfacher Hinsicht sichtbar, denn dieses Gebäude verbindet Wissenschaft und Nachhaltigkeit in besonderer Weise [31]. Novartis hat sich konkrete Ziele gesetzt, um Klima, Ressourcen und Energieverbrauch sowohl im eigenen Unternehmen als auch entlang der Lieferketten zu verbessern. Das Unternehmen strebt an, mit seinen eigenen Aktivitäten bis 2025 kohlenstoffneutral sowie bis 2030 plastik- und wasserneutral zu werden. Bis 2030 soll zudem die gesamte Lieferkette CO2-neutral sein, während bis 2040 das Netto-Null-Ziel erreicht werden soll [32]."
+         data-en="The relationship to sustainability becomes visible in many ways in the Novartis Pavilion, as the building combines science and sustainability in a particularly striking manner [31]. Novartis has set itself concrete goals to improve climate performance, resource use and energy consumption both within the company and along its supply chains. The company aims to become carbon neutral in its own operations by 2025 and plastic- and water-neutral by 2030. By 2030, the entire supply chain is also intended to be CO2-neutral, while the net-zero target is to be achieved by 2040 [32]."
+         data-fr="Le lien avec la durabilité devient visible de multiples manières dans le Pavillon Novartis, car ce bâtiment associe de façon remarquable science et durabilité [31]. Novartis s’est fixé des objectifs concrets afin d’améliorer l’impact climatique, l’utilisation des ressources et la consommation énergétique, aussi bien dans l’entreprise elle-même que tout au long de ses chaînes d’approvisionnement. L’entreprise vise la neutralité carbone de ses propres activités d’ici 2025 ainsi que la neutralité plastique et hydrique d’ici 2030. D’ici 2030, l’ensemble de la chaîne d’approvisionnement doit également devenir neutre en CO2, tandis que l’objectif de zéro émission nette doit être atteint d’ici 2040 [32].">
+        Der Bezug zur Nachhaltigkeit wird im Novartis Pavillon in vielfacher Hinsicht sichtbar, denn dieses Gebäude verbindet Wissenschaft und Nachhaltigkeit in besonderer Weise [31]. Novartis hat sich konkrete Ziele gesetzt, um Klima, Ressourcen und Energieverbrauch sowohl im eigenen Unternehmen als auch entlang der Lieferketten zu verbessern. Das Unternehmen strebt an, mit seinen eigenen Aktivitäten bis 2025 kohlenstoffneutral sowie bis 2030 plastik- und wasserneutral zu werden. Bis 2030 soll zudem die gesamte Lieferkette CO2-neutral sein, während bis 2040 das Netto-Null-Ziel erreicht werden soll [32].
       </p>
 
-      <p class="p">
-        Dies sind zwar die allgemeinen Ziele von Novartis, allerdings zeigen sich diese auch im Gebäude selbst. Die Medienfassade des Pavillons wird nämlich durch Photovoltaikzellen mit Solarstrom betrieben. Diese sogenannte Nullenergie-Medienfassade erzeugt Energie und versorgt gleichzeitig auch die LED-Beleuchtung der Fassade [30]. Novartis hat bereits einen grossen Beitrag zu erneuerbarer Energie geleistet, denn die Gebäude werden durch Fernwärme geheizt. Diese Fernwärme wird wiederum aus Abfall und Holz erzeugt [32].
+      <p class="p"
+         data-de="Diese allgemeinen Nachhaltigkeitsziele zeigen sich auch im Gebäude selbst. Die Medienfassade des Pavillons wird durch Photovoltaikzellen mit Solarstrom betrieben. Diese sogenannte Nullenergie-Medienfassade erzeugt Energie und versorgt gleichzeitig die LED-Beleuchtung der Fassade [30]. Novartis leistet darüber hinaus einen Beitrag zu erneuerbarer Energie, da die Gebäude mit Fernwärme beheizt werden, die wiederum aus Abfall und Holz erzeugt wird [32]."
+         data-en="These general sustainability goals are also reflected in the building itself. The pavilion’s media façade is powered by photovoltaic cells using solar energy. This so-called zero-energy media façade generates electricity and at the same time supplies the façade’s LED lighting [30]. Novartis also contributes to renewable energy because the buildings are heated by district heating, which in turn is generated from waste and wood [32]."
+         data-fr="Ces objectifs généraux de durabilité se reflètent également dans le bâtiment lui-même. La façade médiatique du pavillon est alimentée par des cellules photovoltaïques produisant de l’énergie solaire. Cette façade médiatique dite à énergie nulle génère de l’électricité et alimente en même temps l’éclairage LED de la façade [30]. Novartis contribue en outre aux énergies renouvelables, puisque les bâtiments sont chauffés par un réseau de chauffage à distance lui-même alimenté à partir de déchets et de bois [32].">
+        Diese allgemeinen Nachhaltigkeitsziele zeigen sich auch im Gebäude selbst. Die Medienfassade des Pavillons wird durch Photovoltaikzellen mit Solarstrom betrieben. Diese sogenannte Nullenergie-Medienfassade erzeugt Energie und versorgt gleichzeitig die LED-Beleuchtung der Fassade [30]. Novartis leistet darüber hinaus einen Beitrag zu erneuerbarer Energie, da die Gebäude mit Fernwärme beheizt werden, die wiederum aus Abfall und Holz erzeugt wird [32].
       </p>
 
-      <p class="p">
-        Neben der ökologischen Nachhaltigkeit fördert der Novartis Pavillon auch die soziale Nachhaltigkeit. Der Pavillon unterstützt den Austausch zwischen Wissenschaft und Gesellschaft. Nachhaltigkeit spielt jedoch nicht nur eine soziale oder ökologische Rolle, sondern auch eine wirtschaftliche. Novartis investiert in energieeffiziente Gebäude und nachhaltige Technologien. Dadurch können langfristig Ressourcen eingespart und gleichzeitig die Umwelt geschützt werden, damit auch zukünftige Generationen von der Erde profitieren können.
+      <p class="p"
+         data-de="Neben der ökologischen Nachhaltigkeit fördert der Novartis Pavillon auch soziale Nachhaltigkeit, indem er den Austausch zwischen Wissenschaft und Gesellschaft stärkt. Nachhaltigkeit wird hier jedoch nicht nur sozial oder ökologisch verstanden, sondern auch wirtschaftlich: Investitionen in energieeffiziente Gebäude und nachhaltige Technologien ermöglichen es, langfristig Ressourcen einzusparen und gleichzeitig die Umwelt zu schonen. Dadurch soll gewährleistet werden, dass auch künftige Generationen profitieren können."
+         data-en="Alongside ecological sustainability, the Novartis Pavilion also promotes social sustainability by strengthening the exchange between science and society. Here, however, sustainability is understood not only in social or ecological terms, but also in economic ones: investments in energy-efficient buildings and sustainable technologies make it possible to save resources in the long term while at the same time protecting the environment. In this way, future generations are also meant to benefit."
+         data-fr="Outre la durabilité écologique, le Pavillon Novartis favorise également la durabilité sociale en renforçant les échanges entre la science et la société. Ici, la durabilité n’est toutefois pas comprise uniquement dans ses dimensions sociale ou écologique, mais aussi économique : les investissements dans des bâtiments écoénergétiques et dans des technologies durables permettent d’économiser des ressources à long terme tout en protégeant l’environnement. De cette manière, les générations futures doivent elles aussi pouvoir en bénéficier.">
+        Neben der ökologischen Nachhaltigkeit fördert der Novartis Pavillon auch soziale Nachhaltigkeit, indem er den Austausch zwischen Wissenschaft und Gesellschaft stärkt. Nachhaltigkeit wird hier jedoch nicht nur sozial oder ökologisch verstanden, sondern auch wirtschaftlich: Investitionen in energieeffiziente Gebäude und nachhaltige Technologien ermöglichen es, langfristig Ressourcen einzusparen und gleichzeitig die Umwelt zu schonen. Dadurch soll gewährleistet werden, dass auch künftige Generationen profitieren können.
       </p>
 
-      <p class="p">
-        „Ein echter Meilenstein, wenn es um Medienfassaden geht. Und vor allem Null-Energie-Medienfassaden!“  
-        Zitat von Valentin Spiess, dem Gründer und Verwaltungsratspräsidenten von iart [29].
+      <p class="p"
+         data-de="«Ein echter Meilenstein, wenn es um Medienfassaden geht. Und vor allem Null-Energie-Medienfassaden!» – so beschreibt Valentin Spiess, Gründer und Verwaltungsratspräsident von iart, die besondere Bedeutung des Projekts [29]."
+         data-en="«A real milestone when it comes to media façades. And above all, zero-energy media façades!» – this is how Valentin Spiess, founder and chairman of the board of iart, describes the special significance of the project [29]."
+         data-fr="« Un véritable jalon lorsqu’il s’agit de façades médiatiques. Et surtout de façades médiatiques à énergie nulle ! » – c’est ainsi que Valentin Spiess, fondateur et président du conseil d’administration de iart, décrit l’importance particulière du projet [29].">
+        «Ein echter Meilenstein, wenn es um Medienfassaden geht. Und vor allem Null-Energie-Medienfassaden!» – so beschreibt Valentin Spiess, Gründer und Verwaltungsratspräsident von iart, die besondere Bedeutung des Projekts [29].
       </p>
 
-      <!-- ARCHITEKTUR -->
-      <h2 class="h2">Architektonische Bedeutung</h2>
+      <h2 class="h2"
+          data-de="Architektonische Bedeutung"
+          data-en="Architectural significance"
+          data-fr="Importance architecturale">
+        Architektonische Bedeutung
+      </h2>
 
-      <p class="p">
-        Der Novartis Pavillon wurde vom italienischen Designer und Architekten Michele De Lucchi entworfen [33]. Der Novartis Pavillon ist als Holz-Beton-Hybridbau gebaut worden und ist zugleich das erste öffentlich zugängliche Gebäude des Pharmakonzerns Novartis.
+      <p class="p"
+         data-de="Der Novartis Pavillon wurde vom italienischen Designer und Architekten Michele De Lucchi entworfen [33]. Es handelt sich um einen Holz-Beton-Hybridbau und zugleich um das erste öffentlich zugängliche Gebäude des Pharmakonzerns Novartis."
+         data-en="The Novartis Pavilion was designed by the Italian designer and architect Michele De Lucchi [33]. It is a timber-concrete hybrid building and at the same time the first publicly accessible building of the pharmaceutical company Novartis."
+         data-fr="Le Pavillon Novartis a été conçu par le designer et architecte italien Michele De Lucchi [33]. Il s’agit d’une construction hybride bois-béton et, en même temps, du premier bâtiment accessible au public du groupe pharmaceutique Novartis.">
+        Der Novartis Pavillon wurde vom italienischen Designer und Architekten Michele De Lucchi entworfen [33]. Es handelt sich um einen Holz-Beton-Hybridbau und zugleich um das erste öffentlich zugängliche Gebäude des Pharmakonzerns Novartis.
       </p>
 
-      <p class="p">
-        Eine Besonderheit des Gebäudes liegt im ressourcenschonenden Einsatz von Materialien wie Holz, Stahl und Beton. Neben dieser konstruktiven Besonderheit zeichnet sich der Pavillon jedoch vor allem durch seine besondere Fassadengestaltung aus. Besonders bei Einbruch der Dunkelheit entfaltet das Gebäude seine volle Wirkung. Die künstlerisch gestalteten Fassaden verwandeln den Pavillon in eine Art Kunstwerk. Auf der Fassade werden digitale Kunstwerke von drei Künstlern gezeigt, wodurch ein Zusammenspiel von Architektur, Kunst und Technologie entsteht. Durch die Lichtinszenierungen wirkt die Gebäudehülle lebendig.
+      <p class="p"
+         data-de="Eine architektonische Besonderheit liegt im ressourcenschonenden Einsatz von Materialien wie Holz, Stahl und Beton. Darüber hinaus zeichnet sich der Pavillon vor allem durch seine markante Fassadengestaltung aus. Insbesondere bei Einbruch der Dunkelheit entfaltet das Gebäude seine volle Wirkung: Die künstlerisch bespielte Fassade verwandelt den Pavillon in ein dynamisches Kunstwerk. Auf ihr werden digitale Werke von drei Künstlern gezeigt, wodurch ein Zusammenspiel von Architektur, Kunst und Technologie entsteht. Durch diese Lichtinszenierungen wirkt die Gebäudehülle beinahe lebendig."
+         data-en="One architectural particularity lies in the resource-conscious use of materials such as wood, steel and concrete. Beyond that, the pavilion is defined above all by its striking façade design. Especially after nightfall, the building unfolds its full effect: the artistically animated façade transforms the pavilion into a dynamic work of art. Digital works by three artists are displayed on it, creating an interaction between architecture, art and technology. Through these light stagings, the building envelope appears almost alive."
+         data-fr="Une particularité architecturale réside dans l’utilisation économe en ressources de matériaux tels que le bois, l’acier et le béton. Au-delà de cela, le pavillon se distingue surtout par la conception marquante de sa façade. C’est particulièrement à la tombée de la nuit que le bâtiment déploie toute sa force : la façade investie artistiquement transforme le pavillon en oeuvre d’art dynamique. Des créations numériques de trois artistes y sont projetées, créant une interaction entre architecture, art et technologie. Grâce à ces mises en lumière, l’enveloppe du bâtiment paraît presque vivante.">
+        Eine architektonische Besonderheit liegt im ressourcenschonenden Einsatz von Materialien wie Holz, Stahl und Beton. Darüber hinaus zeichnet sich der Pavillon vor allem durch seine markante Fassadengestaltung aus. Insbesondere bei Einbruch der Dunkelheit entfaltet das Gebäude seine volle Wirkung: Die künstlerisch bespielte Fassade verwandelt den Pavillon in ein dynamisches Kunstwerk. Auf ihr werden digitale Werke von drei Künstlern gezeigt, wodurch ein Zusammenspiel von Architektur, Kunst und Technologie entsteht. Durch diese Lichtinszenierungen wirkt die Gebäudehülle beinahe lebendig.
       </p>
 
-      <p class="p">
-        Diese Lichtinszenierungen sind möglich, da dieses Gebäude eine Nullenergie-Medienfassade hat. Sie besteht nämlich aus mehr als 10’000 rautenförmigen Photovoltaikmodulen, die auf organischen Kohlenwasserstoffverbindungen basieren und mit doppelseitigen LEDs ausgestattet sind. Insgesamt rund 30’000 einzeln steuerbare LEDs ermöglichen mithilfe einer Software komplexe Lichtinszenierungen. Durch die Reflexion an der dahinterliegenden Aluminium-Stehfalzfassade entstehen dynamische visuelle Effekte wie bewegte Schriftzüge oder animierte Lichtbilder. Ein zentraler architektonischer Aspekt ist dabei die Verbindung von Gestaltung und Energieeffizienz. Die semitransparenten Solarmodule sind jeweils zwischen zwei Polycarbonatplatten eingebettet und erzeugen somit selbst Energie mit einer Spitzenleistung von etwa 36 kW. Zwar wird der produzierte Strom in das Netzwerk eingespeist, doch die für die Medienfassade benötigte Energie bleibt in der Gesamtbilanz stets kleiner oder gleich der selbst erzeugten Menge [34].
+      <p class="p"
+         data-de="Möglich werden diese Lichtinszenierungen durch die Nullenergie-Medienfassade. Sie besteht aus mehr als 10’000 rautenförmigen Photovoltaikmodulen auf Basis organischer Kohlenwasserstoffverbindungen, die mit doppelseitigen LEDs ausgestattet sind. Insgesamt ermöglichen rund 30’000 einzeln steuerbare LEDs mithilfe einer Software komplexe visuelle Effekte wie bewegte Schriftzüge oder animierte Lichtbilder. Ein zentraler architektonischer Aspekt liegt dabei in der Verbindung von Gestaltung und Energieeffizienz. Die semitransparenten Solarmodule sind jeweils zwischen zwei Polycarbonatplatten eingebettet und erzeugen selbst Energie mit einer Spitzenleistung von rund 36 kW. Zwar wird der erzeugte Strom in das Netzwerk eingespeist, doch bleibt die für die Medienfassade benötigte Energie in der Gesamtbilanz stets kleiner oder gleich der selbst produzierten Menge [34]."
+         data-en="These light stagings are made possible by the zero-energy media façade. It consists of more than 10,000 diamond-shaped photovoltaic modules based on organic hydrocarbon compounds and equipped with double-sided LEDs. In total, around 30,000 individually controllable LEDs make it possible, with the help of software, to create complex visual effects such as moving lettering or animated light images. A central architectural aspect lies in the connection between design and energy efficiency. The semi-transparent solar modules are embedded between two polycarbonate panels and themselves generate electricity with a peak output of around 36 kW. Although the electricity produced is fed into the network, the energy required for the media façade always remains less than or equal to the amount generated by the building itself in the overall balance [34]."
+         data-fr="Ces mises en lumière sont rendues possibles par la façade médiatique à énergie nulle. Celle-ci se compose de plus de 10 000 modules photovoltaïques en forme de losange, basés sur des composés organiques hydrocarbonés et équipés de LED double face. Au total, environ 30 000 LED commandables individuellement permettent, à l’aide d’un logiciel, de produire des effets visuels complexes tels que des lettrages animés ou des images lumineuses en mouvement. Un aspect architectural central réside ici dans l’association entre conception et efficacité énergétique. Les modules solaires semi-transparents sont intégrés entre deux plaques de polycarbonate et produisent eux-mêmes de l’énergie avec une puissance de pointe d’environ 36 kW. Bien que l’électricité produite soit injectée dans le réseau, l’énergie nécessaire à la façade médiatique reste toujours, dans le bilan global, inférieure ou égale à la quantité produite par le bâtiment lui-même [34].">
+        Möglich werden diese Lichtinszenierungen durch die Nullenergie-Medienfassade. Sie besteht aus mehr als 10’000 rautenförmigen Photovoltaikmodulen auf Basis organischer Kohlenwasserstoffverbindungen, die mit doppelseitigen LEDs ausgestattet sind. Insgesamt ermöglichen rund 30’000 einzeln steuerbare LEDs mithilfe einer Software komplexe visuelle Effekte wie bewegte Schriftzüge oder animierte Lichtbilder. Ein zentraler architektonischer Aspekt liegt dabei in der Verbindung von Gestaltung und Energieeffizienz. Die semitransparenten Solarmodule sind jeweils zwischen zwei Polycarbonatplatten eingebettet und erzeugen selbst Energie mit einer Spitzenleistung von rund 36 kW. Zwar wird der erzeugte Strom in das Netzwerk eingespeist, doch bleibt die für die Medienfassade benötigte Energie in der Gesamtbilanz stets kleiner oder gleich der selbst produzierten Menge [34].
       </p>
 
-      <!-- Bild 2 -->
       <figure class="figure figure--wide">
-        <img class="figure__img" src="novartis4_.jpg" alt="Bild 2: Detailansicht der Medienfassade des Novartis Pavillons (https://www.campus.novartis.com/de/novartis-pavillon/kunstprojekte-pavillon)">
-        <figcaption class="figure__cap">Bild 2: Detailansicht der markanten Medienfassade des Novartis Pavillons. (https://www.campus.novartis.com/de/novartis-pavillon/kunstprojekte-pavillon)</figcaption>
+        <img class="figure__img" src="novartis4_.jpg" alt="Detailansicht der Medienfassade des Novartis Pavillons">
+        <figcaption class="figure__cap"
+                    data-de="Bild 2: Detailansicht der markanten Medienfassade des Novartis Pavillons. (https://www.campus.novartis.com/de/novartis-pavillon/kunstprojekte-pavillon)"
+                    data-en="Figure 2: Detail view of the striking media façade of the Novartis Pavilion. (https://www.campus.novartis.com/de/novartis-pavillon/kunstprojekte-pavillon)"
+                    data-fr="Figure 2 : Vue détaillée de la façade médiatique marquante du Pavillon Novartis. (https://www.campus.novartis.com/de/novartis-pavillon/kunstprojekte-pavillon)">
+          Bild 2: Detailansicht der markanten Medienfassade des Novartis Pavillons. (https://www.campus.novartis.com/de/novartis-pavillon/kunstprojekte-pavillon)
+        </figcaption>
       </figure>
 
       <div class="pager">
-        <a class="pager__link" href="weinlager.html">← Weinlager</a>
-        <a class="pager__link" href="elisabethen.html">Weinlager →</a>
+        <a class="pager__link" href="kunstmuseum.html"
+           data-de="← Kunstmuseum"
+           data-en="← Art Museum"
+           data-fr="← Musée des Beaux-Arts">
+          ← Kunstmuseum
+        </a>
+
+        <a class="pager__link" href="weinlager.html"
+           data-de="Weinlager →"
+           data-en="Weinlager →"
+           data-fr="Weinlager →">
+          Weinlager →
+        </a>
       </div>
 
     </div>
   </section>
 </main>
+
+<script>
+  function switchLanguage(lang) {
+    document.querySelectorAll("[data-de][data-en][data-fr]").forEach(el => {
+      el.textContent = el.getAttribute("data-" + lang);
+    });
+
+    const pageTitle = document.getElementById("pageTitle");
+    if (pageTitle) {
+      document.title = pageTitle.getAttribute("data-" + lang);
+    }
+
+    document.documentElement.lang = lang;
+    localStorage.setItem("siteLanguage", lang);
+
+    document.querySelectorAll("[data-lang-btn]").forEach(btn => {
+      btn.classList.toggle("active", btn.getAttribute("data-lang-btn") === lang);
+    });
+  }
+
+  document.querySelectorAll("[data-lang-btn]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      switchLanguage(btn.getAttribute("data-lang-btn"));
+    });
+  });
+
+  const savedLang = localStorage.getItem("siteLanguage") || "de";
+  switchLanguage(savedLang);
+</script>
 
 </body>
 </html>

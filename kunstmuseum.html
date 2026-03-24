@@ -1,10 +1,14 @@
 <!doctype html>
-<!doctype html>
 <html lang="de">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kunstmuseum Basel – BAULINIE Basel</title>
+  <title id="pageTitle"
+    data-de="Kunstmuseum Basel – BAULINIE Basel"
+    data-en="Kunstmuseum Basel – BAULINIE Basel"
+    data-fr="Musée des Beaux-Arts de Bâle – BAULINIE Basel">
+    Kunstmuseum Basel – BAULINIE Basel
+  </title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
@@ -16,40 +20,96 @@
     <div class="logo">BAULINIE Basel</div>
 
     <nav class="nav-links">
-      <a href="index.html" class="nav-link">Home</a>
-      <a href="zeitstrahl.html" class="nav-link">Zeitstrahl</a>
-      <a href="karte.html" class="nav-link">Karte</a>
-      <a href="wir.html" class="nav-link">Projekt</a>
+      <a href="index.html" class="nav-link"
+         data-de="Home"
+         data-en="Home"
+         data-fr="Accueil">Home</a>
+
+      <a href="zeitstrahl.html" class="nav-link"
+         data-de="Zeitstrahl"
+         data-en="Timeline"
+         data-fr="Chronologie">Zeitstrahl</a>
+
+      <a href="karte.html" class="nav-link"
+         data-de="Karte"
+         data-en="Map"
+         data-fr="Carte">Karte</a>
+
+      <a href="wir.html" class="nav-link"
+         data-de="Projekt"
+         data-en="Project"
+         data-fr="Projet">Projekt</a>
 
       <details class="dropdown">
-        <summary class="dropbtn">Bauwerke ▾</summary>
+        <summary class="dropbtn"
+                 data-de="Bauwerke ▾"
+                 data-en="Buildings ▾"
+                 data-fr="Bâtiments ▾">Bauwerke ▾</summary>
         <div class="dropdown-content">
-          <a href="elisabethen.html">Elisabethenkirche</a>
-          <a href="markthalle.html">Markthalle</a>
-          <a href="messe.html">Messe</a>
-          <a href="kunstmuseum.html">Kunstmuseum</a>
-          <a href="novartis.html">Novartis Campus</a>
-          <a href="weinlager.html">Weinlager</a>
+          <a href="elisabethen.html"
+             data-de="Elisabethenkirche"
+             data-en="Elisabethenkirche"
+             data-fr="Église Sainte-Elisabeth">Elisabethenkirche</a>
+          <a href="markthalle.html"
+             data-de="Markthalle"
+             data-en="Market Hall"
+             data-fr="Halle du Marché">Markthalle</a>
+          <a href="messe.html"
+             data-de="Messe"
+             data-en="Messe"
+             data-fr="Messe">Messe</a>
+          <a href="kunstmuseum.html"
+             data-de="Kunstmuseum"
+             data-en="Art Museum"
+             data-fr="Musée des Beaux-Arts">Kunstmuseum</a>
+          <a href="novartis.html"
+             data-de="Novartis Campus"
+             data-en="Novartis Campus"
+             data-fr="Campus Novartis">Novartis Campus</a>
+          <a href="weinlager.html"
+             data-de="Weinlager"
+             data-en="Weinlager"
+             data-fr="Weinlager">Weinlager</a>
         </div>
       </details>
 
-      <a href="Quellen.html" class="nav-link">Verzeichnis</a>
+      <a href="Quellen.html" class="nav-link"
+         data-de="Verzeichnis"
+         data-en="Sources"
+         data-fr="Sources">Verzeichnis</a>
+
+      <div class="lang-switch">
+        <button type="button" class="lang-btn active" data-lang-btn="de">DE</button>
+        <button type="button" class="lang-btn" data-lang-btn="en">EN</button>
+        <button type="button" class="lang-btn" data-lang-btn="fr">FR</button>
+      </div>
     </nav>
   </div>
 </header>
 
-<!-- HERO -->
 <section class="page-hero" style="background-image:url('km1_.jpg');">
   <div class="page-hero__overlay"></div>
 
   <div class="page-hero__inner">
-    <h1 class="page-hero__title">
-      Kunstmuseum<br>
-      <span class="page-hero__city">Basel</span>
+    <h1 class="page-hero__title"
+        data-de="Kunstmuseum"
+        data-en="Art Museum"
+        data-fr="Musée des Beaux-Arts">
+      Kunstmuseum
     </h1>
 
-    <p class="page-hero__subtitle">
-      Erweiterter Raum für Kunst und Bildung
+    <div class="page-hero__city"
+         data-de="Basel"
+         data-en="Basel"
+         data-fr="Bâle">
+      Basel
+    </div>
+
+    <p class="page-hero__subtitle"
+       data-de="Erweiterter Raum für Kunst und Bildung."
+       data-en="An expanded space for art and education."
+       data-fr="Un espace élargi pour l’art et l’éducation.">
+      Erweiterter Raum für Kunst und Bildung.
     </p>
   </div>
 </section>
@@ -58,75 +118,163 @@
   <section class="page-section">
     <div class="container">
 
-      <!-- Steckbrief -->
       <div class="facts">
         <div class="fact">
-          <div class="fact__label">Baujahr</div>
-          <div class="fact__value">2016</div>
+          <div class="fact__label"
+               data-de="Baujahr"
+               data-en="Year of construction"
+               data-fr="Année de construction">
+            Baujahr
+          </div>
+          <div class="fact__value">2016 [16]</div>
         </div>
       </div>
 
-      <!-- NUTZUNG -->
-      <h2 class="h2">Nutzung</h2>
+      <h2 class="h2"
+          data-de="Nutzung"
+          data-en="Use"
+          data-fr="Usage">
+        Nutzung
+      </h2>
 
-      <p class="p">
-        Der Neubau des Kunstmuseums Basel, entworfen von Christen und Gantenbein und im April 2016 eröffnet, dient als Erweiterung des Kunstmuseum-Hauptbaus und wird vor allem für Sonderausstellungen und Sammlungspräsentationen genutzt. Somit dient er sowohl als Ausstellungsort für wechselnde Themen als auch zur Präsentation der ständigen Sammlungen, wodurch der Neubau die Funktion des Museums gut ergänzt und erweitert. Der Neubau ist mit dem Hauptbau unterirdisch verbunden, und durch seine zentrale Lage im städtischen Umfeld fügt sich der Neubau harmonisch in das Zentrum Basels ein. Damit stärkt er die gesellschaftliche Rolle des Museums als Ort der Begegnung, des Austauschs und der kulturellen Bildung [16] [17].
+      <p class="p"
+         data-de="Der Neubau des Kunstmuseums Basel, entworfen von Christen & Gantenbein und im April 2016 eröffnet, erweitert den historischen Hauptbau des Museums und wird insbesondere für Sonderausstellungen sowie Sammlungspräsentationen genutzt. Er dient damit sowohl als Ort für wechselnde Themen als auch für die Präsentation von Teilen der ständigen Sammlung und ergänzt die Funktion des Museums auf räumlicher wie auch auf inhaltlicher Ebene. Durch die unterirdische Verbindung mit dem Hauptbau und durch seine zentrale Lage im städtischen Umfeld fügt sich der Neubau harmonisch in das Zentrum Basels ein. Zugleich stärkt er die gesellschaftliche Rolle des Museums als Ort der Begegnung, des Austauschs und der kulturellen Bildung [16] [17]."
+         data-en="The new building of Kunstmuseum Basel, designed by Christ & Gantenbein and opened in April 2016, extends the museum’s historic main building and is used above all for temporary exhibitions and presentations of the collection. It thus serves both as a venue for changing themes and as a space for presenting parts of the permanent collection, complementing the museum’s function on both a spatial and a conceptual level. Through its underground connection to the main building and its central position within the urban environment, the extension integrates harmoniously into the centre of Basel. At the same time, it strengthens the museum’s social role as a place of encounter, exchange and cultural education [16] [17]."
+         data-fr="Le nouveau bâtiment du Kunstmuseum Basel, conçu par Christ & Gantenbein et inauguré en avril 2016, prolonge le bâtiment principal historique du musée et est utilisé principalement pour des expositions temporaires ainsi que pour des présentations de la collection. Il sert ainsi à la fois d’espace pour des thématiques changeantes et de lieu de présentation d’une partie de la collection permanente, complétant la fonction du musée tant sur le plan spatial que conceptuel. Grâce à sa liaison souterraine avec le bâtiment principal et à sa situation centrale dans le tissu urbain, cette extension s’intègre harmonieusement au centre de Bâle. En même temps, elle renforce le rôle social du musée comme lieu de rencontre, d’échange et de formation culturelle [16] [17].">
+        Der Neubau des Kunstmuseums Basel, entworfen von Christen & Gantenbein und im April 2016 eröffnet, erweitert den historischen Hauptbau des Museums und wird insbesondere für Sonderausstellungen sowie Sammlungspräsentationen genutzt. Er dient damit sowohl als Ort für wechselnde Themen als auch für die Präsentation von Teilen der ständigen Sammlung und ergänzt die Funktion des Museums auf räumlicher wie auch auf inhaltlicher Ebene. Durch die unterirdische Verbindung mit dem Hauptbau und durch seine zentrale Lage im städtischen Umfeld fügt sich der Neubau harmonisch in das Zentrum Basels ein. Zugleich stärkt er die gesellschaftliche Rolle des Museums als Ort der Begegnung, des Austauschs und der kulturellen Bildung [16] [17].
       </p>
 
-      <!-- Bild 1 -->
       <figure class="figure">
         <img class="figure__img" src="km2_.jpg" alt="Eingang des Kunstmuseum Basel Neubaus">
-        <figcaption class="figure__cap">Eingangsbereich des Kunstmuseum Basel. Foto: Abinaya Sureshkumar</figcaption>
+        <figcaption class="figure__cap"
+                    data-de="Eingangsbereich des Kunstmuseum Basel. Foto: Abinaya Sureshkumar"
+                    data-en="Entrance area of Kunstmuseum Basel. Photo: Abinaya Sureshkumar"
+                    data-fr="Entrée du Kunstmuseum Basel. Photo : Abinaya Sureshkumar">
+          Eingangsbereich des Kunstmuseum Basel. Foto: Abinaya Sureshkumar
+        </figcaption>
       </figure>
 
-      <!-- NACHHALTIGKEIT -->
-      <h2 class="h2">Nachhaltigkeit</h2>
+      <h2 class="h2"
+          data-de="Nachhaltigkeit"
+          data-en="Sustainability"
+          data-fr="Durabilité">
+        Nachhaltigkeit
+      </h2>
 
-      <p class="p">
+      <p class="p"
+         data-de="Der Neubau des Kunstmuseums Basel setzt gezielt auf Nachhaltigkeit in ökologischer, ökonomischer und sozialer Hinsicht."
+         data-en="The new building of Kunstmuseum Basel deliberately focuses on sustainability in ecological, economic and social terms."
+         data-fr="Le nouveau bâtiment du Kunstmuseum Basel mise délibérément sur la durabilité dans ses dimensions écologique, économique et sociale.">
         Der Neubau des Kunstmuseums Basel setzt gezielt auf Nachhaltigkeit in ökologischer, ökonomischer und sozialer Hinsicht.
       </p>
 
-      <p class="p">
-        Ökologisch wurde das Gebäude energieeffizient geplant. Es ist an das Basler Fernwärmenetz angeschlossen und nutzt freie Kühlung sowie Wärmerückgewinnungssysteme mit Sorptionsrädern, um den Energieverbrauch und CO2 zu minimieren. Eine LED-Fassadenbeleuchtung reduziert den Strombedarf, während das ausgeklügelte Lüftungs- und Klimakonzept eine konstante Temperatur- und Feuchtebalance sicherstellt. Dies ist entscheidend für den Schutz empfindlicher Kunstwerke und ein angenehmes Raumklima [18] [19].
+      <p class="p"
+         data-de="In ökologischer Hinsicht wurde das Gebäude energieeffizient geplant. Es ist an das Basler Fernwärmenetz angeschlossen und nutzt freie Kühlung sowie Wärmerückgewinnungssysteme mit Sorptionsrädern, um den Energieverbrauch und den CO2-Ausstoss zu minimieren. Eine LED-Fassadenbeleuchtung reduziert den Strombedarf, während das ausgeklügelte Lüftungs- und Klimakonzept eine konstante Temperatur- und Feuchtebalance sicherstellt. Dies ist sowohl für den Schutz empfindlicher Kunstwerke als auch für ein angenehmes Raumklima von zentraler Bedeutung [18] [19]."
+         data-en="From an ecological perspective, the building was designed to be energy efficient. It is connected to Basel’s district heating network and uses free cooling as well as heat recovery systems with sorption wheels in order to minimise energy consumption and CO2 emissions. LED façade lighting reduces electricity demand, while the sophisticated ventilation and climate-control concept ensures a constant balance of temperature and humidity. This is essential both for the protection of sensitive works of art and for a pleasant indoor climate [18] [19]."
+         data-fr="Sur le plan écologique, le bâtiment a été conçu de manière écoénergétique. Il est raccordé au réseau de chauffage à distance de Bâle et utilise le free cooling ainsi que des systèmes de récupération de chaleur à roues de sorption afin de minimiser la consommation d’énergie et les émissions de CO2. Un éclairage de façade à LED réduit la demande en électricité, tandis que le concept sophistiqué de ventilation et de climatisation garantit un équilibre constant de température et d’humidité. Cela est essentiel tant pour la protection des oeuvres d’art sensibles que pour un climat intérieur agréable [18] [19].">
+        In ökologischer Hinsicht wurde das Gebäude energieeffizient geplant. Es ist an das Basler Fernwärmenetz angeschlossen und nutzt freie Kühlung sowie Wärmerückgewinnungssysteme mit Sorptionsrädern, um den Energieverbrauch und den CO2-Ausstoss zu minimieren. Eine LED-Fassadenbeleuchtung reduziert den Strombedarf, während das ausgeklügelte Lüftungs- und Klimakonzept eine konstante Temperatur- und Feuchtebalance sicherstellt. Dies ist sowohl für den Schutz empfindlicher Kunstwerke als auch für ein angenehmes Raumklima von zentraler Bedeutung [18] [19].
       </p>
 
-      <p class="p">
-        Ökonomisch zeigt sich Nachhaltigkeit darin, dass der Neubau langfristig flexibel genutzt werden kann. Zudem standen bei der Planung auch langfristige Betriebseffizienz und niedrige Wartungskosten im Vordergrund. Durch thermisch aktivierte Böden, optimierte Lüftungssysteme und langlebige, robuste Materialien wurde ein wirtschaftlich nachhaltiges Gebäude gewährleistet. So bleibt das Museum auch in Zukunft finanziell und ressourcenschonend [18] [19].
+      <p class="p"
+         data-de="Ökonomische Nachhaltigkeit zeigt sich darin, dass der Neubau langfristig flexibel genutzt werden kann. Bereits in der Planung standen eine hohe Betriebseffizienz sowie möglichst tiefe Wartungskosten im Vordergrund. Durch thermisch aktivierte Böden, optimierte Lüftungssysteme und langlebige, robuste Materialien entstand ein Gebäude, das wirtschaftlich tragfähig und zugleich ressourcenschonend ist [18] [19]."
+         data-en="Economic sustainability is reflected in the fact that the new building can be used flexibly over the long term. High operational efficiency and low maintenance costs were already central concerns during the planning stage. Through thermally activated floors, optimised ventilation systems and durable, robust materials, a building was created that is both economically viable and resource-efficient [18] [19]."
+         data-fr="La durabilité économique se manifeste dans le fait que le nouveau bâtiment peut être utilisé de manière flexible sur le long terme. Dès la phase de planification, une grande efficacité d’exploitation et des coûts d’entretien aussi faibles que possible ont été au centre des réflexions. Grâce à des sols thermiquement activés, des systèmes de ventilation optimisés et des matériaux durables et robustes, un bâtiment économiquement viable et respectueux des ressources a vu le jour [18] [19].">
+        Ökonomische Nachhaltigkeit zeigt sich darin, dass der Neubau langfristig flexibel genutzt werden kann. Bereits in der Planung standen eine hohe Betriebseffizienz sowie möglichst tiefe Wartungskosten im Vordergrund. Durch thermisch aktivierte Böden, optimierte Lüftungssysteme und langlebige, robuste Materialien entstand ein Gebäude, das wirtschaftlich tragfähig und zugleich ressourcenschonend ist [18] [19].
       </p>
 
-      <p class="p">
-        Als Erweiterung eines zentralen Kunstortes trägt der Neubau wesentlich zur kulturellen Teilhabe in Basel bei. Er bietet neue Räume für Austausch, Bildung und Inspiration und stärkt so die Rolle des Museums als sozialer Treffpunkt innerhalb der Stadt. Zudem ist der Neubau unterirdisch mit dem Haupthaus des Kunstmuseums verbunden. Es wurde auch darauf geachtet, dass es barrierefrei gebaut wird. Somit können auch beeinträchtigte Menschen das Museum bestaunen [18] [20].
+      <p class="p"
+         data-de="Als Erweiterung eines zentralen Kunstortes trägt der Neubau wesentlich zur kulturellen Teilhabe in Basel bei. Er schafft neue Räume für Austausch, Bildung und Inspiration und stärkt damit die Rolle des Museums als sozialer Treffpunkt innerhalb der Stadt. Hinzu kommt, dass der Neubau unterirdisch mit dem Haupthaus verbunden und barrierefrei gestaltet wurde. Dadurch wird sichergestellt, dass auch Menschen mit Beeinträchtigungen das Museum nutzen und erleben können [18] [20]."
+         data-en="As an extension of a central place of art, the new building makes an important contribution to cultural participation in Basel. It creates new spaces for exchange, education and inspiration, thereby strengthening the role of the museum as a social meeting place within the city. In addition, the extension is connected underground to the main building and was designed to be barrier-free. This ensures that people with disabilities can also use and experience the museum [18] [20]."
+         data-fr="En tant qu’extension d’un lieu d’art central, le nouveau bâtiment contribue de manière importante à la participation culturelle à Bâle. Il crée de nouveaux espaces d’échange, de formation et d’inspiration, renforçant ainsi le rôle du musée comme lieu de rencontre social au sein de la ville. De plus, l’extension est reliée au bâtiment principal par une liaison souterraine et a été conçue sans barrières. Cela garantit que les personnes en situation de handicap puissent elles aussi utiliser et découvrir le musée [18] [20].">
+        Als Erweiterung eines zentralen Kunstortes trägt der Neubau wesentlich zur kulturellen Teilhabe in Basel bei. Er schafft neue Räume für Austausch, Bildung und Inspiration und stärkt damit die Rolle des Museums als sozialer Treffpunkt innerhalb der Stadt. Hinzu kommt, dass der Neubau unterirdisch mit dem Haupthaus verbunden und barrierefrei gestaltet wurde. Dadurch wird sichergestellt, dass auch Menschen mit Beeinträchtigungen das Museum nutzen und erleben können [18] [20].
       </p>
 
-      <!-- ARCHITEKTUR -->
-      <h2 class="h2">Architektonische Bedeutung</h2>
+      <h2 class="h2"
+          data-de="Architektonische Bedeutung"
+          data-en="Architectural significance"
+          data-fr="Importance architecturale">
+        Architektonische Bedeutung
+      </h2>
 
-      <p class="p">
-        Der Neubau hat einige architektonische Besonderheiten, wie die silbergraue Fassade aus Beton, in deren Fugen LED-Streifen eingebaut wurden. Dadurch erhält das Gebäude trotz seiner Massivität eine leichte, fast schwebende Wirkung. Das Zusammenspiel von Licht und Stein verleiht dem Bau eine dynamische und flüchtige Erscheinung, als würde das Licht aus dem Inneren des Bauwerks hervorscheinen. Die Ecke des Neubaus ist absichtlich zurückgesetzt und nimmt die Form der alten Ecke des Hauptgebäudes auf. Gleichzeitig öffnet sie sich zur Strassenkreuzung und schafft somit einen einladenden Vorplatz. Dadurch wirken Alt- und Neugebäude wie ein harmonisches Ganzes im Zentrum von Basel.
+      <p class="p"
+         data-de="Der Neubau weist mehrere architektonische Besonderheiten auf. Auffällig ist insbesondere die silbergraue Betonfassade, in deren Fugen LED-Streifen integriert wurden. Dadurch erhält das Gebäude trotz seiner Massivität eine leichte, beinahe schwebende Wirkung. Das Zusammenspiel von Licht und Stein verleiht dem Bau eine dynamische und zugleich flüchtige Erscheinung, als würde das Licht aus dem Inneren des Gebäudes hervortreten. Die Ecke des Neubaus ist bewusst zurückgesetzt und nimmt die Form der alten Ecke des Hauptgebäudes auf. Gleichzeitig öffnet sie sich zur Strassenkreuzung und schafft so einen einladenden Vorplatz. Auf diese Weise wirken Alt- und Neubau wie ein zusammenhängendes architektonisches Ensemble im Zentrum von Basel."
+         data-en="The new building displays several architectural particularities. Especially striking is the silver-grey concrete façade, into whose joints LED strips have been integrated. As a result, the building acquires a light, almost hovering effect despite its massiveness. The interplay of light and stone gives the structure a dynamic and at the same time fleeting appearance, as if light were emerging from within the building. The corner of the extension is deliberately set back and echoes the form of the former corner of the main building. At the same time, it opens towards the street intersection and thus creates an inviting forecourt. In this way, old and new building appear as a coherent architectural ensemble in the centre of Basel."
+         data-fr="Le nouveau bâtiment présente plusieurs particularités architecturales. La façade en béton gris argenté, dans les joints de laquelle des bandes LED ont été intégrées, est particulièrement frappante. Malgré sa massivité, le bâtiment acquiert ainsi une légèreté presque flottante. Le jeu entre la lumière et la pierre confère à la construction une apparence à la fois dynamique et fugitive, comme si la lumière émanait de l’intérieur du bâtiment. L’angle de l’extension est volontairement en retrait et reprend la forme de l’ancien angle du bâtiment principal. En même temps, il s’ouvre vers le carrefour et crée ainsi un parvis accueillant. De cette manière, l’ancien et le nouveau bâtiment apparaissent comme un ensemble architectural cohérent au centre de Bâle.">
+        Der Neubau weist mehrere architektonische Besonderheiten auf. Auffällig ist insbesondere die silbergraue Betonfassade, in deren Fugen LED-Streifen integriert wurden. Dadurch erhält das Gebäude trotz seiner Massivität eine leichte, beinahe schwebende Wirkung. Das Zusammenspiel von Licht und Stein verleiht dem Bau eine dynamische und zugleich flüchtige Erscheinung, als würde das Licht aus dem Inneren des Gebäudes hervortreten. Die Ecke des Neubaus ist bewusst zurückgesetzt und nimmt die Form der alten Ecke des Hauptgebäudes auf. Gleichzeitig öffnet sie sich zur Strassenkreuzung und schafft so einen einladenden Vorplatz. Auf diese Weise wirken Alt- und Neubau wie ein zusammenhängendes architektonisches Ensemble im Zentrum von Basel.
       </p>
 
-      <p class="p">
-        Im Inneren prägen grosszügige, eher zurückhaltend gestaltete Ausstellungsräume und eine imposante zentrale Treppe das Haus, die über ein grosses, rundes Oberlicht belichtet wird. Die Räume sind bewusst ruhig, klar proportioniert und mit zeitlosen Materialien gebaut worden, damit die Kunst im Mittelpunkt steht. Insgesamt entsteht ein Kontrast zwischen der Schwere des Gebäudes und der Bewegung des Lichts, wodurch der Neubau zu einem modernen, aber dennoch dezenten Gegenstück zum Haupthaus des Kunstmuseums wird [16] [18].
+      <p class="p"
+         data-de="Im Inneren prägen grosszügige, bewusst zurückhaltend gestaltete Ausstellungsräume sowie eine markante zentrale Treppe das Haus, die über ein grosses rundes Oberlicht belichtet wird. Die Räume sind ruhig, klar proportioniert und mit zeitlosen Materialien ausgeführt, damit die Kunst selbst im Mittelpunkt bleibt. Insgesamt entsteht ein spannungsreicher Kontrast zwischen der Schwere des Gebäudes und der Beweglichkeit des Lichts, wodurch der Neubau zu einem modernen, zugleich jedoch dezenten Gegenstück zum Haupthaus des Kunstmuseums wird [16] [18]."
+         data-en="Inside, the building is characterised by spacious exhibition rooms designed with deliberate restraint, as well as by a striking central staircase illuminated from above through a large circular skylight. The rooms are calm, clearly proportioned and executed with timeless materials so that the art itself remains at the centre. Overall, a compelling contrast emerges between the heaviness of the building and the mobility of light, making the extension a modern yet discreet counterpart to the main building of the Kunstmuseum [16] [18]."
+         data-fr="À l’intérieur, le bâtiment est marqué par de vastes espaces d’exposition conçus avec retenue ainsi que par un escalier central imposant, éclairé par un grand oculus circulaire. Les espaces sont calmes, clairement proportionnés et réalisés avec des matériaux intemporels afin que l’art lui-même demeure au centre. Dans l’ensemble, il naît un contraste fort entre la lourdeur du bâtiment et la mobilité de la lumière, ce qui fait de l’extension un contrepoint moderne, mais discret, au bâtiment principal du Kunstmuseum [16] [18].">
+        Im Inneren prägen grosszügige, bewusst zurückhaltend gestaltete Ausstellungsräume sowie eine markante zentrale Treppe das Haus, die über ein grosses rundes Oberlicht belichtet wird. Die Räume sind ruhig, klar proportioniert und mit zeitlosen Materialien ausgeführt, damit die Kunst selbst im Mittelpunkt bleibt. Insgesamt entsteht ein spannungsreicher Kontrast zwischen der Schwere des Gebäudes und der Beweglichkeit des Lichts, wodurch der Neubau zu einem modernen, zugleich jedoch dezenten Gegenstück zum Haupthaus des Kunstmuseums wird [16] [18].
       </p>
 
-      <p class="p">
-        Zudem ist der Neubau mitten im Verkehr entstanden und dadurch sehr gut mit öffentlichen Verkehrsmitteln, zu Fuss oder mit dem Fahrrad erreichbar.
+      <p class="p"
+         data-de="Zudem entstand der Neubau inmitten eines stark frequentierten städtischen Umfelds und ist deshalb hervorragend mit öffentlichen Verkehrsmitteln, zu Fuss oder mit dem Fahrrad erreichbar."
+         data-en="In addition, the extension was built within a heavily frequented urban setting and is therefore easily accessible by public transport, on foot or by bicycle."
+         data-fr="En outre, l’extension a été construite au coeur d’un environnement urbain fortement fréquenté et est donc parfaitement accessible en transports publics, à pied ou à vélo.">
+        Zudem entstand der Neubau inmitten eines stark frequentierten städtischen Umfelds und ist deshalb hervorragend mit öffentlichen Verkehrsmitteln, zu Fuss oder mit dem Fahrrad erreichbar.
       </p>
 
-      <!-- Bild 2 -->
       <figure class="figure figure--wide">
         <img class="figure__img" src="km3_.jpg" alt="Fenster- oder Fassadendetail des Kunstmuseum Basel Neubaus">
-        <figcaption class="figure__cap">Fenster- und Fassadendetail des Kunstmuseum Basel. Foto: Abinaya Sureshkumar</figcaption>
+        <figcaption class="figure__cap"
+                    data-de="Fenster- und Fassadendetail des Kunstmuseum Basel. Foto: Abinaya Sureshkumar"
+                    data-en="Window and façade detail of Kunstmuseum Basel. Photo: Abinaya Sureshkumar"
+                    data-fr="Détail de fenêtre et de façade du Kunstmuseum Basel. Photo : Abinaya Sureshkumar">
+          Fenster- und Fassadendetail des Kunstmuseum Basel. Foto: Abinaya Sureshkumar
+        </figcaption>
       </figure>
 
       <div class="pager">
-        <a class="pager__link" href="messe.html">← Messe</a>
-        <a class="pager__link" href="novartis.html">Novartis Pavillon →</a>
+        <a class="pager__link" href="messe.html"
+           data-de="← Messe"
+           data-en="← Trade Fair"
+           data-fr="← Foire">
+          ← Messe
+        </a>
+
+        <a class="pager__link" href="novartis.html"
+           data-de="Novartis Pavillon →"
+           data-en="Novartis Pavilion →"
+           data-fr="Pavillon Novartis →">
+          Novartis Pavillon →
+        </a>
       </div>
 
     </div>
   </section>
 </main>
+
+<script>
+  function switchLanguage(lang) {
+    document.querySelectorAll("[data-de][data-en][data-fr]").forEach(el => {
+      el.textContent = el.getAttribute("data-" + lang);
+    });
+
+    const pageTitle = document.getElementById("pageTitle");
+    if (pageTitle) {
+      document.title = pageTitle.getAttribute("data-" + lang);
+    }
+
+    document.documentElement.lang = lang;
+    localStorage.setItem("siteLanguage", lang);
+
+    document.querySelectorAll("[data-lang-btn]").forEach(btn => {
+      btn.classList.toggle("active", btn.getAttribute("data-lang-btn") === lang);
+    });
+  }
+
+  document.querySelectorAll("[data-lang-btn]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      switchLanguage(btn.getAttribute("data-lang-btn"));
+    });
+  });
+
+  const savedLang = localStorage.getItem("siteLanguage") || "de";
+  switchLanguage(savedLang);
+</script>
 
 </body>
 </html>
