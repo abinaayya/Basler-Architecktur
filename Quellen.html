@@ -3,7 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Basel – Projekt Wahlkurs</title>
+  <title id="pageTitle"
+    data-de="Verzeichnis – BAULINIE Basel"
+    data-en="Sources – BAULINIE Basel"
+    data-fr="Sources – BAULINIE Basel">
+    Verzeichnis – BAULINIE Basel
+  </title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,24 +19,268 @@
     <div class="logo">BAULINIE Basel</div>
 
     <nav class="nav-links">
-      <a href="index.html" class="nav-link">Home</a>
-      <a href="zeitstrahl.html" class="nav-link">Zeitstrahl</a>
-      <a href="karte.html" class="nav-link">Karte</a>
-      <a href="wir.html" class="nav-link">Projekt</a>
+      <a href="index.html" class="nav-link"
+         data-de="Home"
+         data-en="Home"
+         data-fr="Accueil">Home</a>
 
-     <details class="dropdown">
-  <summary class="dropbtn">Bauwerke ▾</summary>
-  <div class="dropdown-content">
-    <a href="elisabethen.html">1864 · Elisabethenkirche</a>
-    <a href="markthalle.html">1929 · Markthalle</a>
-    <a href="messe.html">2013 · Messe</a>
-    <a href="kunstmuseum.html">2016 · Kunstmuseum</a>
-    <a href="weinlager.html">2023 · Weinlager</a>
-    <a href="novartis.html">2022 · Novartis Campus</a>
-  </div>
-</details>
+      <a href="zeitstrahl.html" class="nav-link"
+         data-de="Zeitstrahl"
+         data-en="Timeline"
+         data-fr="Chronologie">Zeitstrahl</a>
 
-    <a href="Quellen.html" class="nav-link">Verzeichnis</a>
+      <a href="karte.html" class="nav-link"
+         data-de="Karte"
+         data-en="Map"
+         data-fr="Carte">Karte</a>
+
+      <a href="wir.html" class="nav-link"
+         data-de="Projekt"
+         data-en="Project"
+         data-fr="Projet">Projekt</a>
+
+      <details class="dropdown">
+        <summary class="dropbtn"
+                 data-de="Bauwerke ▾"
+                 data-en="Buildings ▾"
+                 data-fr="Bâtiments ▾">Bauwerke ▾</summary>
+        <div class="dropdown-content">
+          <a href="elisabethen.html"
+             data-de="Elisabethenkirche"
+             data-en="Elisabethenkirche"
+             data-fr="Église Sainte-Elisabeth">Elisabethenkirche</a>
+          <a href="markthalle.html"
+             data-de="Markthalle"
+             data-en="Market Hall"
+             data-fr="Halle du Marché">Markthalle</a>
+          <a href="messe.html"
+             data-de="Messe"
+             data-en="Messe"
+             data-fr="Messe">Messe</a>
+          <a href="kunstmuseum.html"
+             data-de="Kunstmuseum"
+             data-en="Art Museum"
+             data-fr="Musée des Beaux-Arts">Kunstmuseum</a>
+          <a href="novartis.html"
+             data-de="Novartis Campus"
+             data-en="Novartis Campus"
+             data-fr="2022 · Campus Novartis">Novartis Campus</a>
+          <a href="weinlager.html"
+             data-de="Weinlager"
+             data-en="Weinlager"
+             data-fr="Weinlager">Weinlager</a>
+        </div>
+      </details>
+
+      <a href="Quellen.html" class="nav-link nav-link--active"
+         data-de="Verzeichnis"
+         data-en="Sources"
+         data-fr="Sources">Verzeichnis</a>
+
+      <div class="lang-switch">
+        <button type="button" class="lang-btn active" data-lang-btn="de">DE</button>
+        <button type="button" class="lang-btn" data-lang-btn="en">EN</button>
+        <button type="button" class="lang-btn" data-lang-btn="fr">FR</button>
+      </div>
     </nav>
   </div>
 </header>
+
+<main class="sources-page">
+  <section class="sources-hero">
+    <div class="sources-hero__inner">
+      <div class="sources-kicker"
+           data-de="Dokumentation"
+           data-en="Documentation"
+           data-fr="Documentation">
+        Dokumentation
+      </div>
+
+      <h1 data-de="Quellenverzeichnis"
+          data-en="Sources"
+          data-fr="Sources">
+        Quellenverzeichnis
+      </h1>
+
+      <p data-de="Die folgenden Quellen wurden für die inhaltliche Erarbeitung der Website und des Projekts «BAULINIE Basel» verwendet."
+         data-en="The following sources were used for the content development of the website and the project “BAULINIE Basel”."
+         data-fr="Les sources suivantes ont été utilisées pour l’élaboration du contenu du site web et du projet « BAULINIE Basel ».">
+        Die folgenden Quellen wurden für die inhaltliche Erarbeitung der Website und des Projekts «BAULINIE Basel» verwendet.
+      </p>
+    </div>
+  </section>
+
+  <section class="sources-section">
+    <div class="sources-container">
+
+      <div class="sources-grid">
+
+        <article class="source-card">
+          <div class="source-card__label"
+               data-de="Elisabethenkirche"
+               data-en="Elisabethenkirche"
+               data-fr="Église Sainte-Elisabeth">
+            Elisabethenkirche
+          </div>
+          <ol class="source-list" start="1">
+            <li>Merians Elisabethenkirche, in: Basler Baukultur, Veranstaltungen der Kantonalen Denkmalspflege Basel-Stadt, <a href="https://www.basler-baukultur.ch/veranstaltung/etd-2023-merians-elisabethenkirche/2023-09-09" target="_blank" rel="noopener noreferrer">https://www.basler-baukultur.ch/veranstaltung/etd-2023-merians-elisabethenkirche/2023-09-09</a>, Stand: 04.02.2026</li>
+            <li>Offene Kirche Elisabethen, in: orgel-basel, <a href="https://orgel-basel.ch/de/kirchen/elisabethen" target="_blank" rel="noopener noreferrer">https://orgel-basel.ch/de/kirchen/elisabethen</a>, Stand: 04.02.2026</li>
+            <li>Unsere Geschichte, in: offene kirche, <a href="https://offenekirche.ch/geschichte-offene-kirche-basel/" target="_blank" rel="noopener noreferrer">https://offenekirche.ch/geschichte-offene-kirche-basel/</a>, Stand: 04.02.2026</li>
+            <li>Offene Kirche Elisabethen, Für diese Basler Kirche ist Liebe kein Lippenbekenntnis, in: SRF, <a href="https://www.srf.ch/kultur/gesellschaft-religion/offene-kirche-elisabethen-fuer-diese-basler-kirche-ist-liebe-kein-lippenbekenntnis" target="_blank" rel="noopener noreferrer">https://www.srf.ch/kultur/gesellschaft-religion/offene-kirche-elisabethen-fuer-diese-basler-kirche-ist-liebe-kein-lippenbekenntnis</a>, Stand: 04.02.2026</li>
+            <li>Aktuell, Die Offene Kirche Elisabethen (OKE), in: offene kirche, <a href="https://offenekirche.ch" target="_blank" rel="noopener noreferrer">https://offenekirche.ch</a>, Stand: 04.02.2026</li>
+            <li>Tischlein deck dich!, Lebensmittel für armutsbetroffene Mitmenschen, in: offene kirche, <a href="https://offenekirche.ch/tischlein-deck-dich/" target="_blank" rel="noopener noreferrer">https://offenekirche.ch/tischlein-deck-dich/</a>, Stand: 16.02.2026</li>
+            <li>Frau sein!, in: offene kirche, <a href="https://offenekirche.ch/projekte/frau-sein/" target="_blank" rel="noopener noreferrer">https://offenekirche.ch/projekte/frau-sein/</a>, Stand: 16.02.2026</li>
+            <li>Frauenkleider-Tauschbörse am 23. Oktober: 100% nachhaltig, in: Kanton Basel-Stadt, Medienmitteilung – Departement für Wirtschaft, Soziales und Umwelt, <a href="https://www.bs.ch/medienmitteilungen/wsu/2011-frauenkleider-tauschboerse-am-23-oktober-100-nachhaltig" target="_blank" rel="noopener noreferrer">https://www.bs.ch/medienmitteilungen/wsu/2011-frauenkleider-tauschboerse-am-23-oktober-100-nachhaltig</a>, Stand: 16.06.2026</li>
+            <li>Taschenbörse in Basel, in: Soroptimist International Switzerland, <a href="https://swiss-soroptimist.ch/event/taschenboerse-in-basel/#:~:text=SAVE%20THE%20DATE:%20Am%20Samstag,die%20Stiftung%20Frauenhaus%20beider%20Basel" target="_blank" rel="noopener noreferrer">https://swiss-soroptimist.ch/event/taschenboerse-in-basel/#:~:text=SAVE%20THE%20DATE:%20Am%20Samstag,die%20Stiftung%20Frauenhaus%20beider%20Basel</a>, Stand: 16.02.2026</li>
+            <li>Elisabethenkirche, Basel, in: Wikipedia, <a href="https://en.wikipedia.org/wiki/Elisabethenkirche,_Basel" target="_blank" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Elisabethenkirche,_Basel</a>, Stand: 17.02.2026</li>
+          </ol>
+        </article>
+
+        <article class="source-card">
+          <div class="source-card__label"
+               data-de="Markthalle"
+               data-en="Market Hall"
+               data-fr="Halle du Marché">
+            Markthalle
+          </div>
+          <ol class="source-list" start="11">
+            <li>Über die Markthalle, in: altemarkhalle, <a href="https://altemarkthalle.ch/ueber/organisation/" target="_blank" rel="noopener noreferrer">https://altemarkthalle.ch/ueber/organisation/</a>, Stand: 23.02.2026</li>
+            <li>Markthalle Basel, in: Wikipedia, <a href="https://de.wikipedia.org/wiki/Markthalle_Basel" target="_blank" rel="noopener noreferrer">https://de.wikipedia.org/wiki/Markthalle_Basel</a>, Stand: 23.02.2026</li>
+            <li>Leitbild, in: altemarkthalle, <a href="https://altemarkthalle.ch/wp-content/uploads/2022/05/Leitbild22.pdf" target="_blank" rel="noopener noreferrer">https://altemarkthalle.ch/wp-content/uploads/2022/05/Leitbild22.pdf</a>, Stand: 23.02.2026</li>
+            <li>90 Jahre Markthalle, in: altemarkthalle, <a href="https://altemarkthalle.ch/90-jahre-markthalle/" target="_blank" rel="noopener noreferrer">https://altemarkthalle.ch/90-jahre-markthalle/</a>, Stand: 23.02.2026</li>
+            <li>Architektur, Markthalle, in: This is Basel, <a href="https://www.basel.com/de/attraktionen/markthalle-cbdf9e9048#:~:text=Moderne:%20auch%20Nachkriegsmoderne.,%2C%20Verwaltungsgebäude%2C%20Infrastruktur%20und%20Industrie" target="_blank" rel="noopener noreferrer">https://www.basel.com/de/attraktionen/markthalle-cbdf9e9048#:~:text=Moderne:%20auch%20Nachkriegsmoderne.,%2C%20Verwaltungsgebäude%2C%20Infrastruktur%20und%20Industrie</a>, Stand: 27.02.2026</li>
+          </ol>
+        </article>
+
+        <article class="source-card">
+          <div class="source-card__label"
+               data-de="Kunstmuseum"
+               data-en="Art Museum"
+               data-fr="Musée des Beaux-Arts">
+            Kunstmuseum
+          </div>
+          <ol class="source-list" start="16">
+            <li>Kunstmuseum Basel Neubau, Ein Haus für die Kunst, in: Swiss-Architects, <a href="https://swiss-architects.com/de/architecture-news/building-of-the-week/ein-haus-fur-die-kunst" target="_blank" rel="noopener noreferrer">https://swiss-architects.com/de/architecture-news/building-of-the-week/ein-haus-fur-die-kunst</a>, Stand: 27.02.2026</li>
+            <li>Unsere drei Häuser, in: Kunstmuseum Basel, <a href="https://kunstmuseumbasel.ch/de/museum/unsere-drei-haeuser" target="_blank" rel="noopener noreferrer">https://kunstmuseumbasel.ch/de/museum/unsere-drei-haeuser</a>, Stand: 27.02.2026</li>
+            <li>Kunstmuseum Basel – Ein Film zum Neubau, in: youtube – Kunstmuseum Basel, <a href="https://www.youtube.com/watch?v=F2r-YpKdZOw" target="_blank" rel="noopener noreferrer">https://www.youtube.com/watch?v=F2r-YpKdZOw</a>, Stand: 27.02.2026</li>
+            <li>Erweiterungsbau Kunstmuseum, Basel, Schweiz, in: transsolar, <a href="https://transsolar.com/de/projects/basel-kunstmuseum-neubau" target="_blank" rel="noopener noreferrer">https://transsolar.com/de/projects/basel-kunstmuseum-neubau</a>, Stand: 27.02.2026</li>
+            <li>Barrierefreiheit, in: Kunstmuseum Basel, <a href="https://kunstmuseumbasel.ch/de/besuch/barrierefreiheit" target="_blank" rel="noopener noreferrer">https://kunstmuseumbasel.ch/de/besuch/barrierefreiheit</a>, Stand: 27.02.2026</li>
+          </ol>
+        </article>
+
+        <article class="source-card">
+          <div class="source-card__label"
+               data-de="Messe Basel"
+               data-en="Messe Basel"
+               data-fr="Foire de Bâle">
+            Messe Basel
+          </div>
+          <ol class="source-list" start="21">
+            <li>Messe Basel, Neubau Messehalle, in: architekturbau.ch, <a href="https://a.storyblok.com/f/314427/a11b056710/12013d_messe_basel_web_190416_120003.pdf" target="_blank" rel="noopener noreferrer">https://a.storyblok.com/f/314427/a11b056710/12013d_messe_basel_web_190416_120003.pdf</a>, Stand: 28.02.2026</li>
+            <li>Hybrid Games Switzerland, in: hybridgames, <a href="https://hybridgames.ch" target="_blank" rel="noopener noreferrer">https://hybridgames.ch</a>, Stand: 28.02.3026</li>
+            <li>Interview mit Stefan Graf über das Telefon</li>
+            <li>Messe Basel, Die medialen Elemente der Architektur, in: iart, <a href="https://iart.ch/work/messe-basel" target="_blank" rel="noopener noreferrer">https://iart.ch/work/messe-basel</a>, Stand: 06.03.2026</li>
+            <li>Messe Basel-D, in: architectes, <a href="https://www.architectes.ch/de/reportages/messe-basel-d-62806" target="_blank" rel="noopener noreferrer">https://www.architectes.ch/de/reportages/messe-basel-d-62806</a>, Stand: 06.03.2026</li>
+          </ol>
+        </article>
+
+        <article class="source-card">
+          <div class="source-card__label"
+               data-de="Weinlager"
+               data-en="Wine Warehouse"
+               data-fr="Entrepôt à vin">
+            Weinlager
+          </div>
+          <ol class="source-list" start="26">
+            <li>Das ehemalige Coop-Weinlager: Wohn- und Lebensraum für Menschen wie du und ich, in: Stiftung-habitat, <a href="https://www.stiftung-habitat.ch/sh/weinlagerstrasse/ankommen.html" target="_blank" rel="noopener noreferrer">https://www.stiftung-habitat.ch/sh/weinlagerstrasse/ankommen.html</a>, Stand: 04.03.2026</li>
+            <li>Umnutzung eines Weinlagers in Basel zum Mehrfamilienhaus, in: bauhandwerk, <a href="https://www.bauhandwerk.de/artikel/umnutzung-eines-weinlagers-in-basel-zum-mehrfamilienhaus-4138253.html" target="_blank" rel="noopener noreferrer">https://www.bauhandwerk.de/artikel/umnutzung-eines-weinlagers-in-basel-zum-mehrfamilienhaus-4138253.html</a>, Stand: 04.03.2026</li>
+          </ol>
+        </article>
+
+        <article class="source-card">
+          <div class="source-card__label"
+               data-de="Novartis Pavillon"
+               data-en="Novartis Pavilion"
+               data-fr="Pavillon Novartis">
+            Novartis Pavillon
+          </div>
+          <ol class="source-list" start="28">
+            <li>Aus Sonnenlicht wird Kunst, in: iart, <a href="https://iart.ch/work/novartis-pavillon-fassade" target="_blank" rel="noopener noreferrer">https://iart.ch/work/novartis-pavillon-fassade</a>, Stand: 06.03.2026</li>
+            <li>Novartis eröffnet mit dem Novartis Pavillon einen Ort für Begegnung und Lernen in Basel, in: novartis, <a href="https://www.novartis.com/ch-de/news/media-releases/novartis-eroeffnet-mit-dem-novartis-pavillon-einen-ort-fuer-begegnung-und-lernen-basel" target="_blank" rel="noopener noreferrer">https://www.novartis.com/ch-de/news/media-releases/novartis-eroeffnet-mit-dem-novartis-pavillon-einen-ort-fuer-begegnung-und-lernen-basel</a>, Stand: 06.03.2026</li>
+            <li>Novartis Pavillon, Wo Wissenschaft auf Kunst trifft, in: campus.novartis, <a href="https://www.campus.novartis.com/de/novartis-pavillon" target="_blank" rel="noopener noreferrer">https://www.campus.novartis.com/de/novartis-pavillon</a>, Stand: 06.03.2026</li>
+            <li>Gesundheit, Sicherheit, Umweltschutz und Nachhaltigkeit, in: novartis, <a href="https://www.novartis.com/ch-de/gesellschaft-und-umwelt/gesundheit-sicherheit-umweltschutz-nachhaltigkeit" target="_blank" rel="noopener noreferrer">https://www.novartis.com/ch-de/gesellschaft-und-umwelt/gesundheit-sicherheit-umweltschutz-nachhaltigkeit</a>, Stand: 06.03.2026</li>
+            <li>Novartis Pavillon, in: This is Basel, <a href="https://www.basel.com/de/attraktionen/novartis-pavillon-3e048b49d3#:~:text=Der%20nachhaltig%20gebaute%20Pavillon%20wurde,in%20der%20Medienfassade%20selbst%20produziert." target="_blank" rel="noopener noreferrer">https://www.basel.com/de/attraktionen/novartis-pavillon-3e048b49d3#:~:text=Der%20nachhaltig%20gebaute%20Pavillon%20wurde,in%20der%20Medienfassade%20selbst%20produziert.</a>, Stand: 06.03.2026</li>
+            <li>Künstlerisches Gewand, Novartis Pavillon, Basel, in: espazium, <a href="https://www.espazium.ch/de/aktuelles/fassaden-novartis-pavillon-basel" target="_blank" rel="noopener noreferrer">https://www.espazium.ch/de/aktuelles/fassaden-novartis-pavillon-basel</a>, Stand: 06.03.2026</li>
+            <li>Wärmetauscher «Joulia» für die Dusche, in: swissengineering.ch, <a href="https://www.swissengineering.ch/de/engagement-und-themen/themen/klima-energie-umwelt-mobilitaet/use-case-wärmetauscher-für-die-dusche" target="_blank" rel="noopener noreferrer">https://www.swissengineering.ch/de/engagement-und-themen/themen/klima-energie-umwelt-mobilitaet/use-case-wärmetauscher-für-die-dusche</a>, Stand: 21.03.2026</li>
+            <li>Medienfassade, in: Wikipedia, <a href="https://de.wikipedia.org/wiki/Medienfassade" target="_blank" rel="noopener noreferrer">https://de.wikipedia.org/wiki/Medienfassade</a>, Stand: 21.03.2026</li>
+            <li>Solarmodul, in: Wikipedia, <a href="https://de.wikipedia.org/wiki/Solarmodul" target="_blank" rel="noopener noreferrer">https://de.wikipedia.org/wiki/Solarmodul</a>, Stand: 21.03.2026</li>
+            <li>Transparente Solarmodule: Der neue Standard auf Privatdach- und auf Freiflächenanlagen?, in: SENEC, <a href="https://senec.com/de/magazin/transparente-solarmodule" target="_blank" rel="noopener noreferrer">https://senec.com/de/magazin/transparente-solarmodule</a>, Stand: 21.03.2026</li>
+          </ol>
+        </article>
+
+      </div>
+
+      <section class="sources-ai">
+        <div class="source-card source-card--ai">
+          <div class="source-card__label"
+               data-de="KI-/LLM-Tools"
+               data-en="AI / LLM Tools"
+               data-fr="Outils IA / LLM">
+            KI-/LLM-Tools
+          </div>
+
+          <div class="ai-entry">
+            <p>
+              <strong>ChatGPT</strong><br>
+              URL:
+              <a href="https://chatgpt.com" target="_blank" rel="noopener noreferrer">https://chatgpt.com</a><br>
+              <span data-de="Zuletzt verwendetes Datum: 21.03.2026"
+                    data-en="Last date of use: 21.03.2026"
+                    data-fr="Dernière date d’utilisation : 21.03.2026">
+                Zuletzt verwendetes Datum: 21.03.2026
+              </span><br>
+              <span data-de="Verwendungszweck: Das Tool wurde ausschliesslich zur Überprüfung von Rechtschreibung, Grammatik und Zeichensetzung der finalen Version dieser Website verwendet. Inhaltliche Veränderungen oder inhaltliche Vorschläge des Tools wurden nicht übernommen."
+                    data-en="Purpose of use: The tool was used exclusively to check spelling, grammar and punctuation in the final version of this website. No factual changes or content suggestions from the tool were adopted."
+                    data-fr="But de l’utilisation : L’outil a été utilisé exclusivement pour vérifier l’orthographe, la grammaire et la ponctuation de la version finale de ce site web. Aucune modification de fond ni suggestion de contenu de l’outil n’a été reprise.">
+                Verwendungszweck: Das Tool wurde ausschliesslich zur Überprüfung von Rechtschreibung, Grammatik und Zeichensetzung der finalen Version dieser Website verwendet. Inhaltliche Veränderungen oder inhaltliche Vorschläge des Tools wurden nicht übernommen.
+              </span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </section>
+</main>
+
+<script>
+  function switchLanguage(lang) {
+    document.querySelectorAll("[data-de][data-en][data-fr]").forEach(el => {
+      el.textContent = el.getAttribute("data-" + lang);
+    });
+
+    const pageTitle = document.getElementById("pageTitle");
+    if (pageTitle) {
+      document.title = pageTitle.getAttribute("data-" + lang);
+    }
+
+    document.documentElement.lang = lang;
+    localStorage.setItem("siteLanguage", lang);
+
+    document.querySelectorAll("[data-lang-btn]").forEach(btn => {
+      btn.classList.toggle("active", btn.getAttribute("data-lang-btn") === lang);
+    });
+  }
+
+  document.querySelectorAll("[data-lang-btn]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      switchLanguage(btn.getAttribute("data-lang-btn"));
+    });
+  });
+
+  const savedLang = localStorage.getItem("siteLanguage") || "de";
+  switchLanguage(savedLang);
+</script>
+
+</body>
+</html>

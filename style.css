@@ -1751,3 +1751,142 @@ rgba(0,0,0,0.85)
   }
 }
 
+
+
+/* =========================
+   SOURCES PAGE
+   ========================= */
+
+.sources-page{
+  color: white;
+  min-height: 100vh;
+}
+
+.sources-hero{
+  padding: 120px 20px 30px;
+  text-align: center;
+}
+
+.sources-hero__inner{
+  width: min(960px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+.sources-kicker{
+  color: rgba(255,255,255,0.68);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  margin-bottom: 16px;
+}
+
+.sources-hero h1{
+  font-weight: 300;
+  letter-spacing: 6px;
+  font-size: clamp(38px, 5vw, 64px);
+  margin-bottom: 14px;
+}
+
+.sources-hero p{
+  max-width: 760px;
+  margin: 0 auto;
+  opacity: 0.82;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.sources-section{
+  padding: 10px 0 90px;
+}
+
+.sources-container{
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+.sources-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+.source-card{
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.03);
+  border-radius: 20px;
+  padding: 22px 22px 20px;
+  box-shadow: 0 14px 40px rgba(0,0,0,0.16);
+}
+
+.source-card__label{
+  color: rgba(255,255,255,0.7);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  margin-bottom: 16px;
+}
+
+.source-list{
+  margin: 0;
+  padding-left: 22px;
+}
+
+.source-list li{
+  color: rgba(255,255,255,0.82);
+  line-height: 1.75;
+  margin-bottom: 14px;
+  font-size: 15px;
+  word-break: break-word;
+}
+
+.source-list a,
+.ai-entry a{
+  color: white;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.source-list a:hover,
+.ai-entry a:hover{
+  opacity: 0.8;
+}
+
+.sources-ai{
+  margin-top: 26px;
+}
+
+.source-card--ai{
+  max-width: 100%;
+}
+
+.ai-entry p{
+  color: rgba(255,255,255,0.82);
+  line-height: 1.85;
+  font-size: 15px;
+}
+
+@media (max-width: 900px){
+  .sources-grid{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px){
+  .sources-hero{
+    padding: 110px 16px 20px;
+  }
+
+  .sources-container{
+    width: calc(100% - 24px);
+  }
+
+  .source-card{
+    padding: 18px 16px;
+  }
+
+  .source-list li,
+  .ai-entry p{
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
