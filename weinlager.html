@@ -3,7 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Weinlager – BAULINIE Basel</title>
+  <title id="pageTitle"
+    data-de="Weinlager – BAULINIE Basel"
+    data-en="Wine Warehouse – BAULINIE Basel"
+    data-fr="Entrepôt à vin – BAULINIE Basel">
+    Weinlager – BAULINIE Basel
+  </title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
@@ -15,40 +20,96 @@
     <div class="logo">BAULINIE Basel</div>
 
     <nav class="nav-links">
-      <a href="index.html" class="nav-link">Home</a>
-      <a href="zeitstrahl.html" class="nav-link">Zeitstrahl</a>
-      <a href="karte.html" class="nav-link">Karte</a>
-      <a href="wir.html" class="nav-link">Projekt</a>
+      <a href="index.html" class="nav-link"
+         data-de="Home"
+         data-en="Home"
+         data-fr="Accueil">Home</a>
+
+      <a href="zeitstrahl.html" class="nav-link"
+         data-de="Zeitstrahl"
+         data-en="Timeline"
+         data-fr="Chronologie">Zeitstrahl</a>
+
+      <a href="karte.html" class="nav-link"
+         data-de="Karte"
+         data-en="Map"
+         data-fr="Carte">Karte</a>
+
+      <a href="wir.html" class="nav-link"
+         data-de="Projekt"
+         data-en="Project"
+         data-fr="Projet">Projekt</a>
 
       <details class="dropdown">
-        <summary class="dropbtn">Bauwerke ▾</summary>
+        <summary class="dropbtn"
+                 data-de="Bauwerke ▾"
+                 data-en="Buildings ▾"
+                 data-fr="Bâtiments ▾">Bauwerke ▾</summary>
         <div class="dropdown-content">
-          <a href="elisabethen.html">1864 · Elisabethenkirche</a>
-          <a href="markthalle.html">1929 · Markthalle</a>
-          <a href="messe.html">2013 · Messe</a>
-          <a href="kunstmuseum.html">2016 · Kunstmuseum</a>
-          <a href="weinlager.html">2023 · Weinlager</a>
-          <a href="novartis.html">2022 · Novartis Campus</a>
+          <a href="elisabethen.html"
+             data-de="1864 · Elisabethenkirche"
+             data-en="1864 · Elisabethenkirche"
+             data-fr="1864 · Église Sainte-Elisabeth">1864 · Elisabethenkirche</a>
+          <a href="markthalle.html"
+             data-de="1929 · Markthalle"
+             data-en="1929 · Market Hall"
+             data-fr="1929 · Halle du Marché">1929 · Markthalle</a>
+          <a href="messe.html"
+             data-de="2013 · Messe"
+             data-en="2013 · Trade Fair"
+             data-fr="2013 · Foire">2013 · Messe</a>
+          <a href="kunstmuseum.html"
+             data-de="2016 · Kunstmuseum"
+             data-en="2016 · Art Museum"
+             data-fr="2016 · Musée des Beaux-Arts">2016 · Kunstmuseum</a>
+          <a href="novartis.html"
+             data-de="2022 · Novartis Campus"
+             data-en="2022 · Novartis Campus"
+             data-fr="2022 · Campus Novartis">2022 · Novartis Campus</a>
+          <a href="weinlager.html"
+             data-de="2023 · Weinlager"
+             data-en="2023 · Wine Warehouse"
+             data-fr="2023 · Entrepôt à vin">2023 · Weinlager</a>
         </div>
       </details>
 
-      <a href="Quellen.html" class="nav-link">Verzeichnis</a>
+      <a href="Quellen.html" class="nav-link"
+         data-de="Verzeichnis"
+         data-en="Sources"
+         data-fr="Sources">Verzeichnis</a>
+
+      <div class="lang-switch">
+        <button type="button" class="lang-btn active" data-lang-btn="de">DE</button>
+        <button type="button" class="lang-btn" data-lang-btn="en">EN</button>
+        <button type="button" class="lang-btn" data-lang-btn="fr">FR</button>
+      </div>
     </nav>
   </div>
 </header>
 
-<!-- HERO -->
 <section class="page-hero" style="background-image:url('weinlager1_.jpg');">
   <div class="page-hero__overlay"></div>
 
   <div class="page-hero__inner">
-    <h1 class="page-hero__title">
-      Weinlager<br>
-      <span class="page-hero__city">Basel</span>
+    <h1 class="page-hero__title"
+        data-de="Weinlager"
+        data-en="Wine Warehouse"
+        data-fr="Entrepôt à vin">
+      Weinlager
     </h1>
 
-    <p class="page-hero__subtitle">
-      Vom Industriebau zum urbanen Wohnraum
+    <div class="page-hero__city"
+         data-de="Basel"
+         data-en="Basel"
+         data-fr="Bâle">
+      Basel
+    </div>
+
+    <p class="page-hero__subtitle"
+       data-de="Vom Industriebau zum urbanen Wohnraum."
+       data-en="From industrial building to urban living space."
+       data-fr="D’un bâtiment industriel à un espace d’habitation urbain.">
+      Vom Industriebau zum urbanen Wohnraum.
     </p>
   </div>
 </section>
@@ -57,63 +118,242 @@
   <section class="page-section">
     <div class="container">
 
-      <!-- Steckbrief -->
       <div class="facts">
         <div class="fact">
-          <div class="fact__label">Baujahr</div>
+          <div class="fact__label"
+               data-de="Baujahr"
+               data-en="Year of construction"
+               data-fr="Année de construction">
+            Baujahr
+          </div>
           <div class="fact__value">1955</div>
         </div>
+
         <div class="fact">
-          <div class="fact__label">Umbau</div>
+          <div class="fact__label"
+               data-de="Umbau"
+               data-en="Conversion"
+               data-fr="Transformation">
+            Umbau
+          </div>
           <div class="fact__value">2020–2023</div>
+        </div>
+
+        <div class="fact">
+          <div class="fact__label"
+            >
+            
+          </div>
         </div>
       </div>
 
-      <!-- NUTZUNG -->
-      <h2 class="h2">Nutzung</h2>
+      <h2 class="h2"
+          data-de="Nutzung"
+          data-en="Use"
+          data-fr="Usage">
+        Nutzung
+      </h2>
 
-      <p class="p">
-        []
+      <p class="p"
+         data-de="Die ursprüngliche Funktion des Gebäudes bestand in den 1950er Jahren in der Lagerung von Wein. In den 1970er Jahren wurde das Weinlager zu einem Verteilerzentrum umgenutzt, von dem aus Wein aktiv weitertransportiert und an verschiedene Orte verteilt wurde."
+         data-en="The building’s original function in the 1950s was the storage of wine. In the 1970s, the wine warehouse was converted into a distribution centre from which wine was actively transported onward and distributed to various places."
+         data-fr="Dans les années 1950, le bâtiment servait à l’origine au stockage du vin. Dans les années 1970, l’entrepôt à vin a été transformé en centre de distribution à partir duquel le vin était acheminé et réparti vers différents lieux.">
+        Die ursprüngliche Funktion des Gebäudes bestand in den 1950er Jahren in der Lagerung von Wein. In den 1970er Jahren wurde das Weinlager zu einem Verteilerzentrum umgenutzt, von dem aus Wein aktiv weitertransportiert und an verschiedene Orte verteilt wurde.
       </p>
 
-      <!-- Bild 1 -->
+      <p class="p"
+         data-de="Im Laufe der Zeit entstand der Wunsch, das Gebäude erneut umzunutzen. Heute beherbergt es vielfältige Mietwohnungen, Gewerberäume, ein Café und eine Pizzeria. Die Transformation wurde zwischen 2020 und 2023 realisiert und vom Architekturbüro Esch Sintzel Architekten aus Zürich begleitet [26][27]. Damit wurde aus einem ehemaligen Zweckbau ein gemischt genutztes Gebäude, das Wohnen, Arbeiten und alltägliches städtisches Leben miteinander verbindet."
+         data-en="Over time, the intention arose to repurpose the building once again. Today it accommodates a variety of rental flats, commercial spaces, a café and a pizzeria. The transformation was carried out between 2020 and 2023 and accompanied by the architectural office Esch Sintzel Architekten from Zurich [26][27]. In this way, a former utilitarian building was turned into a mixed-use structure that combines living, working and everyday urban life."
+         data-fr="Avec le temps, le souhait est apparu de réaffecter une nouvelle fois le bâtiment. Aujourd’hui, il abrite divers appartements locatifs, des locaux commerciaux, un café et une pizzeria. La transformation a été réalisée entre 2020 et 2023 sous la direction du bureau Esch Sintzel Architekten de Zurich [26][27]. Ainsi, un ancien bâtiment purement fonctionnel est devenu un édifice à usage mixte reliant habitat, travail et vie urbaine quotidienne.">
+        Im Laufe der Zeit entstand der Wunsch, das Gebäude erneut umzunutzen. Heute beherbergt es vielfältige Mietwohnungen, Gewerberäume, ein Café und eine Pizzeria. Die Transformation wurde zwischen 2020 und 2023 realisiert und vom Architekturbüro Esch Sintzel Architekten aus Zürich begleitet [26][27]. Damit wurde aus einem ehemaligen Zweckbau ein gemischt genutztes Gebäude, das Wohnen, Arbeiten und alltägliches städtisches Leben miteinander verbindet.
+      </p>
+
       <figure class="figure">
         <img class="figure__img" src="weinlager_2.jpg" alt="Weinlager Basel – Ansicht">
-        <figcaption class="figure__cap">Weinlager Basel.</figcaption>
+        <figcaption class="figure__cap"
+                    data-de="Ansicht des umgenutzten Weinlagers in Basel. Foto: Abinaya Sureshkumar"
+                    data-en="View of the converted wine warehouse in Basel. Photo: Abinaya Sureshkumar"
+                    data-fr="Vue de l’ancien entrepôt à vin transformé à Bâle. Photo : Abinaya Sureshkumar">
+          Ansicht des umgenutzten Weinlagers in Basel. Foto: Abinaya Sureshkumar
+        </figcaption>
       </figure>
 
-      <!-- NACHHALTIGKEIT -->
-      <h2 class="h2">Nachhaltigkeit</h2>
+      <h2 class="h2"
+          data-de="Nachhaltigkeit"
+          data-en="Sustainability"
+          data-fr="Durabilité">
+        Nachhaltigkeit
+      </h2>
 
-      <p class="p">
-        []
+      <p class="p"
+         data-de="Im Wohnhaus Weinlager zeigt sich Nachhaltigkeit in mehreren Bereichen. Im Zentrum steht die Wohnnutzung. Durch die Begrenzung der Energiebezugsfläche auf 45 m² pro Person wird ein ressourcenschonender Umgang mit Raum gefördert. Die Stiftung Habitat achtet damit darauf, dass die Wohnfläche in einem angemessenen Verhältnis zur Anzahl der Bewohnenden steht. Zudem wurden die Wohnungen barrierefrei und altersgerecht gestaltet, um eine durchmischte Mieterschaft zu ermöglichen und damit die soziale Nachhaltigkeit zu stärken."
+         data-en="Sustainability in the Weinlager residential building becomes visible in several areas. At the centre stands its residential use. By limiting the energy reference area to 45 m² per person, a resource-conscious use of space is encouraged. The Habitat Foundation thus ensures that the amount of living space is proportionate to the number of residents. In addition, the flats were designed to be barrier-free and suitable for older people in order to enable a socially mixed tenant structure and thereby strengthen social sustainability."
+         data-fr="Dans l’immeuble résidentiel Weinlager, la durabilité se manifeste à plusieurs niveaux. L’usage résidentiel en constitue le coeur. En limitant la surface de référence énergétique à 45 m² par personne, une utilisation économe des espaces est encouragée. La fondation Habitat veille ainsi à ce que la surface habitable reste proportionnée au nombre d’habitantes et d’habitants. De plus, les logements ont été conçus sans barrières et adaptés à un usage intergénérationnel afin de favoriser une mixité locative et de renforcer ainsi la durabilité sociale.">
+        Im Wohnhaus Weinlager zeigt sich Nachhaltigkeit in mehreren Bereichen. Im Zentrum steht die Wohnnutzung. Durch die Begrenzung der Energiebezugsfläche auf 45 m² pro Person wird ein ressourcenschonender Umgang mit Raum gefördert. Die Stiftung Habitat achtet damit darauf, dass die Wohnfläche in einem angemessenen Verhältnis zur Anzahl der Bewohnenden steht. Zudem wurden die Wohnungen barrierefrei und altersgerecht gestaltet, um eine durchmischte Mieterschaft zu ermöglichen und damit die soziale Nachhaltigkeit zu stärken.
       </p>
 
-      <!-- ARCHITEKTUR -->
-      <h2 class="h2">Architektonische Bedeutung</h2>
-
-      <p class="p">
-        []
+      <p class="p"
+         data-de="Auch in ökologischer Hinsicht ist das Projekt bemerkenswert. Da es sich bei der Umgestaltung um eine Renovation und nicht um einen Neubau handelt, konnten zahlreiche Ressourcen eingespart werden. Der Weiterbau am Bestand zeigt, wie sich bestehende Architektur nachhaltig weiterentwickeln lässt."
+         data-en="The project is also noteworthy from an ecological point of view. Since the conversion was a renovation rather than a new construction, numerous resources could be saved. Continuing to build with the existing structure demonstrates how existing architecture can be developed sustainably."
+         data-fr="Le projet est également remarquable sur le plan écologique. Comme il s’agissait d’une rénovation et non d’une nouvelle construction, de nombreuses ressources ont pu être économisées. La transformation du bâti existant montre comment une architecture existante peut être développée de manière durable.">
+        Auch in ökologischer Hinsicht ist das Projekt bemerkenswert. Da es sich bei der Umgestaltung um eine Renovation und nicht um einen Neubau handelt, konnten zahlreiche Ressourcen eingespart werden. Der Weiterbau am Bestand zeigt, wie sich bestehende Architektur nachhaltig weiterentwickeln lässt.
       </p>
 
-      <p class="p">
-        []
+      <p class="p"
+         data-de="Ein weiterer zentraler Aspekt betrifft die Energienutzung des Gebäudes. Ein grosser Teil des Energie- und Wärmebedarfs wird durch Eigenproduktion gedeckt, unter anderem mit einem Grundwasserbrunnen in Kombination mit einer Wärmepumpe. Aufgrund der konstanten Temperatur des Grundwassers benötigt dieses System im Winter weniger Energie als eine Luft-Wärmepumpe. Im Sommer dient das Grundwasser zudem zur Kühlung der Räume. Zusätzlich tragen Jouliaduschen zu einem wärmesparenden Effekt bei. Diese funktionieren mit einem Wärmetauscher im Abfluss, der die Abwärme des verbrauchten Duschwassers nutzt, um das nachströmende Frischwasser vorzuwärmen. In einem Vierpersonenhaushalt können dadurch pro Jahr rund 1000 kWh Energie eingespart werden [26][34]."
+         data-en="Another central aspect concerns the building’s energy use. A large part of the energy and heating demand is covered by in-house production, including a groundwater well combined with a heat pump. Owing to the constant temperature of the groundwater, this system requires less energy in winter than an air-source heat pump. In summer, the groundwater is also used to cool the rooms. In addition, Jouliashowers contribute to a heat-saving effect. They work with a heat exchanger integrated into the drain, which uses the waste heat of used shower water to preheat incoming fresh water. In a four-person household, this can save around 1000 kWh of energy per year [26][34]."
+         data-fr="Un autre aspect central concerne l’utilisation de l’énergie dans le bâtiment. Une grande partie des besoins en énergie et en chaleur est couverte par une production propre, notamment grâce à un puits d’eau souterraine combiné à une pompe à chaleur. En raison de la température constante de l’eau souterraine, ce système nécessite en hiver moins d’énergie qu’une pompe à chaleur air-eau. En été, l’eau souterraine est également utilisée pour rafraîchir les pièces. En outre, les douches Joulia contribuent à économiser de la chaleur. Elles fonctionnent grâce à un échangeur thermique intégré dans l’écoulement, qui utilise la chaleur résiduelle de l’eau de douche usée pour préchauffer l’eau fraîche entrante. Dans un ménage de quatre personnes, cela permet d’économiser environ 1000 kWh d’énergie par an [26][34].">
+        Ein weiterer zentraler Aspekt betrifft die Energienutzung des Gebäudes. Ein grosser Teil des Energie- und Wärmebedarfs wird durch Eigenproduktion gedeckt, unter anderem mit einem Grundwasserbrunnen in Kombination mit einer Wärmepumpe. Aufgrund der konstanten Temperatur des Grundwassers benötigt dieses System im Winter weniger Energie als eine Luft-Wärmepumpe. Im Sommer dient das Grundwasser zudem zur Kühlung der Räume. Zusätzlich tragen Jouliaduschen zu einem wärmesparenden Effekt bei. Diese funktionieren mit einem Wärmetauscher im Abfluss, der die Abwärme des verbrauchten Duschwassers nutzt, um das nachströmende Frischwasser vorzuwärmen. In einem Vierpersonenhaushalt können dadurch pro Jahr rund 1000 kWh Energie eingespart werden [26][34].
       </p>
 
-      <!-- Bild 2 -->
+      <h2 class="h2"
+          data-de="Architektonische Bedeutung"
+          data-en="Architectural significance"
+          data-fr="Importance architecturale">
+        Architektonische Bedeutung
+      </h2>
+
+      <p class="p"
+         data-de="Dass das Gebäude früher ein Lagerhaus war, ist heute nur noch bedingt erkennbar. Einzelne Elemente wie die markanten Betonstützen und die Metallfassade des ehemaligen Lagerhauses sind jedoch erhalten geblieben und erinnern an die industrielle Vergangenheit. Gleichzeitig zeigen die tragenden Holzstützen, dass Funktionalität weiterhin eine wichtige Rolle spielt."
+         data-en="The fact that the building was once a warehouse is now only partly recognisable. Individual elements such as the striking concrete supports and the metal façade of the former storage building have nevertheless been preserved and recall its industrial past. At the same time, the load-bearing timber supports demonstrate that functionality continues to play an important role."
+         data-fr="Le fait que le bâtiment ait autrefois été un entrepôt n’est aujourd’hui plus reconnaissable qu’en partie. Certains éléments, comme les supports en béton marquants et la façade métallique de l’ancien bâtiment de stockage, ont cependant été conservés et rappellent son passé industriel. En même temps, les supports porteurs en bois montrent que la fonctionnalité continue de jouer un rôle important.">
+        Dass das Gebäude früher ein Lagerhaus war, ist heute nur noch bedingt erkennbar. Einzelne Elemente wie die markanten Betonstützen und die Metallfassade des ehemaligen Lagerhauses sind jedoch erhalten geblieben und erinnern an die industrielle Vergangenheit. Gleichzeitig zeigen die tragenden Holzstützen, dass Funktionalität weiterhin eine wichtige Rolle spielt.
+      </p>
+
+      <p class="p"
+         data-de="Architektonisch wurde das ehemals grosse und eher massive Gebäude bewusst transformiert. Durch Balkone und zahlreiche Fenster wirkt es heute leichter, offener und stärker auf den menschlichen Massstab ausgerichtet. Im Inneren steht nicht mehr die Logik des Lagers im Vordergrund, sondern der Mensch. Die Räume sind so gestaltet, dass sie Wohnlichkeit, Geborgenheit und Lebendigkeit vermitteln [26]."
+         data-en="Architecturally, the formerly large and rather massive building was deliberately transformed. Through balconies and numerous windows, it now appears lighter, more open and more oriented towards the human scale. Inside, the logic of the warehouse no longer dominates; instead, the focus lies on the people who live there. The spaces are designed in such a way that they convey a sense of domesticity, comfort and vitality [26]."
+         data-fr="Sur le plan architectural, l’ancien bâtiment, autrefois volumineux et plutôt massif, a été transformé de manière délibérée. Grâce aux balcons et aux nombreuses fenêtres, il apparaît aujourd’hui plus léger, plus ouvert et davantage adapté à l’échelle humaine. À l’intérieur, ce n’est plus la logique de l’entrepôt qui domine, mais la personne qui y habite. Les espaces sont conçus de manière à transmettre une impression d’habitation, de protection et de vitalité [26].">
+        Architektonisch wurde das ehemals grosse und eher massive Gebäude bewusst transformiert. Durch Balkone und zahlreiche Fenster wirkt es heute leichter, offener und stärker auf den menschlichen Massstab ausgerichtet. Im Inneren steht nicht mehr die Logik des Lagers im Vordergrund, sondern der Mensch. Die Räume sind so gestaltet, dass sie Wohnlichkeit, Geborgenheit und Lebendigkeit vermitteln [26].
+      </p>
+
       <figure class="figure figure--wide">
         <img class="figure__img" src="weinlager_3.jpg" alt="Detailansicht des Weinlagers">
-        <figcaption class="figure__cap">Detailansicht des Weinlagers.</figcaption>
+        <figcaption class="figure__cap"
+                    data-de="Detailansicht des umgebauten Weinlagers. Foto: Abinaya Sureshkumar"
+                    data-en="Detail view of the converted wine warehouse. Photo: Abinaya Sureshkumar"
+                    data-fr="Vue détaillée de l’entrepôt à vin transformé. Photo : Abinaya Sureshkumar">
+          Detailansicht des umgebauten Weinlagers. Foto: Abinaya Sureshkumar
+        </figcaption>
       </figure>
 
+      <h2 class="h2"
+          data-de="Bilder"
+          data-en="Images"
+          data-fr="Images">
+        Bilder
+      </h2>
+
+      <div class="gallery" aria-label="Bildergalerie Weinlager">
+        <button class="gallery__btn" type="button" id="prevImg" aria-label="Vorheriges Bild">←</button>
+
+        <figure class="gallery__figure">
+          <img class="gallery__img" id="galleryImg" src="weinlager1_.jpg" alt="Weinlager – Bild 1">
+          <figcaption class="gallery__cap" id="galleryCap">Aussenansicht des Weinlagers. Foto: Abinaya Sureshkumar</figcaption>
+        </figure>
+
+        <button class="gallery__btn" type="button" id="nextImg" aria-label="Nächstes Bild">→</button>
+      </div>
+
       <div class="pager">
-        <a class="pager__link" href="kunstmuseum.html">← Kunstmuseum</a>
-        <a class="pager__link" href="novartis.html">Novartis Campus →</a>
+        <a class="pager__link" href="novartis.html"
+           data-de="← Novartis Pavillon"
+           data-en="← Novartis Pavilion"
+           data-fr="← Pavillon Novartis">
+          ← Novartis Pavillon
+        </a>
+
+        <a class="pager__link" href="elisabethen.html"
+           data-de="Elisabethenkirche →"
+           data-en="Elisabethenkirche →"
+           data-fr="Église Sainte-Elisabeth →">
+          Elisabethenkirche →
+        </a>
       </div>
 
     </div>
   </section>
 </main>
+
+<script>
+  const items = [
+    {
+      src: "weinlager1_.jpg",
+      cap: {
+        de: "Aussenansicht des Weinlagers. Foto: Abinaya Sureshkumar",
+        en: "Exterior view of the wine warehouse. Photo: Abinaya Sureshkumar",
+        fr: "Vue extérieure de l’entrepôt à vin. Photo : Abinaya Sureshkumar"
+      }
+    },
+    {
+      src: "weinlager_2.jpg",
+      cap: {
+        de: "Ansicht des umgenutzten Weinlagers in Basel. Foto: Abinaya Sureshkumar",
+        en: "View of the converted wine warehouse in Basel. Photo: Abinaya Sureshkumar",
+        fr: "Vue de l’ancien entrepôt à vin transformé à Bâle. Photo : Abinaya Sureshkumar"
+      }
+    },
+    {
+      src: "weinlager_3.jpg",
+      cap: {
+        de: "Detailansicht des umgebauten Weinlagers. Foto: Abinaya Sureshkumar",
+        en: "Detail view of the converted wine warehouse. Photo: Abinaya Sureshkumar",
+        fr: "Vue détaillée de l’entrepôt à vin transformé. Photo : Abinaya Sureshkumar"
+      }
+    }
+  ];
+
+  let i = 0;
+  const imgEl = document.getElementById("galleryImg");
+  const capEl = document.getElementById("galleryCap");
+
+  function renderGallery() {
+    const lang = localStorage.getItem("siteLanguage") || "de";
+    imgEl.src = items[i].src;
+    imgEl.alt = items[i].cap[lang];
+    capEl.textContent = items[i].cap[lang];
+  }
+
+  document.getElementById("prevImg").addEventListener("click", () => {
+    i = (i - 1 + items.length) % items.length;
+    renderGallery();
+  });
+
+  document.getElementById("nextImg").addEventListener("click", () => {
+    i = (i + 1) % items.length;
+    renderGallery();
+  });
+
+  function switchLanguage(lang) {
+    document.querySelectorAll("[data-de][data-en][data-fr]").forEach(el => {
+      el.textContent = el.getAttribute("data-" + lang);
+    });
+
+    const pageTitle = document.getElementById("pageTitle");
+    if (pageTitle) {
+      document.title = pageTitle.getAttribute("data-" + lang);
+    }
+
+    document.documentElement.lang = lang;
+    localStorage.setItem("siteLanguage", lang);
+
+    document.querySelectorAll("[data-lang-btn]").forEach(btn => {
+      btn.classList.toggle("active", btn.getAttribute("data-lang-btn") === lang);
+    });
+
+    renderGallery();
+  }
+
+  document.querySelectorAll("[data-lang-btn]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      switchLanguage(btn.getAttribute("data-lang-btn"));
+    });
+  });
+
+  const savedLang = localStorage.getItem("siteLanguage") || "de";
+  switchLanguage(savedLang);
+  renderGallery();
+</script>
 
 </body>
 </html>
